@@ -1221,3 +1221,17 @@
 [2025-11-14T02:55:03.564+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:03.564+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-11-14T02:55:03.572+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:03.572+0000] {dag.py:3947} INFO - Setting next_dagrun for openphish_silver to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
 [2025-11-14T02:55:03.581+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/openphish_silver.py took 0.144 seconds
+[2025-11-14T02:55:32.104+0000] {processor.py:161} INFO - Started process (PID=32929) to work on /opt/airflow/dags/openphish_silver.py
+[2025-11-14T02:55:32.105+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/openphish_silver.py for tasks to queue
+[2025-11-14T02:55:32.106+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:32.106+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/openphish_silver.py
+[2025-11-14T02:55:32.274+0000] {processor.py:840} INFO - DAG(s) 'openphish_silver' retrieved from /opt/airflow/dags/openphish_silver.py
+[2025-11-14T02:55:32.286+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:32.285+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:55:32.292+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:32.292+0000] {dag.py:3947} INFO - Setting next_dagrun for openphish_silver to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:55:32.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/openphish_silver.py took 0.200 seconds
+[2025-11-14T02:55:34.703+0000] {processor.py:161} INFO - Started process (PID=32939) to work on /opt/airflow/dags/openphish_silver.py
+[2025-11-14T02:55:34.704+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/openphish_silver.py for tasks to queue
+[2025-11-14T02:55:34.704+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:34.704+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/openphish_silver.py
+[2025-11-14T02:55:34.819+0000] {processor.py:840} INFO - DAG(s) 'openphish_silver' retrieved from /opt/airflow/dags/openphish_silver.py
+[2025-11-14T02:55:34.825+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:34.825+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:55:34.839+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:34.839+0000] {dag.py:3947} INFO - Setting next_dagrun for openphish_silver to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:55:34.847+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/openphish_silver.py took 0.147 seconds

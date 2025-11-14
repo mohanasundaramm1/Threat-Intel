@@ -1228,3 +1228,10 @@
 [2025-11-14T02:55:30.730+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:30.730+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-11-14T02:55:30.740+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:30.740+0000] {dag.py:3947} INFO - Setting next_dagrun for whois_rdap_ingest to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
 [2025-11-14T02:55:30.751+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.281 seconds
+[2025-11-14T02:55:32.132+0000] {processor.py:161} INFO - Started process (PID=32930) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-14T02:55:32.133+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-14T02:55:32.134+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:32.133+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-14T02:55:32.306+0000] {processor.py:840} INFO - DAG(s) 'whois_rdap_ingest' retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-14T02:55:32.312+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:32.312+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:55:32.319+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:32.319+0000] {dag.py:3947} INFO - Setting next_dagrun for whois_rdap_ingest to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:55:32.326+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.200 seconds

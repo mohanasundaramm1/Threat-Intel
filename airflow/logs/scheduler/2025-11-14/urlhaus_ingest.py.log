@@ -1947,3 +1947,8 @@
 [2025-11-14T02:55:29.353+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:29.353+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-11-14T02:55:29.360+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:29.360+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
 [2025-11-14T02:55:29.367+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.390 seconds
+[2025-11-14T02:55:55.904+0000] {processor.py:161} INFO - Started process (PID=32960) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-11-14T02:55:55.914+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-11-14T02:55:55.915+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:55.914+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-11-14T02:55:56.855+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:56.855+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)

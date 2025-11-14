@@ -1230,3 +1230,17 @@
 [2025-11-14T02:55:05.183+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:05.183+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-11-14T02:55:05.190+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:05.190+0000] {dag.py:3947} INFO - Setting next_dagrun for misp_ingest to 2025-11-13 00:00:00+00:00, run_after=2025-11-14 00:00:00+00:00
 [2025-11-14T02:55:05.197+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/misp_ingest.py took 0.148 seconds
+[2025-11-14T02:55:34.679+0000] {processor.py:161} INFO - Started process (PID=32937) to work on /opt/airflow/dags/misp_ingest.py
+[2025-11-14T02:55:34.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/misp_ingest.py for tasks to queue
+[2025-11-14T02:55:34.680+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:34.680+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/misp_ingest.py
+[2025-11-14T02:55:34.806+0000] {processor.py:840} INFO - DAG(s) 'misp_ingest' retrieved from /opt/airflow/dags/misp_ingest.py
+[2025-11-14T02:55:34.816+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:34.815+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:55:34.823+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:34.823+0000] {dag.py:3947} INFO - Setting next_dagrun for misp_ingest to 2025-11-13 00:00:00+00:00, run_after=2025-11-14 00:00:00+00:00
+[2025-11-14T02:55:34.837+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/misp_ingest.py took 0.161 seconds
+[2025-11-14T02:55:36.110+0000] {processor.py:161} INFO - Started process (PID=32944) to work on /opt/airflow/dags/misp_ingest.py
+[2025-11-14T02:55:36.110+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/misp_ingest.py for tasks to queue
+[2025-11-14T02:55:36.110+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:36.110+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/misp_ingest.py
+[2025-11-14T02:55:36.213+0000] {processor.py:840} INFO - DAG(s) 'misp_ingest' retrieved from /opt/airflow/dags/misp_ingest.py
+[2025-11-14T02:55:36.218+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:36.218+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:55:36.224+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:36.224+0000] {dag.py:3947} INFO - Setting next_dagrun for misp_ingest to 2025-11-13 00:00:00+00:00, run_after=2025-11-14 00:00:00+00:00
+[2025-11-14T02:55:36.231+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/misp_ingest.py took 0.124 seconds

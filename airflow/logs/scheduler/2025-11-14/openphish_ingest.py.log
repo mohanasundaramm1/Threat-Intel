@@ -1947,3 +1947,19 @@
 [2025-11-14T02:55:25.685+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:25.684+0000] {dag.py:3089} INFO - Sync 1 DAGs
 [2025-11-14T02:55:25.691+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:25.691+0000] {dag.py:3947} INFO - Setting next_dagrun for openphish_ingest to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
 [2025-11-14T02:55:25.699+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/openphish_ingest.py took 2.218 seconds
+[2025-11-14T02:55:37.007+0000] {processor.py:161} INFO - Started process (PID=32946) to work on /opt/airflow/dags/openphish_ingest.py
+[2025-11-14T02:55:37.008+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/openphish_ingest.py for tasks to queue
+[2025-11-14T02:55:37.008+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:37.008+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/openphish_ingest.py
+[2025-11-14T02:55:37.859+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:37.859+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-11-14T02:55:38.418+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:38.418+0000] {warnings.py:112} WARNING - /opt/airflow/dags/openphish_ingest.py:105: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-11-14T02:55:38.419+0000] {processor.py:840} INFO - DAG(s) 'openphish_ingest' retrieved from /opt/airflow/dags/openphish_ingest.py
+[2025-11-14T02:55:38.423+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:38.423+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:55:38.428+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:38.428+0000] {dag.py:3947} INFO - Setting next_dagrun for openphish_ingest to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:55:38.434+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/openphish_ingest.py took 1.432 seconds
+[2025-11-14T02:55:55.884+0000] {processor.py:161} INFO - Started process (PID=32959) to work on /opt/airflow/dags/openphish_ingest.py
+[2025-11-14T02:55:55.887+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/openphish_ingest.py for tasks to queue
+[2025-11-14T02:55:55.889+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:55.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/openphish_ingest.py
+[2025-11-14T02:55:56.855+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:56.855+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
