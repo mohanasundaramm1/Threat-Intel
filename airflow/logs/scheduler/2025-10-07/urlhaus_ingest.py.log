@@ -1,0 +1,132 @@
+[2025-10-07T00:51:09.142+0000] {processor.py:161} INFO - Started process (PID=18221) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:51:09.143+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:51:09.143+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:09.143+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:51:10.014+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:10.014+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:51:10.661+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:10.661+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:51:10.663+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:51:10.669+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:10.669+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:51:10.674+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:10.674+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:51:10.680+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.542 seconds
+[2025-10-07T00:51:41.175+0000] {processor.py:161} INFO - Started process (PID=18252) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:51:41.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:51:41.176+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:41.176+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:51:41.957+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:41.957+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:51:42.596+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:42.596+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:51:42.597+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:51:42.603+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:42.603+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:51:42.607+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:51:42.607+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:51:42.613+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.441 seconds
+[2025-10-07T00:52:14.375+0000] {processor.py:161} INFO - Started process (PID=18285) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:52:14.377+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:52:14.377+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:14.377+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:52:15.176+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:15.176+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:52:15.850+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:15.850+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:52:15.852+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:52:15.859+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:15.859+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:52:15.866+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:15.866+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:52:15.876+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.503 seconds
+[2025-10-07T00:52:47.220+0000] {processor.py:161} INFO - Started process (PID=18316) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:52:47.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:52:47.223+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:47.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:52:48.011+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:48.011+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:52:48.613+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:48.613+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:52:48.615+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:52:48.621+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:48.620+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:52:48.627+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:52:48.627+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:52:48.633+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.417 seconds
+[2025-10-07T00:53:19.445+0000] {processor.py:161} INFO - Started process (PID=18347) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:53:19.445+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:53:19.446+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:19.446+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:53:20.207+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:20.207+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:53:20.772+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:20.772+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:53:20.773+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:53:20.786+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:20.785+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:53:20.793+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:20.793+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:53:20.803+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.361 seconds
+[2025-10-07T00:53:50.916+0000] {processor.py:161} INFO - Started process (PID=18378) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:53:50.917+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:53:50.918+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:50.917+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:53:51.628+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:51.628+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:53:52.159+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:52.159+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:53:52.160+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:53:52.165+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:52.165+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:53:52.169+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:53:52.169+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:53:52.175+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.261 seconds
+[2025-10-07T00:54:22.280+0000] {processor.py:161} INFO - Started process (PID=18409) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:54:22.280+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:54:22.281+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:22.280+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:54:23.014+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:23.014+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:54:23.536+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:23.536+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:54:23.537+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:54:23.542+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:23.542+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:54:23.548+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:23.548+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:54:23.556+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.279 seconds
+[2025-10-07T00:54:54.792+0000] {processor.py:161} INFO - Started process (PID=18440) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:54:54.794+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:54:54.794+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:54.794+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:54:55.516+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:55.516+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:54:56.172+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:56.172+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:54:56.173+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:54:56.180+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:56.179+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:54:56.190+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:54:56.190+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:54:56.212+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.422 seconds
+[2025-10-07T00:55:26.909+0000] {processor.py:161} INFO - Started process (PID=18471) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:55:26.911+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:55:26.913+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:55:26.912+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:55:27.976+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:55:27.976+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:55:28.938+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:55:28.938+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:55:28.940+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:55:28.948+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:55:28.948+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:55:28.955+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:55:28.955+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:55:28.965+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 2.062 seconds
+[2025-10-07T00:55:59.335+0000] {processor.py:161} INFO - Started process (PID=18502) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:55:59.336+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:55:59.336+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:55:59.336+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:56:00.515+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:00.515+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:56:01.243+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:01.243+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:56:01.244+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:56:01.255+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:01.255+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:56:01.267+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:01.267+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:56:01.280+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.948 seconds
+[2025-10-07T00:56:32.282+0000] {processor.py:161} INFO - Started process (PID=18533) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:56:32.283+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:56:32.284+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:32.284+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:56:33.298+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:33.297+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:56:33.885+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:33.885+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:56:33.887+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:56:33.895+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:33.895+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:56:33.901+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:56:33.901+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:56:33.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.633 seconds
+[2025-10-07T00:57:04.291+0000] {processor.py:161} INFO - Started process (PID=18564) to work on /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:57:04.292+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_ingest.py for tasks to queue
+[2025-10-07T00:57:04.292+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:57:04.292+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:57:05.219+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:57:05.219+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/snowflake/sqlalchemy/base.py:1068: SAWarning: The GenericFunction 'flatten' is already registered and is going to be overridden.
+  functions.register_function("flatten", flatten)
+[2025-10-07T00:57:06.251+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:57:06.251+0000] {warnings.py:112} WARNING - /opt/airflow/dags/urlhaus_ingest.py:90: RemovedInAirflow3Warning: Param `schedule_interval` is deprecated and will be removed in a future release. Please use `schedule` instead. 
+  with DAG(
+[2025-10-07T00:57:06.252+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_ingest' retrieved from /opt/airflow/dags/urlhaus_ingest.py
+[2025-10-07T00:57:06.260+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:57:06.260+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-10-07T00:57:06.266+0000] {logging_mixin.py:188} INFO - [2025-10-07T00:57:06.266+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_ingest to 2025-10-07 00:00:00+00:00, run_after=2025-10-08 00:00:00+00:00
+[2025-10-07T00:57:06.276+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_ingest.py took 1.989 seconds

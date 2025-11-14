@@ -1,0 +1,24 @@
+[2025-11-13T00:41:41.896+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-13T00:41:41.907+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-12T00:00:00+00:00 [queued]>
+[2025-11-13T00:41:41.909+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-12T00:00:00+00:00 [queued]>
+[2025-11-13T00:41:41.909+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-13T00:41:41.914+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): misp_osint_fetch> on 2025-11-12 00:00:00+00:00
+[2025-11-13T00:41:41.918+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'misp_osint_ingest', 'misp_osint_fetch', 'scheduled__2025-11-12T00:00:00+00:00', '--job-id', '29', '--raw', '--subdir', 'DAGS_FOLDER/misp_osint_ingest.py', '--cfg-path', '/tmp/tmpwf2u8bu8']
+[2025-11-13T00:41:41.919+0000] {standard_task_runner.py:91} INFO - Job 29: Subtask misp_osint_fetch
+[2025-11-13T00:41:41.919+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=10622) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-13T00:41:41.921+0000] {standard_task_runner.py:64} INFO - Started process 10633 to run task
+[2025-11-13T00:41:41.932+0000] {task_command.py:426} INFO - Running <TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-12T00:00:00+00:00 [running]> on host 1fd82182dcce
+[2025-11-13T00:41:41.953+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='misp_osint_ingest' AIRFLOW_CTX_TASK_ID='misp_osint_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-12T00:00:00+00:00'
+[2025-11-13T00:41:41.953+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-13T00:41:41.963+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=3, connect=2, read=3, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff9cf39b20>: Failed to resolve 'www.circl.lu' ([Errno -2] Name or service not known)")': /doc/misp/feed-osint/
+[2025-11-13T00:47:27.447+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=2, connect=1, read=3, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff9d0107a0>: Failed to resolve 'www.circl.lu' ([Errno -2] Name or service not known)")': /doc/misp/feed-osint/
+[2025-11-13T00:47:29.868+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=1, connect=0, read=3, redirect=None, status=None)) after connection broken by 'NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff9d010bf0>: Failed to resolve 'www.circl.lu' ([Errno -2] Name or service not known)")': /doc/misp/feed-osint/
+[2025-11-13T01:09:36.008+0000] {logging_mixin.py:188} INFO - [misp_osint] error on https://www.circl.lu/doc/misp/feed-osint/04e8bb1e-b445-40a6-a68a-1ce85e32d229.json: HTTPSConnectionPool(host='www.circl.lu', port=443): Read timed out.
+[2025-11-13T01:16:24.924+0000] {logging_mixin.py:188} INFO - [misp_osint] ds=2025-11-12 index_rows=1580 matched_today=100 rows_extracted=4476 file_errors=1
+[2025-11-13T01:16:25.038+0000] {logging_mixin.py:188} INFO - [misp_osint] wrote 4476 rows -> /opt/airflow/silver/misp_osint/ingest_date=2025-11-12/misp_osint.parquet
+[2025-11-13T01:16:25.040+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-13T01:16:25.040+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-13T01:16:25.046+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=misp_osint_ingest, task_id=misp_osint_fetch, run_id=scheduled__2025-11-12T00:00:00+00:00, execution_date=20251112T000000, start_date=20251113T004141, end_date=20251113T011625
+[2025-11-13T01:16:25.096+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-13T01:16:25.106+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-13T01:16:25.106+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,102 @@
+[2025-11-07T01:31:02.451+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-07T01:31:02.463+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-11-06T00:00:00+00:00 [queued]>
+[2025-11-07T01:31:02.466+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-11-06T00:00:00+00:00 [queued]>
+[2025-11-07T01:31:02.466+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-11-07T01:31:02.472+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): openphish_fetch_normalize_bronze> on 2025-11-06 00:00:00+00:00
+[2025-11-07T01:31:02.477+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=42785) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-07T01:31:02.478+0000] {standard_task_runner.py:64} INFO - Started process 42806 to run task
+[2025-11-07T01:31:02.479+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'openphish_ingest', 'openphish_fetch_normalize_bronze', 'scheduled__2025-11-06T00:00:00+00:00', '--job-id', '42', '--raw', '--subdir', 'DAGS_FOLDER/openphish_ingest.py', '--cfg-path', '/tmp/tmpcw8l1yvv']
+[2025-11-07T01:31:02.479+0000] {standard_task_runner.py:91} INFO - Job 42: Subtask openphish_fetch_normalize_bronze
+[2025-11-07T01:31:02.498+0000] {task_command.py:426} INFO - Running <TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-11-06T00:00:00+00:00 [running]> on host 7e98baed574a
+[2025-11-07T01:31:02.528+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='openphish_ingest' AIRFLOW_CTX_TASK_ID='openphish_fetch_normalize_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-11-06T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-06T00:00:00+00:00'
+[2025-11-07T01:31:02.528+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-07T01:31:02.541+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-07T01:31:02.541+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 203, in _new_conn
+    sock = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 964, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno -2] Name or service not known
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 492, in _make_request
+    raise new_e
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 468, in _make_request
+    self._validate_conn(conn)
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 1097, in _validate_conn
+    conn.connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 611, in connect
+    self.sock = sock = self._new_conn()
+                       ^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 210, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: <urllib3.connection.HTTPSConnection object at 0xffff63b3cb00>: Failed to resolve 'openphish.com' ([Errno -2] Name or service not known)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 845, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/util/retry.py", line 515, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='openphish.com', port=443): Max retries exceeded with url: /feed.txt (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff63b3cb00>: Failed to resolve 'openphish.com' ([Errno -2] Name or service not known)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/openphish_ingest.py", line 23, in fetch_and_write_openphish
+    r = requests.get(url, timeout=60, headers={"User-Agent":"threat-intel-lab/0.1"})
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 73, in get
+    return request("get", url, params=params, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/api.py", line 59, in request
+    return session.request(method=method, url=url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 700, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='openphish.com', port=443): Max retries exceeded with url: /feed.txt (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff63b3cb00>: Failed to resolve 'openphish.com' ([Errno -2] Name or service not known)"))
+[2025-11-07T01:31:02.545+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=openphish_ingest, task_id=openphish_fetch_normalize_bronze, run_id=scheduled__2025-11-06T00:00:00+00:00, execution_date=20251106T000000, start_date=20251107T013102, end_date=20251107T013102
+[2025-11-07T01:31:02.550+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 42 for task openphish_fetch_normalize_bronze (HTTPSConnectionPool(host='openphish.com', port=443): Max retries exceeded with url: /feed.txt (Caused by NameResolutionError("<urllib3.connection.HTTPSConnection object at 0xffff63b3cb00>: Failed to resolve 'openphish.com' ([Errno -2] Name or service not known)")); 42806)
+[2025-11-07T01:31:02.587+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-11-07T01:31:02.593+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-07T01:31:02.593+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

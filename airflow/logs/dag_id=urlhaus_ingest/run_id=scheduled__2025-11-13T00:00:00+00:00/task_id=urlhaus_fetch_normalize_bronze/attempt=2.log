@@ -1,0 +1,3 @@
+[2025-11-14T02:06:34.507+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-14T02:06:34.514+0000] {taskinstance.py:2066} INFO - Dependencies not met for <TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-11-13T00:00:00+00:00 [skipped]>, dependency 'Task Instance State' FAILED: Task is in the 'skipped' state.
+[2025-11-14T02:06:34.514+0000] {local_task_job_runner.py:163} INFO - Task is not able to be run

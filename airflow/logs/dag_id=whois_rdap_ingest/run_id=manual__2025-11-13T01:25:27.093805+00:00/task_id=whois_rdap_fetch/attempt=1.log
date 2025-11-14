@@ -1,0 +1,98 @@
+[2025-11-13T01:25:29.894+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-13T01:25:29.902+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: whois_rdap_ingest.whois_rdap_fetch manual__2025-11-13T01:25:27.093805+00:00 [queued]>
+[2025-11-13T01:25:29.904+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: whois_rdap_ingest.whois_rdap_fetch manual__2025-11-13T01:25:27.093805+00:00 [queued]>
+[2025-11-13T01:25:29.904+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-13T01:25:29.908+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): whois_rdap_fetch> on 2025-11-13 01:25:27.093805+00:00
+[2025-11-13T01:25:29.912+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'whois_rdap_ingest', 'whois_rdap_fetch', 'manual__2025-11-13T01:25:27.093805+00:00', '--job-id', '46', '--raw', '--subdir', 'DAGS_FOLDER/whois_rdap_dag.py', '--cfg-path', '/tmp/tmp154stxie']
+[2025-11-13T01:25:29.913+0000] {standard_task_runner.py:91} INFO - Job 46: Subtask whois_rdap_fetch
+[2025-11-13T01:25:29.913+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=11571) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-13T01:25:29.916+0000] {standard_task_runner.py:64} INFO - Started process 11582 to run task
+[2025-11-13T01:25:29.926+0000] {task_command.py:426} INFO - Running <TaskInstance: whois_rdap_ingest.whois_rdap_fetch manual__2025-11-13T01:25:27.093805+00:00 [running]> on host 1fd82182dcce
+[2025-11-13T01:25:29.947+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='whois_rdap_ingest' AIRFLOW_CTX_TASK_ID='whois_rdap_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-13T01:25:27.093805+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-13T01:25:27.093805+00:00'
+[2025-11-13T01:25:29.948+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-13T01:25:30.090+0000] {whois_rdap_dag.py:171} INFO - [whois_rdap] ds=2025-11-12 total=2949 to_fetch=288 cached=4250
+[2025-11-13T01:32:06.351+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=3, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='rdap.pandi.id', port=443): Read timed out. (read timeout=30)")': /rdap/domain/kopibrb.my.id
+[2025-11-13T01:32:42.829+0000] {local_task_job_runner.py:291} WARNING - Recorded pid 11646 does not match the current pid 11582
+[2025-11-13T01:32:42.830+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-11-13T01:32:42.832+0000] {process_utils.py:132} INFO - Sending 15 to group 11582. PIDs of all processes in the group: [11582]
+[2025-11-13T01:32:42.832+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 11582
+[2025-11-13T01:32:42.834+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-11-13T01:32:42.840+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-13T01:32:42.853+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 180, in whois_rdap_task
+    new_rows.append(_rdap_domain(d, session))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 103, in _rdap_domain
+    r = session.get(url, timeout=(3, 30))
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 602, in get
+    return self.request("GET", url, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 589, in request
+    resp = self.send(prep, **send_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 724, in send
+    history = [resp for resp in gen]
+              ^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 265, in resolve_redirects
+    resp = self.send(
+           ^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/sessions.py", line 703, in send
+    r = adapter.send(request, **kwargs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/requests/adapters.py", line 667, in send
+    resp = conn.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 875, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 946, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 791, in urlopen
+    response = self._make_request(
+               ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connectionpool.py", line 537, in _make_request
+    response = conn.getresponse()
+               ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/urllib3/connection.py", line 461, in getresponse
+    httplib_response = super().getresponse()
+                       ^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/http/client.py", line 1428, in getresponse
+    response.begin()
+  File "/usr/local/lib/python3.12/http/client.py", line 331, in begin
+    version, status, reason = self._read_status()
+                              ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/http/client.py", line 292, in _read_status
+    line = str(self.fp.readline(_MAXLINE + 1), "iso-8859-1")
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/socket.py", line 708, in readinto
+    return self._sock.recv_into(b)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/ssl.py", line 1252, in recv_into
+    return self.read(nbytes, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/ssl.py", line 1104, in read
+    return self._sslobj.read(len, buffer)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-11-13T01:32:42.865+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=whois_rdap_ingest, task_id=whois_rdap_fetch, run_id=manual__2025-11-13T01:25:27.093805+00:00, execution_date=20251113T012527, start_date=20251113T013241, end_date=20251113T013242
+[2025-11-13T01:32:42.936+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=11582, status='terminated', exitcode=2, started='01:25:29') (11582) terminated with exit code 2

@@ -1,0 +1,144 @@
+[2025-11-03T23:51:27.943+0000] {processor.py:161} INFO - Started process (PID=438) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:51:27.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:51:27.946+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:51:27.946+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:51:28.142+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:51:28.142+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/whois_rdap_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 8, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:51:28.143+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:51:28.148+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.210 seconds
+[2025-11-03T23:51:58.952+0000] {processor.py:161} INFO - Started process (PID=475) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:51:58.954+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:51:58.957+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:51:58.956+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:51:59.255+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:51:59.254+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/whois_rdap_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 8, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:51:59.255+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:51:59.260+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.318 seconds
+[2025-11-03T23:52:30.329+0000] {processor.py:161} INFO - Started process (PID=512) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:52:30.329+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:52:30.331+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:52:30.331+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:52:30.496+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:52:30.495+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/whois_rdap_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 8, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:52:30.496+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:52:30.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.177 seconds
+[2025-11-03T23:52:57.071+0000] {processor.py:161} INFO - Started process (PID=97) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:52:57.071+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:52:57.072+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:52:57.072+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:52:57.185+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:52:57.184+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/whois_rdap_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 8, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:52:57.186+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:52:57.191+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.122 seconds
+[2025-11-03T23:53:27.700+0000] {processor.py:161} INFO - Started process (PID=145) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:53:27.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:53:27.703+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:53:27.703+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:53:27.816+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:53:27.816+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/whois_rdap_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 8, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:53:27.817+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:53:27.822+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.127 seconds
+[2025-11-03T23:53:58.874+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:53:58.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:53:58.876+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:53:58.876+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:53:59.086+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:53:59.085+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/whois_rdap_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 8, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:53:59.086+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:53:59.092+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.221 seconds
+[2025-11-03T23:54:30.212+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:54:30.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:54:30.214+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:54:30.214+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:54:30.377+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:54:30.377+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/whois_rdap_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 8, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:54:30.377+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:54:30.382+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.176 seconds
+[2025-11-03T23:55:01.074+0000] {processor.py:161} INFO - Started process (PID=256) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:55:01.075+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:55:01.077+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:01.077+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:55:01.267+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:01.267+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/whois_rdap_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/whois_rdap_dag.py", line 8, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:55:01.267+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:55:01.272+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.203 seconds
+[2025-11-03T23:55:45.591+0000] {processor.py:161} INFO - Started process (PID=96) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:55:45.592+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:55:45.592+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:45.592+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:55:45.701+0000] {processor.py:840} INFO - DAG(s) 'whois_rdap_ingest' retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:55:45.801+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:45.800+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:whois_rdap_ingest
+[2025-11-03T23:55:45.804+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:45.804+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:whois_rdap_ingest
+[2025-11-03T23:55:45.806+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:45.806+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:whois_rdap_ingest
+[2025-11-03T23:55:45.806+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:45.806+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-03T23:55:45.809+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:45.809+0000] {dag.py:3111} INFO - Creating ORM DAG for whois_rdap_ingest
+[2025-11-03T23:55:45.812+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:45.812+0000] {dag.py:3947} INFO - Setting next_dagrun for whois_rdap_ingest to 2025-11-02 00:00:00+00:00, run_after=2025-11-03 00:00:00+00:00
+[2025-11-03T23:55:45.818+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.230 seconds
+[2025-11-03T23:56:16.314+0000] {processor.py:161} INFO - Started process (PID=144) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:56:16.315+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:56:16.317+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:16.316+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:56:16.432+0000] {processor.py:840} INFO - DAG(s) 'whois_rdap_ingest' retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:56:16.489+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:16.439+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-03T23:56:16.494+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:16.494+0000] {dag.py:3947} INFO - Setting next_dagrun for whois_rdap_ingest to 2025-11-02 00:00:00+00:00, run_after=2025-11-03 00:00:00+00:00
+[2025-11-03T23:56:16.501+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.192 seconds
+[2025-11-03T23:56:47.535+0000] {processor.py:161} INFO - Started process (PID=182) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:56:47.536+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:56:47.538+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:47.538+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:56:47.730+0000] {processor.py:840} INFO - DAG(s) 'whois_rdap_ingest' retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:56:47.735+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:47.735+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-03T23:56:47.740+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:47.740+0000] {dag.py:3947} INFO - Setting next_dagrun for whois_rdap_ingest to 2025-11-02 00:00:00+00:00, run_after=2025-11-03 00:00:00+00:00
+[2025-11-03T23:56:47.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.218 seconds
+[2025-11-03T23:57:18.755+0000] {processor.py:161} INFO - Started process (PID=219) to work on /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:57:18.757+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/whois_rdap_dag.py for tasks to queue
+[2025-11-03T23:57:18.758+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:57:18.758+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:57:18.929+0000] {processor.py:840} INFO - DAG(s) 'whois_rdap_ingest' retrieved from /opt/airflow/dags/whois_rdap_dag.py
+[2025-11-03T23:57:18.934+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:57:18.934+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-03T23:57:18.940+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:57:18.940+0000] {dag.py:3947} INFO - Setting next_dagrun for whois_rdap_ingest to 2025-11-02 00:00:00+00:00, run_after=2025-11-03 00:00:00+00:00
+[2025-11-03T23:57:18.946+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/whois_rdap_dag.py took 0.199 seconds

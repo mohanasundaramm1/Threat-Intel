@@ -1,0 +1,66 @@
+[2025-09-29T00:00:09.044+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-29T00:00:09.052+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-09-29T00:00:09.054+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-09-29T00:00:09.054+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-09-29T00:00:09.058+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): openphish_fetch_normalize_bronze> on 2025-09-28 00:00:00+00:00
+[2025-09-29T00:00:09.062+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'openphish_ingest', 'openphish_fetch_normalize_bronze', 'scheduled__2025-09-28T00:00:00+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/openphish_ingest.py', '--cfg-path', '/tmp/tmp08qo5k9b']
+[2025-09-29T00:00:09.063+0000] {standard_task_runner.py:91} INFO - Job 54: Subtask openphish_fetch_normalize_bronze
+[2025-09-29T00:00:09.062+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=28307) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-09-29T00:00:09.066+0000] {standard_task_runner.py:64} INFO - Started process 28328 to run task
+[2025-09-29T00:00:09.086+0000] {task_command.py:426} INFO - Running <TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [running]> on host 539ffd8f219e
+[2025-09-29T00:00:09.156+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='openphish_ingest' AIRFLOW_CTX_TASK_ID='openphish_fetch_normalize_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-09-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-28T00:00:00+00:00'
+[2025-09-29T00:00:09.158+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-29T00:00:10.092+0000] {logging_mixin.py:188} INFO - [openphish_ingest] rows after normalize: 300
+[2025-09-29T00:00:10.106+0000] {logging_mixin.py:188} INFO - [openphish] rows after normalize: 300
+[2025-09-29T00:00:10.149+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-09-29T00:00:10.150+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-29T00:00:10.154+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=openphish_ingest, task_id=openphish_fetch_normalize_bronze, run_id=scheduled__2025-09-28T00:00:00+00:00, execution_date=20250928T000000, start_date=20250929T000009, end_date=20250929T000010
+[2025-09-29T00:00:10.195+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-29T00:00:10.200+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-29T00:00:10.201+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-29T17:15:06.693+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-29T17:15:06.701+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-10-29T17:15:06.702+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-10-29T17:15:06.702+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-29T17:15:06.706+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): openphish_fetch_normalize_bronze> on 2025-09-28 00:00:00+00:00
+[2025-10-29T17:15:06.709+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=1547) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-29T17:15:06.709+0000] {standard_task_runner.py:64} INFO - Started process 1568 to run task
+[2025-10-29T17:15:06.710+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'openphish_ingest', 'openphish_fetch_normalize_bronze', 'scheduled__2025-09-28T00:00:00+00:00', '--job-id', '54', '--raw', '--subdir', 'DAGS_FOLDER/openphish_ingest.py', '--cfg-path', '/tmp/tmpp4yufuqy']
+[2025-10-29T17:15:06.710+0000] {standard_task_runner.py:91} INFO - Job 54: Subtask openphish_fetch_normalize_bronze
+[2025-10-29T17:15:06.722+0000] {task_command.py:426} INFO - Running <TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [running]> on host 109bbc934e0f
+[2025-10-29T17:15:06.743+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='openphish_ingest' AIRFLOW_CTX_TASK_ID='openphish_fetch_normalize_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-09-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-28T00:00:00+00:00'
+[2025-10-29T17:15:06.743+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-29T17:15:07.395+0000] {logging_mixin.py:188} INFO - [openphish_ingest] rows after normalize: 300
+[2025-10-29T17:15:07.399+0000] {logging_mixin.py:188} INFO - [openphish] rows after normalize: 300
+[2025-10-29T17:15:07.413+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-29T17:15:07.413+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-29T17:15:07.415+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=openphish_ingest, task_id=openphish_fetch_normalize_bronze, run_id=scheduled__2025-09-28T00:00:00+00:00, execution_date=20250928T000000, start_date=20251029T171506, end_date=20251029T171507
+[2025-10-29T17:15:07.460+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-29T17:15:07.464+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-29T17:15:07.464+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-29T18:11:54.898+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-29T18:11:54.906+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-10-29T18:11:54.907+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-10-29T18:11:54.907+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-29T18:11:54.911+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): openphish_fetch_normalize_bronze> on 2025-09-28 00:00:00+00:00
+[2025-10-29T18:11:54.914+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=3474) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-29T18:11:54.914+0000] {standard_task_runner.py:64} INFO - Started process 3495 to run task
+[2025-10-29T18:11:54.915+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'openphish_ingest', 'openphish_fetch_normalize_bronze', 'scheduled__2025-09-28T00:00:00+00:00', '--job-id', '134', '--raw', '--subdir', 'DAGS_FOLDER/openphish_ingest.py', '--cfg-path', '/tmp/tmp1oywm_4o']
+[2025-10-29T18:11:54.915+0000] {standard_task_runner.py:91} INFO - Job 134: Subtask openphish_fetch_normalize_bronze
+[2025-10-29T18:11:54.927+0000] {task_command.py:426} INFO - Running <TaskInstance: openphish_ingest.openphish_fetch_normalize_bronze scheduled__2025-09-28T00:00:00+00:00 [running]> on host 9a4b1d75930e
+[2025-10-29T18:11:54.948+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='openphish_ingest' AIRFLOW_CTX_TASK_ID='openphish_fetch_normalize_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-09-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-28T00:00:00+00:00'
+[2025-10-29T18:11:54.948+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-29T18:11:55.611+0000] {logging_mixin.py:188} INFO - [openphish_ingest] rows after normalize: 300
+[2025-10-29T18:11:55.615+0000] {logging_mixin.py:188} INFO - [openphish] rows after normalize: 300
+[2025-10-29T18:11:55.625+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-29T18:11:55.625+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-29T18:11:55.627+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=openphish_ingest, task_id=openphish_fetch_normalize_bronze, run_id=scheduled__2025-09-28T00:00:00+00:00, execution_date=20250928T000000, start_date=20251029T181154, end_date=20251029T181155
+[2025-10-29T18:11:55.669+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-29T18:11:55.673+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-29T18:11:55.673+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

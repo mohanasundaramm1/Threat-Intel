@@ -1,0 +1,38 @@
+[2025-11-06T00:06:53.636+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-06T00:06:53.645+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-11-05T00:00:00+00:00 [queued]>
+[2025-11-06T00:06:53.646+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-11-05T00:00:00+00:00 [queued]>
+[2025-11-06T00:06:53.646+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-06T00:06:53.651+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): urlhaus_bronze_to_silver> on 2025-11-05 00:00:00+00:00
+[2025-11-06T00:06:53.654+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'urlhaus_silver', 'urlhaus_bronze_to_silver', 'scheduled__2025-11-05T00:00:00+00:00', '--job-id', '30', '--raw', '--subdir', 'DAGS_FOLDER/urlhaus_silver.py', '--cfg-path', '/tmp/tmp2_i1f8a9']
+[2025-11-06T00:06:53.655+0000] {standard_task_runner.py:91} INFO - Job 30: Subtask urlhaus_bronze_to_silver
+[2025-11-06T00:06:53.654+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=36586) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-06T00:06:53.657+0000] {standard_task_runner.py:64} INFO - Started process 36597 to run task
+[2025-11-06T00:06:53.666+0000] {task_command.py:426} INFO - Running <TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-11-05T00:00:00+00:00 [running]> on host 7e98baed574a
+[2025-11-06T00:06:53.683+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='urlhaus_silver' AIRFLOW_CTX_TASK_ID='urlhaus_bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-11-05T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-05T00:00:00+00:00'
+[2025-11-06T00:06:53.683+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-06T00:06:53.687+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-06T00:06:53.687+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/urlhaus_silver.py", line 14, in urlhaus_to_silver
+    raise FileNotFoundError(f"No bronze for {ds}: {bronze_path}")
+FileNotFoundError: No bronze for 2025-11-05: /opt/airflow/bronze/urlhaus/ingest_date=2025-11-05/urlhaus.parquet
+[2025-11-06T00:06:53.689+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=urlhaus_silver, task_id=urlhaus_bronze_to_silver, run_id=scheduled__2025-11-05T00:00:00+00:00, execution_date=20251105T000000, start_date=20251106T000653, end_date=20251106T000653
+[2025-11-06T00:06:53.692+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 30 for task urlhaus_bronze_to_silver (No bronze for 2025-11-05: /opt/airflow/bronze/urlhaus/ingest_date=2025-11-05/urlhaus.parquet; 36597)
+[2025-11-06T00:06:53.719+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-11-06T00:06:53.722+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-06T00:06:53.723+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

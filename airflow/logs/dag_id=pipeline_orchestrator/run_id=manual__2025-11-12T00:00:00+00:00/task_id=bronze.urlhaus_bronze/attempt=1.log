@@ -1,0 +1,32 @@
+[2025-11-12T19:50:46.863+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-12T19:50:46.870+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_orchestrator.bronze.urlhaus_bronze manual__2025-11-12T00:00:00+00:00 [queued]>
+[2025-11-12T19:50:46.872+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_orchestrator.bronze.urlhaus_bronze manual__2025-11-12T00:00:00+00:00 [queued]>
+[2025-11-12T19:50:46.872+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-12T19:50:46.876+0000] {taskinstance.py:2330} INFO - Executing <Task(TriggerDagRunOperator): bronze.urlhaus_bronze> on 2025-11-12 00:00:00+00:00
+[2025-11-12T19:50:46.878+0000] {standard_task_runner.py:64} INFO - Started process 9605 to run task
+[2025-11-12T19:50:46.879+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_orchestrator', 'bronze.urlhaus_bronze', 'manual__2025-11-12T00:00:00+00:00', '--job-id', '17', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_orchestrator.py', '--cfg-path', '/tmp/tmp8cdbkubg']
+[2025-11-12T19:50:46.879+0000] {standard_task_runner.py:91} INFO - Job 17: Subtask bronze.urlhaus_bronze
+[2025-11-12T19:50:46.890+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_orchestrator.bronze.urlhaus_bronze manual__2025-11-12T00:00:00+00:00 [running]> on host 1fd82182dcce
+[2025-11-12T19:50:46.954+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='pipeline_orchestrator' AIRFLOW_CTX_TASK_ID='bronze.urlhaus_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-11-12T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-12T00:00:00+00:00'
+[2025-11-12T19:50:46.954+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-12T19:50:46.970+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-12T19:50:46.970+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-11-12T19:50:46.971+0000] {taskinstance.py:2489} INFO - Pausing task as DEFERRED. dag_id=pipeline_orchestrator, task_id=bronze.urlhaus_bronze, run_id=manual__2025-11-12T00:00:00+00:00, execution_date=20251112T000000, start_date=20251112T195046
+[2025-11-12T19:50:46.984+0000] {local_task_job_runner.py:237} INFO - Task exited with return code 100 (task deferral)
+[2025-11-12T19:50:46.985+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-11-13T01:23:12.046+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-13T01:23:12.056+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_orchestrator.bronze.urlhaus_bronze manual__2025-11-12T00:00:00+00:00 [queued]>
+[2025-11-13T01:23:12.058+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_orchestrator.bronze.urlhaus_bronze manual__2025-11-12T00:00:00+00:00 [queued]>
+[2025-11-13T01:23:12.058+0000] {taskinstance.py:2304} INFO - Resuming after deferral
+[2025-11-13T01:23:12.064+0000] {taskinstance.py:2330} INFO - Executing <Task(TriggerDagRunOperator): bronze.urlhaus_bronze> on 2025-11-12 00:00:00+00:00
+[2025-11-13T01:23:12.068+0000] {standard_task_runner.py:64} INFO - Started process 11213 to run task
+[2025-11-13T01:23:12.069+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_orchestrator', 'bronze.urlhaus_bronze', 'manual__2025-11-12T00:00:00+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_orchestrator.py', '--cfg-path', '/tmp/tmptlplepzv']
+[2025-11-13T01:23:12.075+0000] {standard_task_runner.py:91} INFO - Job 32: Subtask bronze.urlhaus_bronze
+[2025-11-13T01:23:12.120+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_orchestrator.bronze.urlhaus_bronze manual__2025-11-12T00:00:00+00:00 [running]> on host 1fd82182dcce
+[2025-11-13T01:23:12.455+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-13T01:23:12.456+0000] {trigger_dagrun.py:262} INFO - urlhaus_ingest finished with allowed state success
+[2025-11-13T01:23:12.456+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-13T01:23:12.458+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline_orchestrator, task_id=bronze.urlhaus_bronze, run_id=manual__2025-11-12T00:00:00+00:00, execution_date=20251112T000000, start_date=20251112T195046, end_date=20251113T012312
+[2025-11-13T01:23:12.502+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-13T01:23:12.512+0000] {taskinstance.py:3503} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2025-11-13T01:23:12.515+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

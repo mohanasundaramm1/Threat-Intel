@@ -1,0 +1,16 @@
+[2025-11-11T20:49:07.114+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-11T20:49:07.122+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_orchestrator.lookups.whois_rdap scheduled__2025-11-10T00:00:00+00:00 [queued]>
+[2025-11-11T20:49:07.124+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_orchestrator.lookups.whois_rdap scheduled__2025-11-10T00:00:00+00:00 [queued]>
+[2025-11-11T20:49:07.124+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-11T20:49:07.129+0000] {taskinstance.py:2330} INFO - Executing <Task(TriggerDagRunOperator): lookups.whois_rdap> on 2025-11-10 00:00:00+00:00
+[2025-11-11T20:49:07.130+0000] {standard_task_runner.py:64} INFO - Started process 226 to run task
+[2025-11-11T20:49:07.132+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_orchestrator', 'lookups.whois_rdap', 'scheduled__2025-11-10T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_orchestrator.py', '--cfg-path', '/tmp/tmpcu1vkdya']
+[2025-11-11T20:49:07.132+0000] {standard_task_runner.py:91} INFO - Job 8: Subtask lookups.whois_rdap
+[2025-11-11T20:49:07.146+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_orchestrator.lookups.whois_rdap scheduled__2025-11-10T00:00:00+00:00 [running]> on host f527e191e325
+[2025-11-11T20:49:07.239+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='pipeline_orchestrator' AIRFLOW_CTX_TASK_ID='lookups.whois_rdap' AIRFLOW_CTX_EXECUTION_DATE='2025-11-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-10T00:00:00+00:00'
+[2025-11-11T20:49:07.239+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-11T20:49:07.260+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-11T20:49:07.261+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=pipeline_orchestrator, task_id=lookups.whois_rdap, run_id=scheduled__2025-11-10T00:00:00+00:00, execution_date=20251110T000000, start_date=20251111T204907, end_date=20251111T204907
+[2025-11-11T20:49:07.281+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-11T20:49:07.287+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-11T20:49:07.287+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

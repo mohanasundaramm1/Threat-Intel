@@ -1,0 +1,38 @@
+[2025-09-30T00:12:46.313+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-30T00:12:46.332+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: openphish_silver.openphish_bronze_to_silver scheduled__2025-09-29T00:00:00+00:00 [queued]>
+[2025-09-30T00:12:46.334+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: openphish_silver.openphish_bronze_to_silver scheduled__2025-09-29T00:00:00+00:00 [queued]>
+[2025-09-30T00:12:46.334+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-30T00:12:46.342+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): openphish_bronze_to_silver> on 2025-09-29 00:00:00+00:00
+[2025-09-30T00:12:46.349+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'openphish_silver', 'openphish_bronze_to_silver', 'scheduled__2025-09-29T00:00:00+00:00', '--job-id', '61', '--raw', '--subdir', 'DAGS_FOLDER/openphish_silver.py', '--cfg-path', '/tmp/tmprqzzs9oy']
+[2025-09-30T00:12:46.350+0000] {standard_task_runner.py:91} INFO - Job 61: Subtask openphish_bronze_to_silver
+[2025-09-30T00:12:46.351+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=70403) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-09-30T00:12:46.351+0000] {standard_task_runner.py:64} INFO - Started process 70414 to run task
+[2025-09-30T00:12:46.380+0000] {task_command.py:426} INFO - Running <TaskInstance: openphish_silver.openphish_bronze_to_silver scheduled__2025-09-29T00:00:00+00:00 [running]> on host 539ffd8f219e
+[2025-09-30T00:12:46.431+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='openphish_silver' AIRFLOW_CTX_TASK_ID='openphish_bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-09-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-29T00:00:00+00:00'
+[2025-09-30T00:12:46.431+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-30T00:12:46.495+0000] {logging_mixin.py:188} INFO - [openphish_silver] wrote 518 rows -> /opt/airflow/silver/openphish/ingest_date=2025-09-29
+[2025-09-30T00:12:46.495+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-09-30T00:12:46.495+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-30T00:12:46.497+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=openphish_silver, task_id=openphish_bronze_to_silver, run_id=scheduled__2025-09-29T00:00:00+00:00, execution_date=20250929T000000, start_date=20250930T001246, end_date=20250930T001246
+[2025-09-30T00:12:46.531+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-30T00:12:46.538+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-30T00:12:46.538+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-29T18:12:18.994+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-29T18:12:19.004+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: openphish_silver.openphish_bronze_to_silver scheduled__2025-09-29T00:00:00+00:00 [queued]>
+[2025-10-29T18:12:19.005+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: openphish_silver.openphish_bronze_to_silver scheduled__2025-09-29T00:00:00+00:00 [queued]>
+[2025-10-29T18:12:19.005+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-29T18:12:19.010+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): openphish_bronze_to_silver> on 2025-09-29 00:00:00+00:00
+[2025-10-29T18:12:19.014+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'openphish_silver', 'openphish_bronze_to_silver', 'scheduled__2025-09-29T00:00:00+00:00', '--job-id', '143', '--raw', '--subdir', 'DAGS_FOLDER/openphish_silver.py', '--cfg-path', '/tmp/tmpxv2ba1i1']
+[2025-10-29T18:12:19.015+0000] {standard_task_runner.py:91} INFO - Job 143: Subtask openphish_bronze_to_silver
+[2025-10-29T18:12:19.014+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=3711) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-29T18:12:19.018+0000] {standard_task_runner.py:64} INFO - Started process 3722 to run task
+[2025-10-29T18:12:19.027+0000] {task_command.py:426} INFO - Running <TaskInstance: openphish_silver.openphish_bronze_to_silver scheduled__2025-09-29T00:00:00+00:00 [running]> on host 9a4b1d75930e
+[2025-10-29T18:12:19.049+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='openphish_silver' AIRFLOW_CTX_TASK_ID='openphish_bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-09-29T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-29T00:00:00+00:00'
+[2025-10-29T18:12:19.049+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-29T18:12:19.074+0000] {logging_mixin.py:188} INFO - [openphish_silver] 2025-09-29: wrote 206 rows -> /opt/airflow/silver/openphish/ingest_date=2025-09-29
+[2025-10-29T18:12:19.075+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-29T18:12:19.075+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-29T18:12:19.076+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=openphish_silver, task_id=openphish_bronze_to_silver, run_id=scheduled__2025-09-29T00:00:00+00:00, execution_date=20250929T000000, start_date=20251029T181219, end_date=20251029T181219
+[2025-10-29T18:12:19.124+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-29T18:12:19.129+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-29T18:12:19.129+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,79 @@
+[2025-11-13T01:32:54.470+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-13T01:32:54.479+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch manual__2025-11-13T01:25:28.437850+00:00 [queued]>
+[2025-11-13T01:32:54.481+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch manual__2025-11-13T01:25:28.437850+00:00 [queued]>
+[2025-11-13T01:32:54.481+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-13T01:32:54.485+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): dns_ip_geo_fetch> on 2025-11-13 01:25:28.437850+00:00
+[2025-11-13T01:32:54.489+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'dns_ip_geo_ingest', 'dns_ip_geo_fetch', 'manual__2025-11-13T01:25:28.437850+00:00', '--job-id', '49', '--raw', '--subdir', 'DAGS_FOLDER/dns_ip_geo_dag.py', '--cfg-path', '/tmp/tmprrq6zky_']
+[2025-11-13T01:32:54.490+0000] {standard_task_runner.py:91} INFO - Job 49: Subtask dns_ip_geo_fetch
+[2025-11-13T01:32:54.490+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=11700) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-13T01:32:54.493+0000] {standard_task_runner.py:64} INFO - Started process 11715 to run task
+[2025-11-13T01:32:54.505+0000] {task_command.py:426} INFO - Running <TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch manual__2025-11-13T01:25:28.437850+00:00 [running]> on host 1fd82182dcce
+[2025-11-13T01:32:54.528+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='dns_ip_geo_ingest' AIRFLOW_CTX_TASK_ID='dns_ip_geo_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-13T01:25:28.437850+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-13T01:25:28.437850+00:00'
+[2025-11-13T01:32:54.529+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-13T01:37:51.654+0000] {local_task_job_runner.py:291} WARNING - Recorded pid 12131 does not match the current pid 11715
+[2025-11-13T01:37:51.657+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-11-13T01:37:51.659+0000] {process_utils.py:132} INFO - Sending 15 to group 11715. PIDs of all processes in the group: [11715]
+[2025-11-13T01:37:51.659+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 11715
+[2025-11-13T01:37:51.662+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-11-13T01:37:51.666+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-13T01:37:51.690+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/dns/query.py", line 513, in _udp_recv
+    return sock.recvfrom(max_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+BlockingIOError: [Errno 11] Resource temporarily unavailable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 195, in dns_ip_geo_task
+    ips = _resolve_ips(d, resolver)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 102, in _resolve_ips
+    return _resolve_rr(puny_domain, "A", resolver) + _resolve_rr(puny_domain, "AAAA", resolver)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 87, in _resolve_rr
+    answers = resolver.resolve(domain, rdtype, lifetime=3)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/dns/resolver.py", line 1323, in resolve
+    response = nameserver.query(
+               ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/dns/nameserver.py", line 108, in query
+    response = dns.query.udp(
+               ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/dns/query.py", line 735, in udp
+    (r, received_time) = receive_udp(
+                         ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/dns/query.py", line 626, in receive_udp
+    (wire, from_address) = _udp_recv(sock, 65535, expiration)
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/dns/query.py", line 515, in _udp_recv
+    _wait_for_readable(sock, expiration)
+  File "/home/airflow/.local/lib/python3.12/site-packages/dns/query.py", line 259, in _wait_for_readable
+    _wait_for(s, True, False, True, expiration)
+  File "/home/airflow/.local/lib/python3.12/site-packages/dns/query.py", line 234, in _wait_for
+    if not sel.select(timeout):
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/selectors.py", line 415, in select
+    fd_event_list = self._selector.poll(timeout)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2613, in signal_handler
+    raise AirflowTaskTerminated("Task received SIGTERM signal")
+airflow.exceptions.AirflowTaskTerminated: Task received SIGTERM signal
+[2025-11-13T01:37:51.704+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=dns_ip_geo_ingest, task_id=dns_ip_geo_fetch, run_id=manual__2025-11-13T01:25:28.437850+00:00, execution_date=20251113T012528, start_date=20251113T013746, end_date=20251113T013751
+[2025-11-13T01:37:51.764+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=11715, status='terminated', exitcode=2, started='01:32:54') (11715) terminated with exit code 2

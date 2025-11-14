@@ -1,0 +1,1239 @@
+[2025-11-14T00:09:02.584+0000] {processor.py:161} INFO - Started process (PID=25598) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T00:09:02.584+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T00:09:02.585+0000] {logging_mixin.py:188} INFO - [2025-11-14T00:09:02.585+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T00:09:02.765+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T00:09:02.774+0000] {logging_mixin.py:188} INFO - [2025-11-14T00:09:02.774+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T00:09:02.784+0000] {logging_mixin.py:188} INFO - [2025-11-14T00:09:02.784+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T00:09:02.795+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.216 seconds
+[2025-11-14T00:09:33.905+0000] {processor.py:161} INFO - Started process (PID=25638) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T00:09:33.907+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T00:09:33.909+0000] {logging_mixin.py:188} INFO - [2025-11-14T00:09:33.908+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T00:09:34.079+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T00:09:34.085+0000] {logging_mixin.py:188} INFO - [2025-11-14T00:09:34.085+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T00:09:34.092+0000] {logging_mixin.py:188} INFO - [2025-11-14T00:09:34.091+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T00:09:34.099+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.201 seconds
+[2025-11-14T01:09:56.774+0000] {processor.py:161} INFO - Started process (PID=25678) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T01:09:56.775+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T01:09:56.776+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:09:56.776+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T01:09:56.954+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T01:09:56.962+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:09:56.961+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T01:09:56.970+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:09:56.970+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T01:09:56.980+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.210 seconds
+[2025-11-14T01:10:29.318+0000] {processor.py:161} INFO - Started process (PID=25718) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T01:10:29.319+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T01:10:29.319+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:10:29.319+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T01:10:29.423+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T01:10:29.428+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:10:29.428+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T01:10:29.433+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:10:29.433+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T01:10:29.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.127 seconds
+[2025-11-14T01:48:04.960+0000] {processor.py:161} INFO - Started process (PID=25758) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T01:48:04.962+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T01:48:04.962+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:48:04.962+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T01:48:05.143+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T01:48:05.150+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:48:05.150+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T01:48:05.158+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:48:05.158+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T01:48:05.169+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.214 seconds
+[2025-11-14T01:48:36.745+0000] {processor.py:161} INFO - Started process (PID=25798) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T01:48:36.746+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T01:48:36.747+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:48:36.747+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T01:48:36.868+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T01:48:36.873+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:48:36.873+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T01:48:36.879+0000] {logging_mixin.py:188} INFO - [2025-11-14T01:48:36.879+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T01:48:36.886+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.145 seconds
+[2025-11-14T02:05:14.260+0000] {processor.py:161} INFO - Started process (PID=25838) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:05:14.261+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:05:14.262+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:05:14.261+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:05:14.376+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:05:14.382+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:05:14.381+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:05:14.387+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:05:14.387+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:05:14.394+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.137 seconds
+[2025-11-14T02:05:45.760+0000] {processor.py:161} INFO - Started process (PID=25878) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:05:45.761+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:05:45.762+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:05:45.762+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:05:45.979+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:05:45.991+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:05:45.991+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:05:45.999+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:05:45.999+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:05:46.010+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.254 seconds
+[2025-11-14T02:06:17.718+0000] {processor.py:161} INFO - Started process (PID=25918) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:06:17.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:06:17.719+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:06:17.719+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:06:17.850+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:06:17.856+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:06:17.856+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:06:17.862+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:06:17.862+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:06:17.869+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.155 seconds
+[2025-11-14T02:06:53.607+0000] {processor.py:161} INFO - Started process (PID=26145) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:06:53.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:06:53.609+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:06:53.609+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:06:53.723+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:06:53.727+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:06:53.727+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:06:53.733+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:06:53.733+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:06:53.739+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.136 seconds
+[2025-11-14T02:07:25.443+0000] {processor.py:161} INFO - Started process (PID=26185) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:07:25.444+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:07:25.445+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:07:25.445+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:07:25.564+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:07:25.568+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:07:25.568+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:07:25.573+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:07:25.573+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:07:25.579+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.142 seconds
+[2025-11-14T02:07:58.076+0000] {processor.py:161} INFO - Started process (PID=26225) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:07:58.077+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:07:58.077+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:07:58.077+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:07:58.194+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:07:58.199+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:07:58.199+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:07:58.205+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:07:58.205+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:07:58.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.141 seconds
+[2025-11-14T02:08:29.540+0000] {processor.py:161} INFO - Started process (PID=26265) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:08:29.542+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:08:29.542+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:08:29.542+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:08:29.652+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:08:29.656+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:08:29.656+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:08:29.661+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:08:29.661+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:08:29.668+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.132 seconds
+[2025-11-14T02:09:00.906+0000] {processor.py:161} INFO - Started process (PID=26312) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:09:00.908+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:09:00.908+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:09:00.908+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:09:01.015+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:09:01.019+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:09:01.019+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:09:01.024+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:09:01.024+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:09:01.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.200 seconds
+[2025-11-14T02:09:32.596+0000] {processor.py:161} INFO - Started process (PID=26352) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:09:32.598+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:09:32.599+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:09:32.599+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:09:32.758+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:09:32.764+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:09:32.764+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:09:32.778+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:09:32.778+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:09:32.787+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.197 seconds
+[2025-11-14T02:10:04.291+0000] {processor.py:161} INFO - Started process (PID=26392) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:10:04.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:10:04.294+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:10:04.293+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:10:04.469+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:10:04.476+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:10:04.476+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:10:04.483+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:10:04.483+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:10:04.493+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.206 seconds
+[2025-11-14T02:10:37.350+0000] {processor.py:161} INFO - Started process (PID=26439) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:10:37.352+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:10:37.353+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:10:37.353+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:10:37.470+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:10:37.475+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:10:37.475+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:10:37.536+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:10:37.536+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:10:37.542+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.198 seconds
+[2025-11-14T02:11:08.805+0000] {processor.py:161} INFO - Started process (PID=26479) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:11:08.807+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:11:08.808+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:11:08.807+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:11:08.981+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:11:08.984+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:11:08.984+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:11:08.988+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:11:08.988+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:11:08.995+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.194 seconds
+[2025-11-14T02:11:40.133+0000] {processor.py:161} INFO - Started process (PID=26519) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:11:40.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:11:40.134+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:11:40.134+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:11:40.339+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:11:40.342+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:11:40.342+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:11:40.346+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:11:40.346+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:11:40.353+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.225 seconds
+[2025-11-14T02:12:11.473+0000] {processor.py:161} INFO - Started process (PID=26559) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:12:11.474+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:12:11.475+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:12:11.474+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:12:11.813+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:12:11.818+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:12:11.818+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:12:11.823+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:12:11.822+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:12:11.829+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.362 seconds
+[2025-11-14T02:12:42.655+0000] {processor.py:161} INFO - Started process (PID=26599) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:12:42.657+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:12:42.657+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:12:42.657+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:12:42.872+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:12:42.875+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:12:42.875+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:12:42.880+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:12:42.880+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:12:42.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.237 seconds
+[2025-11-14T02:13:15.040+0000] {processor.py:161} INFO - Started process (PID=26639) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:13:15.041+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:13:15.042+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:13:15.042+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:13:15.230+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:13:15.234+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:13:15.233+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:13:15.239+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:13:15.239+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:13:15.246+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.210 seconds
+[2025-11-14T02:13:47.674+0000] {processor.py:161} INFO - Started process (PID=26679) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:13:47.676+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:13:47.679+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:13:47.678+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:13:47.923+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:13:47.927+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:13:47.927+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:13:47.932+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:13:47.931+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:13:47.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.276 seconds
+[2025-11-14T02:14:19.616+0000] {processor.py:161} INFO - Started process (PID=26719) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:19.617+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:14:19.618+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:19.617+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:19.800+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:19.804+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:19.804+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:14:19.809+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:19.808+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:14:19.815+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.203 seconds
+[2025-11-14T02:14:40.877+0000] {processor.py:161} INFO - Started process (PID=26774) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:40.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:14:40.879+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:40.879+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:41.187+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:41.193+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:41.193+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:14:41.200+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:41.200+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:14:41.208+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.341 seconds
+[2025-11-14T02:14:52.394+0000] {processor.py:161} INFO - Started process (PID=26811) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:52.395+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:14:52.395+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:52.395+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:52.590+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:14:52.594+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:52.594+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:14:52.600+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:14:52.600+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:14:52.607+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.216 seconds
+[2025-11-14T02:15:13.142+0000] {processor.py:161} INFO - Started process (PID=26854) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:13.146+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:15:13.148+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:13.147+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:13.527+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:13.533+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:13.533+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:15:13.543+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:13.543+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:15:13.552+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.425 seconds
+[2025-11-14T02:15:27.450+0000] {processor.py:161} INFO - Started process (PID=26891) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:27.452+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:15:27.453+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:27.453+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:27.723+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:27.727+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:27.726+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:15:27.731+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:27.731+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:15:27.740+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.294 seconds
+[2025-11-14T02:15:45.654+0000] {processor.py:161} INFO - Started process (PID=26934) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:45.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:15:45.656+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:45.656+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:45.992+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:45.997+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:45.997+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:15:46.012+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:46.011+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:15:46.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.383 seconds
+[2025-11-14T02:15:58.067+0000] {processor.py:161} INFO - Started process (PID=26971) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:58.068+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:15:58.069+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:58.069+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:58.562+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:15:58.566+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:58.566+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:15:58.571+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:15:58.571+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:15:58.578+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.528 seconds
+[2025-11-14T02:16:17.489+0000] {processor.py:161} INFO - Started process (PID=27014) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:17.490+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:16:17.490+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:17.490+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:17.696+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:17.700+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:17.700+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:16:17.706+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:17.706+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:16:17.715+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.229 seconds
+[2025-11-14T02:16:31.642+0000] {processor.py:161} INFO - Started process (PID=27053) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:31.643+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:16:31.644+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:31.644+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:32.036+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:32.044+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:32.044+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:16:32.052+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:32.052+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:16:32.059+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.423 seconds
+[2025-11-14T02:16:49.367+0000] {processor.py:161} INFO - Started process (PID=27094) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:49.368+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:16:49.368+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:49.368+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:49.579+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:16:49.585+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:49.585+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:16:49.591+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:16:49.590+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:16:49.597+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.233 seconds
+[2025-11-14T02:17:03.768+0000] {processor.py:161} INFO - Started process (PID=27133) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:03.769+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:17:03.770+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:03.769+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:04.036+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:04.047+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:04.046+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:17:04.062+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:04.062+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:17:04.084+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.320 seconds
+[2025-11-14T02:17:23.419+0000] {processor.py:161} INFO - Started process (PID=27174) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:23.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:17:23.421+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:23.420+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:23.668+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:23.673+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:23.673+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:17:23.679+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:23.679+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:17:23.685+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.269 seconds
+[2025-11-14T02:17:35.992+0000] {processor.py:161} INFO - Started process (PID=27215) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:35.994+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:17:35.995+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:35.994+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:36.426+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:36.430+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:36.430+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:17:36.434+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:36.434+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:17:36.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.463 seconds
+[2025-11-14T02:17:55.477+0000] {processor.py:161} INFO - Started process (PID=27254) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:55.479+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:17:55.480+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:55.480+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:56.303+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:17:56.318+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:56.318+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:17:56.328+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:17:56.327+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:17:56.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.883 seconds
+[2025-11-14T02:18:09.106+0000] {processor.py:161} INFO - Started process (PID=27295) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:09.107+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:18:09.108+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:09.108+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:09.309+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:09.313+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:09.312+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:18:09.317+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:09.317+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:18:09.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.221 seconds
+[2025-11-14T02:18:26.704+0000] {processor.py:161} INFO - Started process (PID=27334) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:26.705+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:18:26.706+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:26.705+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:26.832+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:26.838+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:26.838+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:18:26.845+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:26.845+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:18:26.854+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.153 seconds
+[2025-11-14T02:18:41.767+0000] {processor.py:161} INFO - Started process (PID=27375) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:41.768+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:18:41.768+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:41.768+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:41.957+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:41.961+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:41.961+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:18:41.967+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:41.967+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:18:41.975+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.213 seconds
+[2025-11-14T02:18:58.862+0000] {processor.py:161} INFO - Started process (PID=27414) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:58.864+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:18:58.865+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:58.864+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:59.017+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:18:59.024+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:59.024+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:18:59.031+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:18:59.031+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:18:59.040+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.182 seconds
+[2025-11-14T02:19:12.629+0000] {processor.py:161} INFO - Started process (PID=27455) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:12.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:19:12.631+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:12.631+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:12.830+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:12.834+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:12.834+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:19:12.839+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:12.839+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:19:12.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.220 seconds
+[2025-11-14T02:19:32.698+0000] {processor.py:161} INFO - Started process (PID=27494) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:32.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:19:32.700+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:32.699+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:32.840+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:32.845+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:32.845+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:19:32.853+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:32.853+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:19:32.861+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.169 seconds
+[2025-11-14T02:19:46.468+0000] {processor.py:161} INFO - Started process (PID=27537) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:46.470+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:19:46.470+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:46.470+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:46.635+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:19:46.639+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:46.639+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:19:46.644+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:19:46.644+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:19:46.650+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.185 seconds
+[2025-11-14T02:20:03.764+0000] {processor.py:161} INFO - Started process (PID=27574) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:03.765+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:20:03.765+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:03.765+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:03.872+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:03.877+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:03.877+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:20:03.883+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:03.883+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:20:03.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.128 seconds
+[2025-11-14T02:20:18.300+0000] {processor.py:161} INFO - Started process (PID=27626) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:18.301+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:20:18.301+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:18.301+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:18.506+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:18.511+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:18.510+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:20:18.516+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:18.516+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:20:18.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.224 seconds
+[2025-11-14T02:20:34.475+0000] {processor.py:161} INFO - Started process (PID=27663) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:34.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:20:34.476+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:34.476+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:34.665+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:34.673+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:34.672+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:20:34.681+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:34.681+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:20:34.689+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.219 seconds
+[2025-11-14T02:20:50.572+0000] {processor.py:161} INFO - Started process (PID=27706) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:50.573+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:20:50.574+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:50.573+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:50.795+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:20:50.800+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:50.799+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:20:50.805+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:20:50.805+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:20:50.812+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.245 seconds
+[2025-11-14T02:21:06.207+0000] {processor.py:161} INFO - Started process (PID=27752) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:06.208+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:21:06.208+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:06.208+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:06.310+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:06.315+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:06.315+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:21:06.321+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:06.320+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:21:06.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.125 seconds
+[2025-11-14T02:21:22.029+0000] {processor.py:161} INFO - Started process (PID=27795) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:22.029+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:21:22.030+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:22.029+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:22.198+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:22.202+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:22.202+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:21:22.207+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:22.207+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:21:22.213+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.189 seconds
+[2025-11-14T02:21:39.431+0000] {processor.py:161} INFO - Started process (PID=27832) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:39.432+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:21:39.433+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:39.432+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:39.579+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:39.588+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:39.588+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:21:39.596+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:39.596+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:21:39.607+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.181 seconds
+[2025-11-14T02:21:55.001+0000] {processor.py:161} INFO - Started process (PID=27875) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:55.002+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:21:55.003+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:55.002+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:55.187+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:21:55.191+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:55.191+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:21:55.196+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:21:55.196+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:21:55.202+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.204 seconds
+[2025-11-14T02:22:12.422+0000] {processor.py:161} INFO - Started process (PID=27913) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:12.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:22:12.423+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:12.423+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:12.541+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:12.547+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:12.547+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:22:12.553+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:12.553+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:22:12.561+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.142 seconds
+[2025-11-14T02:22:27.155+0000] {processor.py:161} INFO - Started process (PID=27955) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:27.156+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:22:27.157+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:27.157+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:27.340+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:27.344+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:27.343+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:22:27.348+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:27.348+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:22:27.355+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.204 seconds
+[2025-11-14T02:22:45.279+0000] {processor.py:161} INFO - Started process (PID=27993) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:45.280+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:22:45.281+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:45.280+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:45.400+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:45.409+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:45.409+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:22:45.683+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:45.665+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:22:45.798+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.522 seconds
+[2025-11-14T02:22:59.624+0000] {processor.py:161} INFO - Started process (PID=28044) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:59.624+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:22:59.625+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:59.625+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:59.793+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:22:59.798+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:59.798+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:22:59.803+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:22:59.803+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:22:59.812+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.192 seconds
+[2025-11-14T02:23:18.284+0000] {processor.py:161} INFO - Started process (PID=28084) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:18.285+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:23:18.286+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:18.286+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:18.434+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:18.443+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:18.442+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:23:18.450+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:18.450+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:23:18.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.181 seconds
+[2025-11-14T02:23:31.200+0000] {processor.py:161} INFO - Started process (PID=28124) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:31.200+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:23:31.201+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:31.201+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:31.396+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:31.400+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:31.400+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:23:31.405+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:31.405+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:23:31.411+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.216 seconds
+[2025-11-14T02:23:50.189+0000] {processor.py:161} INFO - Started process (PID=28173) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:50.190+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:23:50.191+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:50.190+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:50.307+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:23:50.313+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:50.313+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:23:50.319+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:23:50.319+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:23:50.327+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.140 seconds
+[2025-11-14T02:24:03.816+0000] {processor.py:161} INFO - Started process (PID=28213) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:03.817+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:24:03.817+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:03.817+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:04.032+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:04.036+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:04.036+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:24:04.041+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:04.041+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:24:04.047+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.236 seconds
+[2025-11-14T02:24:21.835+0000] {processor.py:161} INFO - Started process (PID=28253) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:21.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:24:21.836+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:21.836+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:21.946+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:21.951+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:21.951+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:24:21.957+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:21.957+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:24:21.963+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.131 seconds
+[2025-11-14T02:24:35.503+0000] {processor.py:161} INFO - Started process (PID=28293) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:35.504+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:24:35.505+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:35.505+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:35.684+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:35.691+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:35.691+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:24:35.698+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:35.698+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:24:35.707+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.214 seconds
+[2025-11-14T02:24:53.775+0000] {processor.py:161} INFO - Started process (PID=28343) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:53.780+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:24:53.784+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:53.784+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:53.936+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:24:53.942+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:53.941+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:24:53.948+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:24:53.948+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:24:53.957+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.188 seconds
+[2025-11-14T02:25:07.064+0000] {processor.py:161} INFO - Started process (PID=28373) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:07.065+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:25:07.066+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:07.066+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:07.202+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:07.209+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:07.208+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:25:07.218+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:07.218+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:25:07.230+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.171 seconds
+[2025-11-14T02:25:25.833+0000] {processor.py:161} INFO - Started process (PID=28423) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:25.836+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:25:25.839+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:25.838+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:25.969+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:25.978+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:25.977+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:25:25.988+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:25.988+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:25:25.997+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.166 seconds
+[2025-11-14T02:25:38.903+0000] {processor.py:161} INFO - Started process (PID=28453) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:38.905+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:25:38.906+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:38.905+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:39.015+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:39.020+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:39.020+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:25:39.029+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:39.029+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:25:39.037+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.139 seconds
+[2025-11-14T02:25:57.608+0000] {processor.py:161} INFO - Started process (PID=28503) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:57.609+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:25:57.610+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:57.610+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:57.757+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:25:57.765+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:57.765+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:25:57.772+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:25:57.772+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:25:57.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.175 seconds
+[2025-11-14T02:26:10.630+0000] {processor.py:161} INFO - Started process (PID=28533) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:10.631+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:26:10.632+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:10.631+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:10.746+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:10.751+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:10.750+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:26:10.755+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:10.755+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:26:10.762+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.137 seconds
+[2025-11-14T02:26:30.382+0000] {processor.py:161} INFO - Started process (PID=28585) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:30.383+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:26:30.383+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:30.383+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:30.491+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:30.496+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:30.496+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:26:30.501+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:30.501+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:26:30.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.130 seconds
+[2025-11-14T02:26:42.432+0000] {processor.py:161} INFO - Started process (PID=28613) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:42.433+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:26:42.433+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:42.433+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:42.539+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:26:42.544+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:42.544+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:26:42.550+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:26:42.550+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:26:42.557+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.127 seconds
+[2025-11-14T02:27:02.122+0000] {processor.py:161} INFO - Started process (PID=28665) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:02.123+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:27:02.123+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:02.123+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:02.225+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:02.231+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:02.231+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:27:02.236+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:02.236+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:27:02.243+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.123 seconds
+[2025-11-14T02:27:14.068+0000] {processor.py:161} INFO - Started process (PID=28693) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:14.069+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:27:14.069+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:14.069+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:14.175+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:14.180+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:14.180+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:27:14.185+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:14.185+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:27:14.192+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.128 seconds
+[2025-11-14T02:27:33.633+0000] {processor.py:161} INFO - Started process (PID=28745) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:33.633+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:27:33.634+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:33.633+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:33.748+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:33.754+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:33.754+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:27:33.760+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:33.760+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:27:33.768+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.140 seconds
+[2025-11-14T02:27:47.137+0000] {processor.py:161} INFO - Started process (PID=28773) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:47.139+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:27:47.139+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:47.139+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:47.266+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:27:47.272+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:47.272+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:27:47.281+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:27:47.281+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:27:47.290+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.157 seconds
+[2025-11-14T02:28:06.590+0000] {processor.py:161} INFO - Started process (PID=28826) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:06.591+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:28:06.591+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:06.591+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:06.724+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:06.730+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:06.729+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:28:06.736+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:06.736+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:28:06.744+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.159 seconds
+[2025-11-14T02:28:18.675+0000] {processor.py:161} INFO - Started process (PID=28853) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:18.676+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:28:18.676+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:18.676+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:18.789+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:18.795+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:18.794+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:28:18.800+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:18.800+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:28:18.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.136 seconds
+[2025-11-14T02:28:38.220+0000] {processor.py:161} INFO - Started process (PID=28906) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:38.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:28:38.221+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:38.221+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:38.330+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:38.336+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:38.335+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:28:38.341+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:38.341+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:28:38.348+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.132 seconds
+[2025-11-14T02:28:51.013+0000] {processor.py:161} INFO - Started process (PID=28933) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:51.013+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:28:51.014+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:51.014+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:51.133+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:28:51.138+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:51.138+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:28:51.144+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:28:51.144+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:28:51.151+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.143 seconds
+[2025-11-14T02:29:10.342+0000] {processor.py:161} INFO - Started process (PID=28986) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:10.343+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:29:10.344+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:10.343+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:10.455+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:10.462+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:10.461+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:29:10.468+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:10.468+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:29:10.475+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.137 seconds
+[2025-11-14T02:29:22.792+0000] {processor.py:161} INFO - Started process (PID=29013) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:22.792+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:29:22.793+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:22.792+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:22.907+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:22.913+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:22.912+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:29:22.918+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:22.918+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:29:22.926+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.137 seconds
+[2025-11-14T02:29:42.084+0000] {processor.py:161} INFO - Started process (PID=29066) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:42.085+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:29:42.085+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:42.085+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:42.190+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:42.197+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:42.196+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:29:42.203+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:42.203+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:29:42.210+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.130 seconds
+[2025-11-14T02:29:54.629+0000] {processor.py:161} INFO - Started process (PID=29093) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:54.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:29:54.630+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:54.630+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:54.756+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:29:54.763+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:54.762+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:29:54.769+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:29:54.769+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:29:54.777+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.151 seconds
+[2025-11-14T02:30:14.248+0000] {processor.py:161} INFO - Started process (PID=29146) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:14.249+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:30:14.249+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:14.249+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:14.367+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:14.372+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:14.372+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:30:14.378+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:14.378+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:30:14.386+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.142 seconds
+[2025-11-14T02:30:26.217+0000] {processor.py:161} INFO - Started process (PID=29173) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:26.218+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:30:26.218+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:26.218+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:26.343+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:26.349+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:26.349+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:30:26.355+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:26.355+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:30:26.363+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.150 seconds
+[2025-11-14T02:30:46.261+0000] {processor.py:161} INFO - Started process (PID=29226) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:46.263+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:30:46.263+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:46.263+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:46.376+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:46.382+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:46.382+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:30:46.389+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:46.389+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:30:46.396+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.139 seconds
+[2025-11-14T02:30:58.170+0000] {processor.py:161} INFO - Started process (PID=29253) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:58.171+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:30:58.171+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:58.171+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:58.288+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:30:58.293+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:58.293+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:30:58.301+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:30:58.301+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:30:58.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.142 seconds
+[2025-11-14T02:31:18.297+0000] {processor.py:161} INFO - Started process (PID=29306) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:18.298+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:31:18.299+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:18.299+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:18.420+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:18.427+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:18.426+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:31:18.434+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:18.434+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:31:18.441+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.147 seconds
+[2025-11-14T02:31:29.876+0000] {processor.py:161} INFO - Started process (PID=29333) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:29.876+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:31:29.877+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:29.877+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:29.986+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:29.992+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:29.991+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:31:29.998+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:29.998+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:31:30.004+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.133 seconds
+[2025-11-14T02:31:50.877+0000] {processor.py:161} INFO - Started process (PID=29388) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:50.878+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:31:50.879+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:50.878+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:50.987+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:31:50.993+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:50.992+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:31:50.999+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:31:50.999+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:31:51.006+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.133 seconds
+[2025-11-14T02:32:01.919+0000] {processor.py:161} INFO - Started process (PID=29413) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:01.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:32:01.921+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:01.920+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:02.032+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:02.037+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:02.037+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:32:02.043+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:02.042+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:32:02.049+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.133 seconds
+[2025-11-14T02:32:23.805+0000] {processor.py:161} INFO - Started process (PID=29468) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:23.806+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:32:23.807+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:23.807+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:23.944+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:23.952+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:23.952+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:32:23.960+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:23.959+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:32:23.968+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.169 seconds
+[2025-11-14T02:32:34.802+0000] {processor.py:161} INFO - Started process (PID=29493) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:34.803+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:32:34.803+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:34.803+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:34.928+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:34.933+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:34.933+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:32:34.940+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:34.940+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:32:34.950+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.152 seconds
+[2025-11-14T02:32:56.192+0000] {processor.py:161} INFO - Started process (PID=29548) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:56.193+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:32:56.193+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:56.193+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:56.350+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:32:56.357+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:56.357+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:32:56.366+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:32:56.366+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:32:56.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.185 seconds
+[2025-11-14T02:33:07.647+0000] {processor.py:161} INFO - Started process (PID=29573) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:07.648+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:33:07.648+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:07.648+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:07.762+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:07.768+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:07.767+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:33:07.773+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:07.773+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:33:07.781+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.138 seconds
+[2025-11-14T02:33:28.718+0000] {processor.py:161} INFO - Started process (PID=29628) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:28.719+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:33:28.719+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:28.719+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:28.825+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:28.831+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:28.830+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:33:28.836+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:28.836+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:33:28.844+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.128 seconds
+[2025-11-14T02:33:39.680+0000] {processor.py:161} INFO - Started process (PID=29653) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:39.681+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:33:39.681+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:39.681+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:39.801+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:33:39.808+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:39.807+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:33:39.814+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:33:39.814+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:33:39.823+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.147 seconds
+[2025-11-14T02:34:01.949+0000] {processor.py:161} INFO - Started process (PID=29708) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:01.950+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:34:01.951+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:01.950+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:02.495+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:02.523+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:02.522+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:34:02.554+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:02.554+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:34:02.782+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.837 seconds
+[2025-11-14T02:34:10.229+0000] {processor.py:161} INFO - Started process (PID=29733) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:10.230+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:34:10.230+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:10.230+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:10.353+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:10.359+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:10.359+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:34:10.366+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:10.366+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:34:10.374+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.148 seconds
+[2025-11-14T02:34:33.421+0000] {processor.py:161} INFO - Started process (PID=29788) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:33.423+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:34:33.423+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:33.423+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:33.639+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:33.643+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:33.642+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:34:33.648+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:33.648+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:34:33.655+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.241 seconds
+[2025-11-14T02:34:42.216+0000] {processor.py:161} INFO - Started process (PID=29813) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:42.216+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:34:42.217+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:42.217+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:42.340+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:34:42.346+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:42.346+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:34:42.352+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:34:42.352+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:34:42.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.147 seconds
+[2025-11-14T02:35:06.137+0000] {processor.py:161} INFO - Started process (PID=29868) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:06.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:35:06.138+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:06.138+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:06.878+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:06.889+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:06.889+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:35:06.902+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:06.901+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:35:06.911+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.786 seconds
+[2025-11-14T02:35:13.963+0000] {processor.py:161} INFO - Started process (PID=29893) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:13.963+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:35:13.964+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:13.964+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:14.098+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:14.103+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:14.103+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:35:14.110+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:14.110+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:35:14.117+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.158 seconds
+[2025-11-14T02:35:37.918+0000] {processor.py:161} INFO - Started process (PID=29948) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:37.920+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:35:37.921+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:37.920+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:38.056+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:38.063+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:38.062+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:35:38.166+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:38.166+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:35:38.172+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.259 seconds
+[2025-11-14T02:35:45.764+0000] {processor.py:161} INFO - Started process (PID=29973) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:45.765+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:35:45.766+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:45.766+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:45.959+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:35:45.968+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:45.967+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:35:45.978+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:35:45.977+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:35:45.988+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.229 seconds
+[2025-11-14T02:36:10.340+0000] {processor.py:161} INFO - Started process (PID=30028) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:10.342+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:36:10.342+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:10.342+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:10.532+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:10.536+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:10.536+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:36:10.541+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:10.541+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:36:10.549+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.213 seconds
+[2025-11-14T02:36:17.790+0000] {processor.py:161} INFO - Started process (PID=30053) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:17.791+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:36:17.791+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:17.791+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:17.921+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:17.929+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:17.929+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:36:17.936+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:17.936+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:36:17.943+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.156 seconds
+[2025-11-14T02:36:43.290+0000] {processor.py:161} INFO - Started process (PID=30108) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:43.290+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:36:43.291+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:43.291+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:43.548+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:43.552+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:43.552+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:36:43.557+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:43.557+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:36:43.564+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.280 seconds
+[2025-11-14T02:36:49.344+0000] {processor.py:161} INFO - Started process (PID=30133) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:49.344+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:36:49.345+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:49.345+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:49.471+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:36:49.478+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:49.477+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:36:49.484+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:36:49.484+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:36:49.492+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.152 seconds
+[2025-11-14T02:37:15.307+0000] {processor.py:161} INFO - Started process (PID=30188) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:15.307+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:37:15.308+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:15.308+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:15.503+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:15.507+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:15.507+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:37:15.512+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:15.512+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:37:15.520+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.217 seconds
+[2025-11-14T02:37:21.502+0000] {processor.py:161} INFO - Started process (PID=30213) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:21.502+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:37:21.503+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:21.502+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:21.638+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:21.644+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:21.644+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:37:21.652+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:21.652+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:37:21.660+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.161 seconds
+[2025-11-14T02:37:47.515+0000] {processor.py:161} INFO - Started process (PID=30268) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:47.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:37:47.517+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:47.517+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:47.728+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:47.732+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:47.732+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:37:47.738+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:47.738+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:37:47.746+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.235 seconds
+[2025-11-14T02:37:53.183+0000] {processor.py:161} INFO - Started process (PID=30293) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:53.183+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:37:53.184+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:53.184+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:53.331+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:37:53.338+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:53.338+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:37:53.345+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:37:53.345+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:37:53.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.175 seconds
+[2025-11-14T02:38:19.687+0000] {processor.py:161} INFO - Started process (PID=30350) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:19.689+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:38:19.690+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:19.689+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:19.953+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:19.957+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:19.957+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:38:19.962+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:19.962+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:38:19.973+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.289 seconds
+[2025-11-14T02:38:24.753+0000] {processor.py:161} INFO - Started process (PID=30372) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:24.754+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:38:24.754+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:24.754+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:24.883+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:24.890+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:24.890+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:38:24.895+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:24.895+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:38:24.903+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.153 seconds
+[2025-11-14T02:38:51.471+0000] {processor.py:161} INFO - Started process (PID=30430) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:51.473+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:38:51.474+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:51.474+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:51.907+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:51.915+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:51.915+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:38:51.925+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:51.925+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:38:51.938+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.474 seconds
+[2025-11-14T02:38:58.180+0000] {processor.py:161} INFO - Started process (PID=30454) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:58.181+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:38:58.182+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:58.181+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:58.428+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:38:58.438+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:58.437+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:38:58.705+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:38:58.705+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:38:58.713+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.543 seconds
+[2025-11-14T02:39:23.896+0000] {processor.py:161} INFO - Started process (PID=30510) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:23.898+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:39:23.898+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:23.898+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:24.217+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:24.223+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:24.223+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:39:24.233+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:24.232+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:39:24.242+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.350 seconds
+[2025-11-14T02:39:30.333+0000] {processor.py:161} INFO - Started process (PID=30534) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:30.334+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:39:30.335+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:30.334+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:30.499+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:30.509+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:30.509+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:39:30.519+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:30.519+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:39:30.619+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.291 seconds
+[2025-11-14T02:39:56.708+0000] {processor.py:161} INFO - Started process (PID=30600) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:56.710+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:39:56.712+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:56.712+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:56.971+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:39:56.977+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:56.977+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:39:56.986+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:39:56.986+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:39:56.996+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.291 seconds
+[2025-11-14T02:40:02.606+0000] {processor.py:161} INFO - Started process (PID=30614) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:02.607+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:40:02.607+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:02.607+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:02.867+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:02.871+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:02.871+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:40:02.877+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:02.877+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:40:02.884+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.282 seconds
+[2025-11-14T02:40:28.700+0000] {processor.py:161} INFO - Started process (PID=30680) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:28.701+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:40:28.702+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:28.701+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:28.897+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:28.901+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:28.901+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:40:28.905+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:28.905+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:40:28.913+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.215 seconds
+[2025-11-14T02:40:33.399+0000] {processor.py:161} INFO - Started process (PID=30693) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:33.399+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:40:33.399+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:33.399+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:33.579+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:40:33.582+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:33.582+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:40:33.588+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:40:33.587+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:40:33.594+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.200 seconds
+[2025-11-14T02:41:00.785+0000] {processor.py:161} INFO - Started process (PID=30760) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:00.786+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:41:00.786+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:00.786+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:00.970+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:00.974+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:00.973+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:41:00.978+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:00.978+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:41:00.985+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.205 seconds
+[2025-11-14T02:41:05.390+0000] {processor.py:161} INFO - Started process (PID=30773) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:05.390+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:41:05.391+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:05.390+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:05.582+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:05.587+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:05.586+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:41:05.591+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:05.591+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:41:05.598+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.212 seconds
+[2025-11-14T02:41:32.607+0000] {processor.py:161} INFO - Started process (PID=30840) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:32.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:41:32.609+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:32.608+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:32.835+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:32.839+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:32.839+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:41:32.845+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:32.845+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:41:32.851+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.248 seconds
+[2025-11-14T02:41:36.033+0000] {processor.py:161} INFO - Started process (PID=30851) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:36.034+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:41:36.034+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:36.034+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:36.220+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:41:36.224+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:36.223+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:41:36.230+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:41:36.230+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:41:36.236+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.207 seconds
+[2025-11-14T02:42:04.631+0000] {processor.py:161} INFO - Started process (PID=30922) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:04.632+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:42:04.633+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:04.632+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:04.829+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:04.833+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:04.833+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:42:04.839+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:04.839+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:42:04.846+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.218 seconds
+[2025-11-14T02:42:08.193+0000] {processor.py:161} INFO - Started process (PID=30931) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:08.194+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:42:08.194+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:08.194+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:08.393+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:08.398+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:08.397+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:42:08.403+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:08.403+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:42:08.410+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.220 seconds
+[2025-11-14T02:42:36.679+0000] {processor.py:161} INFO - Started process (PID=31000) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:36.680+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:42:36.680+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:36.680+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:36.873+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:36.878+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:36.878+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:42:36.883+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:36.882+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:42:36.890+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.215 seconds
+[2025-11-14T02:42:40.458+0000] {processor.py:161} INFO - Started process (PID=31011) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:40.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:42:40.459+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:40.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:40.667+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:42:40.671+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:40.670+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:42:40.675+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:42:40.675+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:42:40.682+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.228 seconds
+[2025-11-14T02:43:08.378+0000] {processor.py:161} INFO - Started process (PID=31080) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:08.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:43:08.380+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:08.380+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:08.578+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:08.588+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:08.588+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:43:08.594+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:08.594+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:43:08.602+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.227 seconds
+[2025-11-14T02:43:12.552+0000] {processor.py:161} INFO - Started process (PID=31092) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:12.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:43:12.553+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:12.553+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:12.753+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:12.758+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:12.758+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:43:12.767+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:12.767+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:43:12.778+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.229 seconds
+[2025-11-14T02:43:40.161+0000] {processor.py:161} INFO - Started process (PID=31161) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:40.162+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:43:40.162+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:40.162+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:40.339+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:40.343+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:40.342+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:43:40.347+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:40.347+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:43:40.354+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.195 seconds
+[2025-11-14T02:43:43.484+0000] {processor.py:161} INFO - Started process (PID=31171) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:43.485+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:43:43.485+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:43.485+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:43.701+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:43:43.709+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:43.709+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:43:43.716+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:43:43.716+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:43:43.725+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.244 seconds
+[2025-11-14T02:44:12.211+0000] {processor.py:161} INFO - Started process (PID=31242) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:12.212+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:44:12.213+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:12.213+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:12.403+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:12.407+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:12.407+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:44:12.413+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:12.413+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:44:12.419+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.210 seconds
+[2025-11-14T02:44:15.696+0000] {processor.py:161} INFO - Started process (PID=31252) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:15.697+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:44:15.697+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:15.697+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:15.885+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:15.889+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:15.889+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:44:15.894+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:15.893+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:44:15.900+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.208 seconds
+[2025-11-14T02:44:44.057+0000] {processor.py:161} INFO - Started process (PID=31324) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:44.059+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:44:44.060+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:44.059+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:44.265+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:44.269+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:44.269+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:44:44.273+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:44.273+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:44:44.284+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.230 seconds
+[2025-11-14T02:44:46.744+0000] {processor.py:161} INFO - Started process (PID=31330) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:46.745+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:44:46.745+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:46.745+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:47.032+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:44:47.040+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:47.039+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:44:47.045+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:44:47.045+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:44:47.052+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.313 seconds
+[2025-11-14T02:45:17.275+0000] {processor.py:161} INFO - Started process (PID=31406) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:17.276+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:45:17.277+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:17.276+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:17.476+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:17.480+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:17.480+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:45:17.484+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:17.484+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:45:17.491+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.219 seconds
+[2025-11-14T02:45:18.575+0000] {processor.py:161} INFO - Started process (PID=31408) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:18.576+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:45:18.576+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:18.576+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:19.323+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:19.346+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:19.345+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:45:19.366+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:19.366+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:45:19.408+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.839 seconds
+[2025-11-14T02:45:49.292+0000] {processor.py:161} INFO - Started process (PID=31484) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:49.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:45:49.293+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:49.293+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:49.501+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:49.505+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:49.505+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:45:49.510+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:49.510+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:45:49.516+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.226 seconds
+[2025-11-14T02:45:51.477+0000] {processor.py:161} INFO - Started process (PID=31490) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:51.477+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:45:51.478+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:51.477+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:51.663+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:45:51.666+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:51.666+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:45:51.672+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:45:51.672+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:45:51.682+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.208 seconds
+[2025-11-14T02:46:21.232+0000] {processor.py:161} INFO - Started process (PID=31566) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:21.233+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:46:21.233+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:21.233+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:21.409+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:21.413+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:21.413+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:46:21.418+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:21.418+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:46:21.425+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.196 seconds
+[2025-11-14T02:46:22.302+0000] {processor.py:161} INFO - Started process (PID=31568) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:22.303+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:46:22.304+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:22.303+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:22.491+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:22.497+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:22.497+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:46:22.504+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:22.504+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:46:22.513+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.215 seconds
+[2025-11-14T02:46:54.473+0000] {processor.py:161} INFO - Started process (PID=31644) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:54.475+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:46:54.476+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:54.476+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:54.783+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:54.788+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:54.788+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:46:54.794+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:54.793+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:46:54.804+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.338 seconds
+[2025-11-14T02:46:57.546+0000] {processor.py:161} INFO - Started process (PID=31650) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:57.550+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:46:57.552+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:57.551+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:58.147+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:46:58.158+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:58.158+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:46:58.173+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:46:58.173+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:46:58.184+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.664 seconds
+[2025-11-14T02:47:26.377+0000] {processor.py:161} INFO - Started process (PID=31724) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:26.379+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:47:26.379+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:26.379+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:26.585+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:26.589+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:26.589+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:47:26.593+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:26.593+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:47:26.600+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.228 seconds
+[2025-11-14T02:47:28.556+0000] {processor.py:161} INFO - Started process (PID=31730) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:28.556+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:47:28.557+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:28.557+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:28.740+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:28.744+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:28.743+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:47:28.749+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:28.749+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:47:28.756+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.204 seconds
+[2025-11-14T02:47:58.244+0000] {processor.py:161} INFO - Started process (PID=31804) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:58.245+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:47:58.245+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:58.245+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:58.462+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:47:58.471+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:58.471+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:47:58.476+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:47:58.476+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:47:58.484+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.243 seconds
+[2025-11-14T02:48:00.661+0000] {processor.py:161} INFO - Started process (PID=31810) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:00.661+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:48:00.662+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:00.662+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:00.855+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:00.864+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:00.864+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:48:00.873+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:00.873+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:48:00.887+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.231 seconds
+[2025-11-14T02:48:30.219+0000] {processor.py:161} INFO - Started process (PID=31884) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:30.221+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:48:30.222+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:30.222+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:30.417+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:30.423+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:30.422+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:48:30.429+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:30.429+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:48:30.437+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.224 seconds
+[2025-11-14T02:48:32.599+0000] {processor.py:161} INFO - Started process (PID=31890) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:32.599+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:48:32.600+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:32.599+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:32.792+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:48:32.796+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:32.796+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:48:32.801+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:48:32.801+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:48:32.807+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.213 seconds
+[2025-11-14T02:49:01.974+0000] {processor.py:161} INFO - Started process (PID=31964) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:01.975+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:49:01.975+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:01.975+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:02.107+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:02.113+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:02.113+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:49:02.119+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:02.119+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:49:02.126+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.155 seconds
+[2025-11-14T02:49:04.451+0000] {processor.py:161} INFO - Started process (PID=31970) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:04.452+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:49:04.454+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:04.453+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:04.658+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:04.661+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:04.661+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:49:04.667+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:04.667+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:49:04.673+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.225 seconds
+[2025-11-14T02:49:33.205+0000] {processor.py:161} INFO - Started process (PID=32042) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:33.207+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:49:33.207+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:33.207+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:33.322+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:33.327+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:33.327+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:49:33.333+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:33.333+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:49:33.342+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.140 seconds
+[2025-11-14T02:49:36.690+0000] {processor.py:161} INFO - Started process (PID=32053) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:36.691+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:49:36.692+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:36.692+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:36.883+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:49:36.888+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:36.887+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:49:36.892+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:49:36.892+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:49:36.899+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.213 seconds
+[2025-11-14T02:50:06.465+0000] {processor.py:161} INFO - Started process (PID=32124) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:06.467+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:50:06.468+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:06.467+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:06.591+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:06.600+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:06.600+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:50:06.608+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:06.608+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:50:06.623+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.160 seconds
+[2025-11-14T02:50:07.874+0000] {processor.py:161} INFO - Started process (PID=32130) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:07.875+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:50:07.875+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:07.875+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:08.075+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:08.079+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:08.078+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:50:08.084+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:08.084+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:50:08.089+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.218 seconds
+[2025-11-14T02:50:37.879+0000] {processor.py:161} INFO - Started process (PID=32202) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:37.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:50:37.880+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:37.880+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:38.007+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:38.013+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:38.013+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:50:38.020+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:38.020+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:50:38.028+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.153 seconds
+[2025-11-14T02:50:39.944+0000] {processor.py:161} INFO - Started process (PID=32212) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:39.944+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:50:39.945+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:39.944+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:40.141+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:50:40.145+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:40.145+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:50:40.150+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:50:40.150+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:50:40.161+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.220 seconds
+[2025-11-14T02:51:13.168+0000] {processor.py:161} INFO - Started process (PID=32285) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:13.169+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:51:13.170+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:13.169+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:13.313+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:13.322+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:13.321+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:51:13.331+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:13.331+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:51:13.347+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.182 seconds
+[2025-11-14T02:51:14.581+0000] {processor.py:161} INFO - Started process (PID=32291) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:14.581+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:51:14.582+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:14.582+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:14.787+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:14.791+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:14.791+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:51:14.797+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:14.797+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:51:14.805+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.226 seconds
+[2025-11-14T02:51:45.141+0000] {processor.py:161} INFO - Started process (PID=32365) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:45.142+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:51:45.143+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:45.142+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:45.315+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:45.325+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:45.323+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:51:45.341+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:45.341+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:51:45.372+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.235 seconds
+[2025-11-14T02:51:47.016+0000] {processor.py:161} INFO - Started process (PID=32371) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:47.021+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:51:47.022+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:47.022+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:47.335+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:51:47.339+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:47.339+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:51:47.346+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:51:47.345+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:51:47.357+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.361 seconds
+[2025-11-14T02:52:16.570+0000] {processor.py:161} INFO - Started process (PID=32443) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:16.571+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:52:16.571+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:16.571+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:16.732+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:16.742+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:16.742+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:52:16.754+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:16.754+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:52:16.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.207 seconds
+[2025-11-14T02:52:20.850+0000] {processor.py:161} INFO - Started process (PID=32457) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:20.850+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:52:20.851+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:20.850+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:21.060+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:21.064+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:21.064+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:52:21.071+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:21.070+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:52:21.079+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.232 seconds
+[2025-11-14T02:52:50.855+0000] {processor.py:161} INFO - Started process (PID=32525) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:50.856+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:52:50.856+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:50.856+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:50.991+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:50.998+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:50.998+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:52:51.004+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:51.004+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:52:51.012+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.161 seconds
+[2025-11-14T02:52:53.562+0000] {processor.py:161} INFO - Started process (PID=32535) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:53.562+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:52:53.563+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:53.562+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:53.756+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:52:53.760+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:53.760+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:52:53.766+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:52:53.766+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:52:53.773+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.214 seconds
+[2025-11-14T02:53:21.268+0000] {processor.py:161} INFO - Started process (PID=32603) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:21.269+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:53:21.269+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:21.269+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:21.399+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:21.408+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:21.407+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:53:21.417+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:21.417+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:53:21.426+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.160 seconds
+[2025-11-14T02:53:25.419+0000] {processor.py:161} INFO - Started process (PID=32617) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:25.420+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:53:25.420+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:25.420+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:25.607+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:25.611+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:25.611+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:53:25.617+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:25.617+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:53:25.624+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.207 seconds
+[2025-11-14T02:53:53.485+0000] {processor.py:161} INFO - Started process (PID=32683) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:53.486+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:53:53.486+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:53.486+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:53.645+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:53.651+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:53.651+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:53:53.658+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:53.657+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:53:53.667+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.184 seconds
+[2025-11-14T02:53:57.628+0000] {processor.py:161} INFO - Started process (PID=32697) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:57.629+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:53:57.629+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:57.629+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:57.830+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:53:57.835+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:57.835+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:53:57.840+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:53:57.840+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:53:57.848+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.222 seconds
+[2025-11-14T02:54:27.655+0000] {processor.py:161} INFO - Started process (PID=32765) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:27.655+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:54:27.657+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:27.656+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:27.872+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:27.900+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:27.899+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:54:27.913+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:27.913+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:54:27.935+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.284 seconds
+[2025-11-14T02:54:31.134+0000] {processor.py:161} INFO - Started process (PID=32777) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:31.134+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:54:31.135+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:31.135+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:31.340+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:31.345+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:31.345+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:54:31.351+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:31.351+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:54:31.358+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.227 seconds
+[2025-11-14T02:54:59.753+0000] {processor.py:161} INFO - Started process (PID=32845) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:59.755+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:54:59.755+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:59.755+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:59.928+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:54:59.940+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:59.940+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:54:59.952+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:54:59.952+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:54:59.966+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.217 seconds
+[2025-11-14T02:55:02.384+0000] {processor.py:161} INFO - Started process (PID=32855) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:55:02.385+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:55:02.385+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:02.385+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:55:02.504+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:55:02.509+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:02.509+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:55:02.515+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:02.515+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:55:02.522+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.139 seconds
+[2025-11-14T02:55:30.847+0000] {processor.py:161} INFO - Started process (PID=32927) to work on /opt/airflow/dags/labels_union.py
+[2025-11-14T02:55:30.847+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/labels_union.py for tasks to queue
+[2025-11-14T02:55:30.848+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:30.848+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:55:30.979+0000] {processor.py:840} INFO - DAG(s) 'labels_union' retrieved from /opt/airflow/dags/labels_union.py
+[2025-11-14T02:55:30.987+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:30.987+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-14T02:55:30.994+0000] {logging_mixin.py:188} INFO - [2025-11-14T02:55:30.994+0000] {dag.py:3947} INFO - Setting next_dagrun for labels_union to 2025-11-14 00:00:00+00:00, run_after=2025-11-15 00:00:00+00:00
+[2025-11-14T02:55:31.002+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/labels_union.py took 0.158 seconds

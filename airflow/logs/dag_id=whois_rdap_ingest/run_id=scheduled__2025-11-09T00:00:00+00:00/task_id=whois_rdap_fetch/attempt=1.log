@@ -1,0 +1,18 @@
+[2025-11-10T00:15:11.664+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-10T00:15:11.679+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: whois_rdap_ingest.whois_rdap_fetch scheduled__2025-11-09T00:00:00+00:00 [queued]>
+[2025-11-10T00:15:11.682+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: whois_rdap_ingest.whois_rdap_fetch scheduled__2025-11-09T00:00:00+00:00 [queued]>
+[2025-11-10T00:15:11.682+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-10T00:15:11.691+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): whois_rdap_fetch> on 2025-11-09 00:00:00+00:00
+[2025-11-10T00:15:11.698+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=5410) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-10T00:15:11.699+0000] {standard_task_runner.py:64} INFO - Started process 5421 to run task
+[2025-11-10T00:15:11.698+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'whois_rdap_ingest', 'whois_rdap_fetch', 'scheduled__2025-11-09T00:00:00+00:00', '--job-id', '62', '--raw', '--subdir', 'DAGS_FOLDER/whois_rdap_dag.py', '--cfg-path', '/tmp/tmplolo0_9h']
+[2025-11-10T00:15:11.700+0000] {standard_task_runner.py:91} INFO - Job 62: Subtask whois_rdap_fetch
+[2025-11-10T00:15:11.723+0000] {task_command.py:426} INFO - Running <TaskInstance: whois_rdap_ingest.whois_rdap_fetch scheduled__2025-11-09T00:00:00+00:00 [running]> on host 7e98baed574a
+[2025-11-10T00:15:11.759+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='whois_rdap_ingest' AIRFLOW_CTX_TASK_ID='whois_rdap_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-09T00:00:00+00:00'
+[2025-11-10T00:15:11.760+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-10T00:15:11.771+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-10T00:15:11.771+0000] {taskinstance.py:2506} INFO - [whois_rdap] labels_union parquet not found for ds=2025-11-09: /opt/airflow/silver/labels_union/ingest_date=2025-11-09/labels_union.parquet
+[2025-11-10T00:15:11.774+0000] {taskinstance.py:1206} INFO - Marking task as SKIPPED. dag_id=whois_rdap_ingest, task_id=whois_rdap_fetch, run_id=scheduled__2025-11-09T00:00:00+00:00, execution_date=20251109T000000, start_date=20251110T001511, end_date=20251110T001511
+[2025-11-10T00:15:11.806+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-10T00:15:11.813+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-10T00:15:11.814+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

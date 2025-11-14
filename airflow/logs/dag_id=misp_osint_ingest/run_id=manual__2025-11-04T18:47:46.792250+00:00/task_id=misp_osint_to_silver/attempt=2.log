@@ -1,0 +1,40 @@
+[2025-11-04T18:52:54.475+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-04T18:52:54.485+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: misp_osint_ingest.misp_osint_to_silver manual__2025-11-04T18:47:46.792250+00:00 [queued]>
+[2025-11-04T18:52:54.489+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: misp_osint_ingest.misp_osint_to_silver manual__2025-11-04T18:47:46.792250+00:00 [queued]>
+[2025-11-04T18:52:54.489+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 2
+[2025-11-04T18:52:54.499+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): misp_osint_to_silver> on 2025-11-04 18:47:46.792250+00:00
+[2025-11-04T18:52:54.507+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=3524) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-11-04T18:52:54.508+0000] {standard_task_runner.py:64} INFO - Started process 3545 to run task
+[2025-11-04T18:52:54.509+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'misp_osint_ingest', 'misp_osint_to_silver', 'manual__2025-11-04T18:47:46.792250+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/misp_osint_ingest.py', '--cfg-path', '/tmp/tmpy9dw7oe3']
+[2025-11-04T18:52:54.510+0000] {standard_task_runner.py:91} INFO - Job 14: Subtask misp_osint_to_silver
+[2025-11-04T18:52:54.550+0000] {task_command.py:426} INFO - Running <TaskInstance: misp_osint_ingest.misp_osint_to_silver manual__2025-11-04T18:47:46.792250+00:00 [running]> on host 7e98baed574a
+[2025-11-04T18:52:54.594+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='misp_osint_ingest' AIRFLOW_CTX_TASK_ID='misp_osint_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-11-04T18:47:46.792250+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-04T18:47:46.792250+00:00'
+[2025-11-04T18:52:54.594+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-04T18:52:56.450+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-04T18:52:56.450+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 401, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 235, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 252, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/misp_osint_ingest.py", line 108, in misp_osint_to_silver
+    raise ValueError("MISP OSINT feed yielded 0 rows — failing for visibility.")
+ValueError: MISP OSINT feed yielded 0 rows — failing for visibility.
+[2025-11-04T18:52:56.453+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=misp_osint_ingest, task_id=misp_osint_to_silver, run_id=manual__2025-11-04T18:47:46.792250+00:00, execution_date=20251104T184746, start_date=20251104T185254, end_date=20251104T185256
+[2025-11-04T18:52:56.458+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 14 for task misp_osint_to_silver (MISP OSINT feed yielded 0 rows — failing for visibility.; 3545)
+[2025-11-04T18:52:56.466+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-11-04T18:52:56.471+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-04T18:52:56.471+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

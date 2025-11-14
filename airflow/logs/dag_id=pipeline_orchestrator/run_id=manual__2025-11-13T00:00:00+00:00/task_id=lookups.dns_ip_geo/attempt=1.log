@@ -1,0 +1,49 @@
+[2025-11-13T01:41:50.804+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-13T01:41:50.813+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_orchestrator.lookups.dns_ip_geo manual__2025-11-13T00:00:00+00:00 [queued]>
+[2025-11-13T01:41:50.815+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_orchestrator.lookups.dns_ip_geo manual__2025-11-13T00:00:00+00:00 [queued]>
+[2025-11-13T01:41:50.815+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-13T01:41:50.819+0000] {taskinstance.py:2330} INFO - Executing <Task(TriggerDagRunOperator): lookups.dns_ip_geo> on 2025-11-13 00:00:00+00:00
+[2025-11-13T01:41:50.822+0000] {standard_task_runner.py:64} INFO - Started process 13035 to run task
+[2025-11-13T01:41:50.823+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_orchestrator', 'lookups.dns_ip_geo', 'manual__2025-11-13T00:00:00+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_orchestrator.py', '--cfg-path', '/tmp/tmpndwsq2j0']
+[2025-11-13T01:41:50.824+0000] {standard_task_runner.py:91} INFO - Job 72: Subtask lookups.dns_ip_geo
+[2025-11-13T01:41:50.837+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_orchestrator.lookups.dns_ip_geo manual__2025-11-13T00:00:00+00:00 [running]> on host 1fd82182dcce
+[2025-11-13T01:41:51.309+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='airflow' AIRFLOW_CTX_DAG_ID='pipeline_orchestrator' AIRFLOW_CTX_TASK_ID='lookups.dns_ip_geo' AIRFLOW_CTX_EXECUTION_DATE='2025-11-13T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-13T00:00:00+00:00'
+[2025-11-13T01:41:51.309+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-13T01:41:51.397+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-13T01:41:51.397+0000] {crypto.py:82} WARNING - empty cryptography key - values will not be stored encrypted.
+[2025-11-13T01:41:51.399+0000] {taskinstance.py:2489} INFO - Pausing task as DEFERRED. dag_id=pipeline_orchestrator, task_id=lookups.dns_ip_geo, run_id=manual__2025-11-13T00:00:00+00:00, execution_date=20251113T000000, start_date=20251113T014150
+[2025-11-13T01:41:51.436+0000] {local_task_job_runner.py:237} INFO - Task exited with return code 100 (task deferral)
+[2025-11-13T01:41:51.437+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-11-13T01:51:59.365+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-13T01:51:59.377+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_orchestrator.lookups.dns_ip_geo manual__2025-11-13T00:00:00+00:00 [queued]>
+[2025-11-13T01:51:59.379+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_orchestrator.lookups.dns_ip_geo manual__2025-11-13T00:00:00+00:00 [queued]>
+[2025-11-13T01:51:59.380+0000] {taskinstance.py:2304} INFO - Resuming after deferral
+[2025-11-13T01:51:59.389+0000] {taskinstance.py:2330} INFO - Executing <Task(TriggerDagRunOperator): lookups.dns_ip_geo> on 2025-11-13 00:00:00+00:00
+[2025-11-13T01:51:59.394+0000] {standard_task_runner.py:64} INFO - Started process 13164 to run task
+[2025-11-13T01:51:59.396+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'pipeline_orchestrator', 'lookups.dns_ip_geo', 'manual__2025-11-13T00:00:00+00:00', '--job-id', '77', '--raw', '--subdir', 'DAGS_FOLDER/pipeline_orchestrator.py', '--cfg-path', '/tmp/tmpn_jcii_a']
+[2025-11-13T01:51:59.397+0000] {standard_task_runner.py:91} INFO - Job 77: Subtask lookups.dns_ip_geo
+[2025-11-13T01:51:59.416+0000] {task_command.py:426} INFO - Running <TaskInstance: pipeline_orchestrator.lookups.dns_ip_geo manual__2025-11-13T00:00:00+00:00 [running]> on host 1fd82182dcce
+[2025-11-13T01:51:59.537+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-13T01:51:59.539+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-13T01:51:59.540+0000] {taskinstance.py:2905} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 465, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 432, in _execute_callable
+    return execute_callable(context=context, **execute_callable_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 1701, in resume_execution
+    return execute_callable(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 79, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/trigger_dagrun.py", line 260, in execute_complete
+    raise AirflowException(f"{self.trigger_dag_id} failed with failed state {state}")
+airflow.exceptions.AirflowException: dns_ip_geo_ingest failed with failed state failed
+[2025-11-13T01:51:59.541+0000] {taskinstance.py:1206} INFO - Marking task as FAILED. dag_id=pipeline_orchestrator, task_id=lookups.dns_ip_geo, run_id=manual__2025-11-13T00:00:00+00:00, execution_date=20251113T000000, start_date=20251113T014150, end_date=20251113T015159
+[2025-11-13T01:51:59.545+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 77 for task lookups.dns_ip_geo (dns_ip_geo_ingest failed with failed state failed; 13164)
+[2025-11-13T01:51:59.584+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 1
+[2025-11-13T01:51:59.599+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-13T01:51:59.604+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

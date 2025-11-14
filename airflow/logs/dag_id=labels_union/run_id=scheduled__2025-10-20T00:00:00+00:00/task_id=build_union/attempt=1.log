@@ -1,0 +1,19 @@
+[2025-10-29T18:16:52.597+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-29T18:16:52.605+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: labels_union.build_union scheduled__2025-10-20T00:00:00+00:00 [queued]>
+[2025-10-29T18:16:52.607+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: labels_union.build_union scheduled__2025-10-20T00:00:00+00:00 [queued]>
+[2025-10-29T18:16:52.607+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-29T18:16:52.612+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): build_union> on 2025-10-20 00:00:00+00:00
+[2025-10-29T18:16:52.615+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'labels_union', 'build_union', 'scheduled__2025-10-20T00:00:00+00:00', '--job-id', '257', '--raw', '--subdir', 'DAGS_FOLDER/labels_union.py', '--cfg-path', '/tmp/tmpgyiyzrpj']
+[2025-10-29T18:16:52.616+0000] {standard_task_runner.py:91} INFO - Job 257: Subtask build_union
+[2025-10-29T18:16:52.616+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=6539) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-29T18:16:52.619+0000] {standard_task_runner.py:64} INFO - Started process 6550 to run task
+[2025-10-29T18:16:52.629+0000] {task_command.py:426} INFO - Running <TaskInstance: labels_union.build_union scheduled__2025-10-20T00:00:00+00:00 [running]> on host 9a4b1d75930e
+[2025-10-29T18:16:52.650+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='labels_union' AIRFLOW_CTX_TASK_ID='build_union' AIRFLOW_CTX_EXECUTION_DATE='2025-10-20T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-20T00:00:00+00:00'
+[2025-10-29T18:16:52.650+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-29T18:16:52.678+0000] {logging_mixin.py:188} INFO - [labels_union] 2025-10-20: wrote 3114 rows -> /opt/airflow/silver/labels_union/ingest_date=2025-10-20
+[2025-10-29T18:16:52.678+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-29T18:16:52.678+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-29T18:16:52.680+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=labels_union, task_id=build_union, run_id=scheduled__2025-10-20T00:00:00+00:00, execution_date=20251020T000000, start_date=20251029T181652, end_date=20251029T181652
+[2025-10-29T18:16:52.719+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-29T18:16:52.723+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-29T18:16:52.723+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

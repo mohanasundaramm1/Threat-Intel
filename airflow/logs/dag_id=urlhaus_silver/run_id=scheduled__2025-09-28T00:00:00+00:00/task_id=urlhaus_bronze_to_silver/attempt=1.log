@@ -1,0 +1,38 @@
+[2025-09-29T00:00:15.827+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-09-29T00:00:15.839+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-09-29T00:00:15.842+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-09-29T00:00:15.842+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-09-29T00:00:15.848+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): urlhaus_bronze_to_silver> on 2025-09-28 00:00:00+00:00
+[2025-09-29T00:00:15.852+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'urlhaus_silver', 'urlhaus_bronze_to_silver', 'scheduled__2025-09-28T00:00:00+00:00', '--job-id', '56', '--raw', '--subdir', 'DAGS_FOLDER/urlhaus_silver.py', '--cfg-path', '/tmp/tmpby65i5m7']
+[2025-09-29T00:00:15.854+0000] {standard_task_runner.py:91} INFO - Job 56: Subtask urlhaus_bronze_to_silver
+[2025-09-29T00:00:15.854+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=28355) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-09-29T00:00:15.857+0000] {standard_task_runner.py:64} INFO - Started process 28366 to run task
+[2025-09-29T00:00:15.872+0000] {task_command.py:426} INFO - Running <TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-09-28T00:00:00+00:00 [running]> on host 539ffd8f219e
+[2025-09-29T00:00:15.910+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='urlhaus_silver' AIRFLOW_CTX_TASK_ID='urlhaus_bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-09-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-28T00:00:00+00:00'
+[2025-09-29T00:00:15.910+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-09-29T00:00:15.979+0000] {logging_mixin.py:188} INFO - [urlhaus_silver] wrote 5590 rows -> /opt/airflow/silver/urlhaus/ingest_date=2025-09-28
+[2025-09-29T00:00:15.980+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-09-29T00:00:15.980+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-09-29T00:00:15.982+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=urlhaus_silver, task_id=urlhaus_bronze_to_silver, run_id=scheduled__2025-09-28T00:00:00+00:00, execution_date=20250928T000000, start_date=20250929T000015, end_date=20250929T000015
+[2025-09-29T00:00:15.998+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-09-29T00:00:16.005+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-09-29T00:00:16.006+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-29T18:12:12.144+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-29T18:12:12.153+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-10-29T18:12:12.155+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-09-28T00:00:00+00:00 [queued]>
+[2025-10-29T18:12:12.155+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-10-29T18:12:12.160+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): urlhaus_bronze_to_silver> on 2025-09-28 00:00:00+00:00
+[2025-10-29T18:12:12.162+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'urlhaus_silver', 'urlhaus_bronze_to_silver', 'scheduled__2025-09-28T00:00:00+00:00', '--job-id', '140', '--raw', '--subdir', 'DAGS_FOLDER/urlhaus_silver.py', '--cfg-path', '/tmp/tmpqbdpofjl']
+[2025-10-29T18:12:12.163+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=3636) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-10-29T18:12:12.163+0000] {standard_task_runner.py:91} INFO - Job 140: Subtask urlhaus_bronze_to_silver
+[2025-10-29T18:12:12.164+0000] {standard_task_runner.py:64} INFO - Started process 3647 to run task
+[2025-10-29T18:12:12.175+0000] {task_command.py:426} INFO - Running <TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-09-28T00:00:00+00:00 [running]> on host 9a4b1d75930e
+[2025-10-29T18:12:12.193+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='urlhaus_silver' AIRFLOW_CTX_TASK_ID='urlhaus_bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-09-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-09-28T00:00:00+00:00'
+[2025-10-29T18:12:12.194+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-29T18:12:12.230+0000] {logging_mixin.py:188} INFO - [urlhaus_silver] 2025-09-28: wrote 2908 rows -> /opt/airflow/silver/urlhaus/ingest_date=2025-09-28
+[2025-10-29T18:12:12.231+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-29T18:12:12.231+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-29T18:12:12.232+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=urlhaus_silver, task_id=urlhaus_bronze_to_silver, run_id=scheduled__2025-09-28T00:00:00+00:00, execution_date=20250928T000000, start_date=20251029T181212, end_date=20251029T181212
+[2025-10-29T18:12:12.264+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-29T18:12:12.268+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-29T18:12:12.268+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

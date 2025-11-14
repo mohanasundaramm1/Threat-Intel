@@ -1,0 +1,18 @@
+[2025-11-11T01:55:16.648+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-11T01:55:16.656+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-11-10T00:00:00+00:00 [queued]>
+[2025-11-11T01:55:16.658+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-11-10T00:00:00+00:00 [queued]>
+[2025-11-11T01:55:16.658+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-11T01:55:16.662+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): urlhaus_bronze_to_silver> on 2025-11-10 00:00:00+00:00
+[2025-11-11T01:55:16.666+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=20231) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-11T01:55:16.666+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'urlhaus_silver', 'urlhaus_bronze_to_silver', 'scheduled__2025-11-10T00:00:00+00:00', '--job-id', '69', '--raw', '--subdir', 'DAGS_FOLDER/urlhaus_silver.py', '--cfg-path', '/tmp/tmpq3m3j24q']
+[2025-11-11T01:55:16.667+0000] {standard_task_runner.py:91} INFO - Job 69: Subtask urlhaus_bronze_to_silver
+[2025-11-11T01:55:16.667+0000] {standard_task_runner.py:64} INFO - Started process 20242 to run task
+[2025-11-11T01:55:16.677+0000] {task_command.py:426} INFO - Running <TaskInstance: urlhaus_silver.urlhaus_bronze_to_silver scheduled__2025-11-10T00:00:00+00:00 [running]> on host 7e98baed574a
+[2025-11-11T01:55:16.696+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='urlhaus_silver' AIRFLOW_CTX_TASK_ID='urlhaus_bronze_to_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-11-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-10T00:00:00+00:00'
+[2025-11-11T01:55:16.696+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-11T01:55:16.701+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-11T01:55:16.701+0000] {taskinstance.py:2506} INFO - [urlhaus_silver] no bronze for 2025-11-10: /opt/airflow/bronze/urlhaus/ingest_date=2025-11-10/urlhaus.parquet
+[2025-11-11T01:55:16.703+0000] {taskinstance.py:1206} INFO - Marking task as SKIPPED. dag_id=urlhaus_silver, task_id=urlhaus_bronze_to_silver, run_id=scheduled__2025-11-10T00:00:00+00:00, execution_date=20251110T000000, start_date=20251111T015516, end_date=20251111T015516
+[2025-11-11T01:55:16.729+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-11T01:55:16.733+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-11T01:55:16.733+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

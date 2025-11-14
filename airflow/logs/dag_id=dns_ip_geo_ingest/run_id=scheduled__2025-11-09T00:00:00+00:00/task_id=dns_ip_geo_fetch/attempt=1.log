@@ -1,0 +1,18 @@
+[2025-11-10T02:27:06.147+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-10T02:27:06.154+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch scheduled__2025-11-09T00:00:00+00:00 [queued]>
+[2025-11-10T02:27:06.155+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch scheduled__2025-11-09T00:00:00+00:00 [queued]>
+[2025-11-10T02:27:06.155+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-10T02:27:06.159+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): dns_ip_geo_fetch> on 2025-11-09 00:00:00+00:00
+[2025-11-10T02:27:06.163+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'dns_ip_geo_ingest', 'dns_ip_geo_fetch', 'scheduled__2025-11-09T00:00:00+00:00', '--job-id', '65', '--raw', '--subdir', 'DAGS_FOLDER/dns_ip_geo_dag.py', '--cfg-path', '/tmp/tmp1vvl7me8']
+[2025-11-10T02:27:06.163+0000] {standard_task_runner.py:91} INFO - Job 65: Subtask dns_ip_geo_fetch
+[2025-11-10T02:27:06.163+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=5463) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-10T02:27:06.166+0000] {standard_task_runner.py:64} INFO - Started process 5474 to run task
+[2025-11-10T02:27:06.174+0000] {task_command.py:426} INFO - Running <TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch scheduled__2025-11-09T00:00:00+00:00 [running]> on host 7e98baed574a
+[2025-11-10T02:27:06.192+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='dns_ip_geo_ingest' AIRFLOW_CTX_TASK_ID='dns_ip_geo_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-09T00:00:00+00:00'
+[2025-11-10T02:27:06.193+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-10T02:27:06.198+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-10T02:27:06.198+0000] {taskinstance.py:2506} INFO - [dns_ip_geo] labels_union parquet not found for ds=2025-11-09: /opt/airflow/silver/labels_union/ingest_date=2025-11-09/labels_union.parquet
+[2025-11-10T02:27:06.199+0000] {taskinstance.py:1206} INFO - Marking task as SKIPPED. dag_id=dns_ip_geo_ingest, task_id=dns_ip_geo_fetch, run_id=scheduled__2025-11-09T00:00:00+00:00, execution_date=20251109T000000, start_date=20251110T022706, end_date=20251110T022706
+[2025-11-10T02:27:06.227+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-10T02:27:06.231+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-10T02:27:06.231+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,23 @@
+[2025-11-11T00:13:20.866+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-11T00:13:20.881+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-10T00:00:00+00:00 [queued]>
+[2025-11-11T00:13:20.882+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-10T00:00:00+00:00 [queued]>
+[2025-11-11T00:13:20.883+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-11T00:13:20.887+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): misp_osint_fetch> on 2025-11-10 00:00:00+00:00
+[2025-11-11T00:13:20.892+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=20214) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-11T00:13:20.892+0000] {standard_task_runner.py:64} INFO - Started process 20225 to run task
+[2025-11-11T00:13:20.892+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'misp_osint_ingest', 'misp_osint_fetch', 'scheduled__2025-11-10T00:00:00+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/misp_osint_ingest.py', '--cfg-path', '/tmp/tmpygbca4bo']
+[2025-11-11T00:13:20.893+0000] {standard_task_runner.py:91} INFO - Job 68: Subtask misp_osint_fetch
+[2025-11-11T00:13:20.907+0000] {task_command.py:426} INFO - Running <TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-10T00:00:00+00:00 [running]> on host 7e98baed574a
+[2025-11-11T00:13:20.929+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='misp_osint_ingest' AIRFLOW_CTX_TASK_ID='misp_osint_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-10T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-10T00:00:00+00:00'
+[2025-11-11T00:13:20.929+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-11T01:14:39.686+0000] {logging_mixin.py:188} INFO - [misp_osint] error on https://www.circl.lu/doc/misp/feed-osint/053f26a4-8fac-4733-a114-a6c0bdfd1e1c.json: HTTPSConnectionPool(host='www.circl.lu', port=443): Read timed out.
+[2025-11-11T01:33:41.889+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=3, connect=3, read=2, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /doc/misp/feed-osint/d4766c50-0269-4cda-acea-850ea4fdb198.json
+[2025-11-11T01:33:46.285+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=2, connect=3, read=1, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='www.circl.lu', port=443): Read timed out. (read timeout=3)")': /doc/misp/feed-osint/d4766c50-0269-4cda-acea-850ea4fdb198.json
+[2025-11-11T01:55:14.882+0000] {logging_mixin.py:188} INFO - [misp_osint] ds=2025-11-10 index_rows=1580 matched_today=100 rows_extracted=4409 file_errors=1
+[2025-11-11T01:55:15.025+0000] {logging_mixin.py:188} INFO - [misp_osint] wrote 4409 rows -> /opt/airflow/silver/misp_osint/ingest_date=2025-11-10/misp_osint.parquet
+[2025-11-11T01:55:15.030+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-11T01:55:15.030+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-11T01:55:15.038+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=misp_osint_ingest, task_id=misp_osint_fetch, run_id=scheduled__2025-11-10T00:00:00+00:00, execution_date=20251110T000000, start_date=20251111T001320, end_date=20251111T015515
+[2025-11-11T01:55:15.088+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-11T01:55:15.097+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-11T01:55:15.097+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,19 @@
+[2025-11-13T01:37:46.588+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-13T01:37:46.599+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch manual__2025-11-13T01:25:28.437850+00:00 [queued]>
+[2025-11-13T01:37:46.601+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch manual__2025-11-13T01:25:28.437850+00:00 [queued]>
+[2025-11-13T01:37:46.601+0000] {taskinstance.py:2306} INFO - Starting attempt 2 of 1
+[2025-11-13T01:37:46.606+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): dns_ip_geo_fetch> on 2025-11-13 01:25:28.437850+00:00
+[2025-11-13T01:37:46.610+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'dns_ip_geo_ingest', 'dns_ip_geo_fetch', 'manual__2025-11-13T01:25:28.437850+00:00', '--job-id', '51', '--raw', '--subdir', 'DAGS_FOLDER/dns_ip_geo_dag.py', '--cfg-path', '/tmp/tmpfaa5ifcd']
+[2025-11-13T01:37:46.611+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=12120) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-13T01:37:46.611+0000] {standard_task_runner.py:91} INFO - Job 51: Subtask dns_ip_geo_fetch
+[2025-11-13T01:37:46.611+0000] {standard_task_runner.py:64} INFO - Started process 12131 to run task
+[2025-11-13T01:37:46.625+0000] {task_command.py:426} INFO - Running <TaskInstance: dns_ip_geo_ingest.dns_ip_geo_fetch manual__2025-11-13T01:25:28.437850+00:00 [running]> on host 1fd82182dcce
+[2025-11-13T01:37:46.650+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='dns_ip_geo_ingest' AIRFLOW_CTX_TASK_ID='dns_ip_geo_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-13T01:25:28.437850+00:00' AIRFLOW_CTX_TRY_NUMBER='2' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-13T01:25:28.437850+00:00'
+[2025-11-13T01:37:46.650+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-13T01:38:01.741+0000] {local_task_job_runner.py:313} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2025-11-13T01:38:01.745+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-11-13T01:38:01.746+0000] {process_utils.py:132} INFO - Sending 15 to group 12131. PIDs of all processes in the group: [12131]
+[2025-11-13T01:38:01.747+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 12131
+[2025-11-13T01:38:01.747+0000] {taskinstance.py:2611} ERROR - Received SIGTERM. Terminating subprocesses.
+[2025-11-13T01:38:01.748+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-13T01:38:01.777+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=12131, status='terminated', exitcode=0, started='01:37:46') (12131) terminated with exit code 0

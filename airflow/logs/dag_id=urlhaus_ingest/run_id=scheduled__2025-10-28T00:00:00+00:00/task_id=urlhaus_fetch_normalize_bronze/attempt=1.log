@@ -1,0 +1,66 @@
+[2025-10-29T16:26:36.553+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-29T16:26:36.561+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [queued]>
+[2025-10-29T16:26:36.563+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [queued]>
+[2025-10-29T16:26:36.563+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-29T16:26:36.567+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): urlhaus_fetch_normalize_bronze> on 2025-10-28 00:00:00+00:00
+[2025-10-29T16:26:36.569+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=229) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-29T16:26:36.569+0000] {standard_task_runner.py:64} INFO - Started process 250 to run task
+[2025-10-29T16:26:36.570+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'urlhaus_ingest', 'urlhaus_fetch_normalize_bronze', 'scheduled__2025-10-28T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/urlhaus_ingest.py', '--cfg-path', '/tmp/tmpx1147d0m']
+[2025-10-29T16:26:36.570+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask urlhaus_fetch_normalize_bronze
+[2025-10-29T16:26:36.586+0000] {task_command.py:426} INFO - Running <TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [running]> on host 71216881f673
+[2025-10-29T16:26:36.608+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='urlhaus_ingest' AIRFLOW_CTX_TASK_ID='urlhaus_fetch_normalize_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-10-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-28T00:00:00+00:00'
+[2025-10-29T16:26:36.609+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-29T16:26:37.380+0000] {logging_mixin.py:188} INFO - [urlhaus_ingest] rows after normalize: 21269
+[2025-10-29T16:26:37.392+0000] {logging_mixin.py:188} INFO - [urlhaus] rows after normalize: 21269
+[2025-10-29T16:26:37.444+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-29T16:26:37.445+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-29T16:26:37.446+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=urlhaus_ingest, task_id=urlhaus_fetch_normalize_bronze, run_id=scheduled__2025-10-28T00:00:00+00:00, execution_date=20251028T000000, start_date=20251029T162636, end_date=20251029T162637
+[2025-10-29T16:26:37.482+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-29T16:26:37.487+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-29T16:26:37.487+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-29T17:19:12.217+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-29T17:19:12.224+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [queued]>
+[2025-10-29T17:19:12.226+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [queued]>
+[2025-10-29T17:19:12.226+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-29T17:19:12.229+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): urlhaus_fetch_normalize_bronze> on 2025-10-28 00:00:00+00:00
+[2025-10-29T17:19:12.232+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=3363) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-29T17:19:12.232+0000] {standard_task_runner.py:64} INFO - Started process 3384 to run task
+[2025-10-29T17:19:12.233+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'urlhaus_ingest', 'urlhaus_fetch_normalize_bronze', 'scheduled__2025-10-28T00:00:00+00:00', '--job-id', '120', '--raw', '--subdir', 'DAGS_FOLDER/urlhaus_ingest.py', '--cfg-path', '/tmp/tmp50pv40m6']
+[2025-10-29T17:19:12.233+0000] {standard_task_runner.py:91} INFO - Job 120: Subtask urlhaus_fetch_normalize_bronze
+[2025-10-29T17:19:12.244+0000] {task_command.py:426} INFO - Running <TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [running]> on host 109bbc934e0f
+[2025-10-29T17:19:12.264+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='urlhaus_ingest' AIRFLOW_CTX_TASK_ID='urlhaus_fetch_normalize_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-10-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-28T00:00:00+00:00'
+[2025-10-29T17:19:12.264+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-29T17:19:12.408+0000] {logging_mixin.py:188} INFO - [urlhaus_ingest] rows after normalize: 21313
+[2025-10-29T17:19:12.419+0000] {logging_mixin.py:188} INFO - [urlhaus] rows after normalize: 21313
+[2025-10-29T17:19:12.445+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-29T17:19:12.445+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-29T17:19:12.447+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=urlhaus_ingest, task_id=urlhaus_fetch_normalize_bronze, run_id=scheduled__2025-10-28T00:00:00+00:00, execution_date=20251028T000000, start_date=20251029T171912, end_date=20251029T171912
+[2025-10-29T17:19:12.459+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-29T17:19:12.468+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-29T17:19:12.468+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-10-29T18:18:02.553+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-10-29T18:18:02.561+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [queued]>
+[2025-10-29T18:18:02.563+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [queued]>
+[2025-10-29T18:18:02.563+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 2
+[2025-10-29T18:18:02.567+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): urlhaus_fetch_normalize_bronze> on 2025-10-28 00:00:00+00:00
+[2025-10-29T18:18:02.570+0000] {warnings.py:112} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62: DeprecationWarning: This process (pid=7247) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-10-29T18:18:02.570+0000] {standard_task_runner.py:64} INFO - Started process 7268 to run task
+[2025-10-29T18:18:02.571+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'urlhaus_ingest', 'urlhaus_fetch_normalize_bronze', 'scheduled__2025-10-28T00:00:00+00:00', '--job-id', '286', '--raw', '--subdir', 'DAGS_FOLDER/urlhaus_ingest.py', '--cfg-path', '/tmp/tmp077sxwr4']
+[2025-10-29T18:18:02.571+0000] {standard_task_runner.py:91} INFO - Job 286: Subtask urlhaus_fetch_normalize_bronze
+[2025-10-29T18:18:02.583+0000] {task_command.py:426} INFO - Running <TaskInstance: urlhaus_ingest.urlhaus_fetch_normalize_bronze scheduled__2025-10-28T00:00:00+00:00 [running]> on host 9a4b1d75930e
+[2025-10-29T18:18:02.604+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='urlhaus_ingest' AIRFLOW_CTX_TASK_ID='urlhaus_fetch_normalize_bronze' AIRFLOW_CTX_EXECUTION_DATE='2025-10-28T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-10-28T00:00:00+00:00'
+[2025-10-29T18:18:02.604+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-10-29T18:18:02.752+0000] {logging_mixin.py:188} INFO - [urlhaus_ingest] rows after normalize: 21293
+[2025-10-29T18:18:02.764+0000] {logging_mixin.py:188} INFO - [urlhaus] rows after normalize: 21293
+[2025-10-29T18:18:02.787+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-10-29T18:18:02.787+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-10-29T18:18:02.789+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=urlhaus_ingest, task_id=urlhaus_fetch_normalize_bronze, run_id=scheduled__2025-10-28T00:00:00+00:00, execution_date=20251028T000000, start_date=20251029T181802, end_date=20251029T181802
+[2025-10-29T18:18:02.798+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-10-29T18:18:02.802+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-10-29T18:18:02.802+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

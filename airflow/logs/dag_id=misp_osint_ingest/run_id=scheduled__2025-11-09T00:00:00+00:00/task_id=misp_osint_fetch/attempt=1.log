@@ -1,0 +1,24 @@
+[2025-11-10T00:15:13.925+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-10T00:15:13.939+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-09T00:00:00+00:00 [queued]>
+[2025-11-10T00:15:13.942+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-09T00:00:00+00:00 [queued]>
+[2025-11-10T00:15:13.942+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-10T00:15:13.950+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): misp_osint_fetch> on 2025-11-09 00:00:00+00:00
+[2025-11-10T00:15:13.956+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=5422) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-10T00:15:13.957+0000] {standard_task_runner.py:64} INFO - Started process 5433 to run task
+[2025-11-10T00:15:13.956+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'misp_osint_ingest', 'misp_osint_fetch', 'scheduled__2025-11-09T00:00:00+00:00', '--job-id', '63', '--raw', '--subdir', 'DAGS_FOLDER/misp_osint_ingest.py', '--cfg-path', '/tmp/tmp0jf3td3_']
+[2025-11-10T00:15:13.958+0000] {standard_task_runner.py:91} INFO - Job 63: Subtask misp_osint_fetch
+[2025-11-10T00:15:13.978+0000] {task_command.py:426} INFO - Running <TaskInstance: misp_osint_ingest.misp_osint_fetch scheduled__2025-11-09T00:00:00+00:00 [running]> on host 7e98baed574a
+[2025-11-10T00:15:14.007+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='misp_osint_ingest' AIRFLOW_CTX_TASK_ID='misp_osint_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-09T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-09T00:00:00+00:00'
+[2025-11-10T00:15:14.007+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-10T01:16:33.656+0000] {logging_mixin.py:188} INFO - [misp_osint] error on https://www.circl.lu/doc/misp/feed-osint/b2a90426-2dc0-4022-b51e-8be190ffb7e5.json: HTTPSConnectionPool(host='www.circl.lu', port=443): Read timed out.
+[2025-11-10T01:16:37.877+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=3, connect=3, read=2, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /doc/misp/feed-osint/69df43bb-2c48-4b4d-aa85-8477e92cb010.json
+[2025-11-10T01:16:43.283+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=3, connect=3, read=2, redirect=None, status=None)) after connection broken by 'RemoteDisconnected('Remote end closed connection without response')': /doc/misp/feed-osint/50d572f9-06d0-4f0b-af1c-3958a5fedefe.json
+[2025-11-10T02:17:44.458+0000] {logging_mixin.py:188} INFO - [misp_osint] error on https://www.circl.lu/doc/misp/feed-osint/24fe9665-88f8-49d9-9d28-2de0020acf48.json: HTTPSConnectionPool(host='www.circl.lu', port=443): Read timed out.
+[2025-11-10T02:27:00.854+0000] {logging_mixin.py:188} INFO - [misp_osint] ds=2025-11-09 index_rows=1579 matched_today=100 rows_extracted=4783 file_errors=2
+[2025-11-10T02:27:00.964+0000] {logging_mixin.py:188} INFO - [misp_osint] wrote 4783 rows -> /opt/airflow/silver/misp_osint/ingest_date=2025-11-09/misp_osint.parquet
+[2025-11-10T02:27:00.967+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-10T02:27:00.967+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-10T02:27:00.972+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=misp_osint_ingest, task_id=misp_osint_fetch, run_id=scheduled__2025-11-09T00:00:00+00:00, execution_date=20251109T000000, start_date=20251110T001513, end_date=20251110T022700
+[2025-11-10T02:27:00.996+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-10T02:27:01.006+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-10T02:27:01.007+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

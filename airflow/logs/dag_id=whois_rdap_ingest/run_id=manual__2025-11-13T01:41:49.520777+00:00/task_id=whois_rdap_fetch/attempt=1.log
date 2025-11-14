@@ -1,0 +1,22 @@
+[2025-11-13T01:41:52.642+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-13T01:41:52.651+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: whois_rdap_ingest.whois_rdap_fetch manual__2025-11-13T01:41:49.520777+00:00 [queued]>
+[2025-11-13T01:41:52.653+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: whois_rdap_ingest.whois_rdap_fetch manual__2025-11-13T01:41:49.520777+00:00 [queued]>
+[2025-11-13T01:41:52.653+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-13T01:41:52.658+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): whois_rdap_fetch> on 2025-11-13 01:41:49.520777+00:00
+[2025-11-13T01:41:52.661+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'whois_rdap_ingest', 'whois_rdap_fetch', 'manual__2025-11-13T01:41:49.520777+00:00', '--job-id', '73', '--raw', '--subdir', 'DAGS_FOLDER/whois_rdap_dag.py', '--cfg-path', '/tmp/tmp43g9arue']
+[2025-11-13T01:41:52.661+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=13034) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-13T01:41:52.662+0000] {standard_task_runner.py:91} INFO - Job 73: Subtask whois_rdap_fetch
+[2025-11-13T01:41:52.662+0000] {standard_task_runner.py:64} INFO - Started process 13049 to run task
+[2025-11-13T01:41:52.678+0000] {task_command.py:426} INFO - Running <TaskInstance: whois_rdap_ingest.whois_rdap_fetch manual__2025-11-13T01:41:49.520777+00:00 [running]> on host 1fd82182dcce
+[2025-11-13T01:41:52.699+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='whois_rdap_ingest' AIRFLOW_CTX_TASK_ID='whois_rdap_fetch' AIRFLOW_CTX_EXECUTION_DATE='2025-11-13T01:41:49.520777+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-11-13T01:41:49.520777+00:00'
+[2025-11-13T01:41:52.700+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-13T01:41:52.842+0000] {whois_rdap_dag.py:171} INFO - [whois_rdap] ds=2025-11-13 total=2957 to_fetch=322 cached=4250
+[2025-11-13T01:48:55.057+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=3, connect=3, read=2, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='rdap.pandi.id', port=443): Read timed out. (read timeout=30)")': /rdap/domain/kopibrb.my.id
+[2025-11-13T01:49:47.784+0000] {connectionpool.py:872} WARNING - Retrying (Retry(total=1, connect=3, read=1, redirect=None, status=None)) after connection broken by 'ReadTimeoutError("HTTPSConnectionPool(host='rdap.pandi.id', port=443): Read timed out. (read timeout=30)")': /rdap/domain/kopibrb.my.id
+[2025-11-13T01:51:40.284+0000] {whois_rdap_dag.py:210} INFO - [whois_rdap] ds=2025-11-13 fetched=322 daily_rows=2957 cache_size=4572 -> /opt/airflow/lookups/whois/ingest_date=2025-11-13
+[2025-11-13T01:51:40.295+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-13T01:51:40.296+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-13T01:51:40.305+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=whois_rdap_ingest, task_id=whois_rdap_fetch, run_id=manual__2025-11-13T01:41:49.520777+00:00, execution_date=20251113T014149, start_date=20251113T014152, end_date=20251113T015140
+[2025-11-13T01:51:40.376+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-13T01:51:40.400+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-13T01:51:40.400+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

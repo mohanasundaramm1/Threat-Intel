@@ -1,0 +1,144 @@
+[2025-11-03T23:51:26.592+0000] {processor.py:161} INFO - Started process (PID=436) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:51:26.593+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:51:26.594+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:51:26.594+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:51:26.855+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:51:26.854+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dns_ip_geo_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 9, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:51:26.856+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:51:26.860+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.272 seconds
+[2025-11-03T23:51:57.578+0000] {processor.py:161} INFO - Started process (PID=473) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:51:57.579+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:51:57.581+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:51:57.581+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:51:57.783+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:51:57.783+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dns_ip_geo_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 9, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:51:57.783+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:51:57.788+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.216 seconds
+[2025-11-03T23:52:27.996+0000] {processor.py:161} INFO - Started process (PID=510) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:52:27.997+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:52:28.000+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:52:27.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:52:28.231+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:52:28.230+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dns_ip_geo_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 9, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:52:28.231+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:52:28.235+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.247 seconds
+[2025-11-03T23:52:55.017+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:52:55.018+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:52:55.018+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:52:55.018+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:52:55.937+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:52:55.936+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dns_ip_geo_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 9, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:52:55.937+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:52:55.942+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.927 seconds
+[2025-11-03T23:53:26.102+0000] {processor.py:161} INFO - Started process (PID=143) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:53:26.102+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:53:26.104+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:53:26.104+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:53:26.351+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:53:26.350+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dns_ip_geo_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 9, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:53:26.351+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:53:26.356+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.261 seconds
+[2025-11-03T23:53:57.191+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:53:57.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:53:57.195+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:53:57.194+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:53:57.504+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:53:57.503+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dns_ip_geo_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 9, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:53:57.504+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:53:57.509+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.321 seconds
+[2025-11-03T23:54:28.286+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:54:28.286+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:54:28.288+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:54:28.288+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:54:28.586+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:54:28.585+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dns_ip_geo_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 9, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:54:28.586+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:54:28.592+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.311 seconds
+[2025-11-03T23:54:59.514+0000] {processor.py:161} INFO - Started process (PID=254) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:54:59.522+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:54:59.531+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:54:59.531+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:54:59.837+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:54:59.836+0000] {dagbag.py:355} ERROR - Failed to import: /opt/airflow/dags/dns_ip_geo_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/dagbag.py", line 351, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "/opt/airflow/dags/dns_ip_geo_dag.py", line 9, in <module>
+    import tldextract
+ModuleNotFoundError: No module named 'tldextract'
+[2025-11-03T23:54:59.837+0000] {processor.py:842} WARNING - No viable dags retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:54:59.843+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.337 seconds
+[2025-11-03T23:55:43.641+0000] {processor.py:161} INFO - Started process (PID=84) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:55:43.642+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:55:43.643+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:43.643+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:55:44.465+0000] {processor.py:840} INFO - DAG(s) 'dns_ip_geo_ingest' retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:55:44.497+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:44.497+0000] {override.py:1858} INFO - Created Permission View: can read on DAG:dns_ip_geo_ingest
+[2025-11-03T23:55:44.501+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:44.501+0000] {override.py:1858} INFO - Created Permission View: can delete on DAG:dns_ip_geo_ingest
+[2025-11-03T23:55:44.503+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:44.503+0000] {override.py:1858} INFO - Created Permission View: can edit on DAG:dns_ip_geo_ingest
+[2025-11-03T23:55:44.504+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:44.504+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-03T23:55:44.506+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:44.506+0000] {dag.py:3111} INFO - Creating ORM DAG for dns_ip_geo_ingest
+[2025-11-03T23:55:44.509+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:55:44.509+0000] {dag.py:3947} INFO - Setting next_dagrun for dns_ip_geo_ingest to 2025-11-02 00:00:00+00:00, run_after=2025-11-03 00:00:00+00:00
+[2025-11-03T23:55:44.515+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.876 seconds
+[2025-11-03T23:56:14.720+0000] {processor.py:161} INFO - Started process (PID=142) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:56:14.721+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:56:14.724+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:14.723+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:56:14.972+0000] {processor.py:840} INFO - DAG(s) 'dns_ip_geo_ingest' retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:56:14.978+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:14.978+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-03T23:56:14.983+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:14.983+0000] {dag.py:3947} INFO - Setting next_dagrun for dns_ip_geo_ingest to 2025-11-02 00:00:00+00:00, run_after=2025-11-03 00:00:00+00:00
+[2025-11-03T23:56:14.991+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.278 seconds
+[2025-11-03T23:56:45.841+0000] {processor.py:161} INFO - Started process (PID=180) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:56:45.843+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:56:45.844+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:45.844+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:56:46.093+0000] {processor.py:840} INFO - DAG(s) 'dns_ip_geo_ingest' retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:56:46.097+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:46.097+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-03T23:56:46.103+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:56:46.103+0000] {dag.py:3947} INFO - Setting next_dagrun for dns_ip_geo_ingest to 2025-11-02 00:00:00+00:00, run_after=2025-11-03 00:00:00+00:00
+[2025-11-03T23:56:46.109+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.274 seconds
+[2025-11-03T23:57:16.941+0000] {processor.py:161} INFO - Started process (PID=217) to work on /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:57:16.942+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/dns_ip_geo_dag.py for tasks to queue
+[2025-11-03T23:57:16.945+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:57:16.944+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:57:17.162+0000] {processor.py:840} INFO - DAG(s) 'dns_ip_geo_ingest' retrieved from /opt/airflow/dags/dns_ip_geo_dag.py
+[2025-11-03T23:57:17.167+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:57:17.167+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-03T23:57:17.173+0000] {logging_mixin.py:188} INFO - [2025-11-03T23:57:17.173+0000] {dag.py:3947} INFO - Setting next_dagrun for dns_ip_geo_ingest to 2025-11-02 00:00:00+00:00, run_after=2025-11-03 00:00:00+00:00
+[2025-11-03T23:57:17.179+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/dns_ip_geo_dag.py took 0.243 seconds

@@ -1,0 +1,57 @@
+[2025-11-03T23:00:34.378+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-03T23:00:34.395+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [queued]>
+[2025-11-03T23:00:34.402+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [queued]>
+[2025-11-03T23:00:34.402+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-03T23:00:34.408+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): misp_fetch_normalize_silver> on 2025-11-02 00:00:00+00:00
+[2025-11-03T23:00:34.416+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=147) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-03T23:00:34.414+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'misp_ingest', 'misp_fetch_normalize_silver', 'scheduled__2025-11-02T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/misp_ingest.py', '--cfg-path', '/tmp/tmp3yw24kos']
+[2025-11-03T23:00:34.416+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask misp_fetch_normalize_silver
+[2025-11-03T23:00:34.416+0000] {standard_task_runner.py:64} INFO - Started process 158 to run task
+[2025-11-03T23:00:34.436+0000] {task_command.py:426} INFO - Running <TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [running]> on host 392d890917c0
+[2025-11-03T23:00:34.467+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='misp_ingest' AIRFLOW_CTX_TASK_ID='misp_fetch_normalize_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-11-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-02T00:00:00+00:00'
+[2025-11-03T23:00:34.468+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-03T23:00:34.509+0000] {logging_mixin.py:188} INFO - [misp_ingest] No credentials set. Wrote EMPTY partition for ds=2025-11-02 at /opt/airflow/silver/misp_indicators/ingest_date=2025-11-02.
+[2025-11-03T23:00:34.509+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-03T23:00:34.509+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-03T23:00:34.511+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=misp_ingest, task_id=misp_fetch_normalize_silver, run_id=scheduled__2025-11-02T00:00:00+00:00, execution_date=20251102T000000, start_date=20251103T230034, end_date=20251103T230034
+[2025-11-03T23:00:34.521+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-03T23:00:34.524+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-03T23:00:34.525+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-11-03T23:43:21.064+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-03T23:43:21.072+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [queued]>
+[2025-11-03T23:43:21.074+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [queued]>
+[2025-11-03T23:43:21.074+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-03T23:43:21.078+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): misp_fetch_normalize_silver> on 2025-11-02 00:00:00+00:00
+[2025-11-03T23:43:21.081+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'misp_ingest', 'misp_fetch_normalize_silver', 'scheduled__2025-11-02T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/misp_ingest.py', '--cfg-path', '/tmp/tmpfp058zsu']
+[2025-11-03T23:43:21.083+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask misp_fetch_normalize_silver
+[2025-11-03T23:43:21.082+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=159) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-03T23:43:21.085+0000] {standard_task_runner.py:64} INFO - Started process 170 to run task
+[2025-11-03T23:43:21.095+0000] {task_command.py:426} INFO - Running <TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [running]> on host b7f8432056a4
+[2025-11-03T23:43:21.118+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='misp_ingest' AIRFLOW_CTX_TASK_ID='misp_fetch_normalize_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-11-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-02T00:00:00+00:00'
+[2025-11-03T23:43:21.118+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-03T23:43:21.158+0000] {logging_mixin.py:188} INFO - [misp_ingest] No credentials set. Wrote EMPTY partition for ds=2025-11-02 at /opt/airflow/silver/misp_indicators/ingest_date=2025-11-02.
+[2025-11-03T23:43:21.158+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-03T23:43:21.158+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-03T23:43:21.159+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=misp_ingest, task_id=misp_fetch_normalize_silver, run_id=scheduled__2025-11-02T00:00:00+00:00, execution_date=20251102T000000, start_date=20251103T234321, end_date=20251103T234321
+[2025-11-03T23:43:21.185+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-03T23:43:21.189+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-03T23:43:21.189+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
+[2025-11-03T23:57:33.378+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-11-03T23:57:33.387+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [queued]>
+[2025-11-03T23:57:33.388+0000] {taskinstance.py:2076} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [queued]>
+[2025-11-03T23:57:33.388+0000] {taskinstance.py:2306} INFO - Starting attempt 1 of 1
+[2025-11-03T23:57:33.392+0000] {taskinstance.py:2330} INFO - Executing <Task(PythonOperator): misp_fetch_normalize_silver> on 2025-11-02 00:00:00+00:00
+[2025-11-03T23:57:33.395+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'misp_ingest', 'misp_fetch_normalize_silver', 'scheduled__2025-11-02T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/misp_ingest.py', '--cfg-path', '/tmp/tmpfgsltng4']
+[2025-11-03T23:57:33.398+0000] {standard_task_runner.py:91} INFO - Job 2: Subtask misp_fetch_normalize_silver
+[2025-11-03T23:57:33.398+0000] {logging_mixin.py:188} WARNING - /home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py:62 DeprecationWarning: This process (pid=254) is multi-threaded, use of fork() may lead to deadlocks in the child.
+[2025-11-03T23:57:33.401+0000] {standard_task_runner.py:64} INFO - Started process 265 to run task
+[2025-11-03T23:57:33.411+0000] {task_command.py:426} INFO - Running <TaskInstance: misp_ingest.misp_fetch_normalize_silver scheduled__2025-11-02T00:00:00+00:00 [running]> on host 90fcab7a3fd8
+[2025-11-03T23:57:33.428+0000] {taskinstance.py:2648} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='you' AIRFLOW_CTX_DAG_ID='misp_ingest' AIRFLOW_CTX_TASK_ID='misp_fetch_normalize_silver' AIRFLOW_CTX_EXECUTION_DATE='2025-11-02T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-11-02T00:00:00+00:00'
+[2025-11-03T23:57:33.429+0000] {taskinstance.py:430} INFO - ::endgroup::
+[2025-11-03T23:57:33.461+0000] {logging_mixin.py:188} INFO - [misp_ingest] No credentials set. Wrote EMPTY partition for ds=2025-11-02 at /opt/airflow/silver/misp_indicators/ingest_date=2025-11-02.
+[2025-11-03T23:57:33.461+0000] {python.py:237} INFO - Done. Returned value was: None
+[2025-11-03T23:57:33.462+0000] {taskinstance.py:441} INFO - ::group::Post task execution logs
+[2025-11-03T23:57:33.463+0000] {taskinstance.py:1206} INFO - Marking task as SUCCESS. dag_id=misp_ingest, task_id=misp_fetch_normalize_silver, run_id=scheduled__2025-11-02T00:00:00+00:00, execution_date=20251102T000000, start_date=20251103T235733, end_date=20251103T235733
+[2025-11-03T23:57:33.504+0000] {local_task_job_runner.py:243} INFO - Task exited with return code 0
+[2025-11-03T23:57:33.509+0000] {taskinstance.py:3503} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-11-03T23:57:33.509+0000] {local_task_job_runner.py:222} INFO - ::endgroup::

@@ -1,0 +1,32 @@
+services:
+  airflow:
+    image: apache/airflow:2.9.3
+    container_name: airflow-local
+    environment:
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+      AIRFLOW__WEBSERVER__EXPOSE_CONFIG: "true"
+      AIRFLOW__WEBSERVER__WEB_SERVER_HOST: "0.0.0.0"
+      AIRFLOW__WEBSERVER__WEB_SERVER_PORT: "8080"
+      _PIP_ADDITIONAL_REQUIREMENTS: "pandas pyarrow requests dnspython tldextract great_expectations==0.18.12"
+      MISP_URL: ""
+      MISP_API_KEY: ""
+      MISP_VERIFY_SSL: "true"
+    user: "${AIRFLOW_UID:-50000}:0"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ../bronze:/opt/airflow/bronze
+      - ../silver:/opt/airflow/silver
+      - ../lookups:/opt/airflow/lookups
+    ports:
+      - "8080:8080"
+    # Init DB + create admin user, then start webserver & scheduler and keep container alive
+    command: >
+      bash -lc "
+      airflow db init &&
+      airflow users create --username admin --password admin --firstname Admin --lastname User --role Admin --email admin@example.com || true &&
+      airflow webserver -p 8080 -D &&
+      airflow scheduler
+      "

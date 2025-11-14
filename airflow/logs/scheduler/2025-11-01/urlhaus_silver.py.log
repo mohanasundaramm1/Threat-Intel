@@ -1,0 +1,455 @@
+[2025-11-01T00:27:42.851+0000] {processor.py:161} INFO - Started process (PID=68339) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:27:42.852+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T00:27:42.854+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:27:42.853+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:27:43.014+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:27:43.020+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:27:43.019+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T00:27:43.024+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:27:43.024+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T00:27:43.031+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.185 seconds
+[2025-11-01T00:31:46.154+0000] {processor.py:161} INFO - Started process (PID=68370) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:31:46.154+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T00:31:46.156+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:31:46.156+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:31:46.311+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:31:46.317+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:31:46.316+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T00:31:46.321+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:31:46.321+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T00:31:46.328+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.178 seconds
+[2025-11-01T00:32:17.655+0000] {processor.py:161} INFO - Started process (PID=68401) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:32:17.656+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T00:32:17.658+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:32:17.657+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:32:17.818+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:32:17.823+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:32:17.823+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T00:32:17.827+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:32:17.827+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T00:32:17.834+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.184 seconds
+[2025-11-01T00:33:57.129+0000] {processor.py:161} INFO - Started process (PID=68432) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:33:57.130+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T00:33:57.131+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:33:57.131+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:33:57.282+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:33:57.288+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:33:57.287+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T00:33:57.293+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:33:57.293+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T00:33:57.300+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.175 seconds
+[2025-11-01T00:39:25.652+0000] {processor.py:161} INFO - Started process (PID=68463) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:39:25.653+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T00:39:25.655+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:39:25.654+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:39:25.910+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:39:25.920+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:39:25.920+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T00:39:25.929+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:39:25.929+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T00:39:25.939+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.292 seconds
+[2025-11-01T00:39:58.141+0000] {processor.py:161} INFO - Started process (PID=68494) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:39:58.141+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T00:39:58.143+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:39:58.143+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:39:58.297+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T00:39:58.303+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:39:58.303+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T00:39:58.308+0000] {logging_mixin.py:188} INFO - [2025-11-01T00:39:58.307+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T00:39:58.313+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.177 seconds
+[2025-11-01T01:29:54.699+0000] {processor.py:161} INFO - Started process (PID=68525) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:29:54.699+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T01:29:54.700+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:29:54.700+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:29:54.848+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:29:54.853+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:29:54.853+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T01:29:54.858+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:29:54.858+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T01:29:54.865+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.169 seconds
+[2025-11-01T01:33:46.221+0000] {processor.py:161} INFO - Started process (PID=68556) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:33:46.222+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T01:33:46.224+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:33:46.223+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:33:46.387+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:33:46.392+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:33:46.391+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T01:33:46.397+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:33:46.397+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T01:33:46.402+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.186 seconds
+[2025-11-01T01:49:38.253+0000] {processor.py:161} INFO - Started process (PID=68587) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:49:38.253+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T01:49:38.255+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:49:38.255+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:49:38.416+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:49:38.422+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:49:38.422+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T01:49:38.426+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:49:38.426+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T01:49:38.433+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.186 seconds
+[2025-11-01T01:50:09.361+0000] {processor.py:161} INFO - Started process (PID=68618) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:50:09.362+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T01:50:09.362+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:50:09.362+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:50:09.520+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T01:50:09.526+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:50:09.526+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T01:50:09.531+0000] {logging_mixin.py:188} INFO - [2025-11-01T01:50:09.531+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T01:50:09.537+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.178 seconds
+[2025-11-01T02:34:28.087+0000] {processor.py:161} INFO - Started process (PID=68649) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T02:34:28.088+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T02:34:28.089+0000] {logging_mixin.py:188} INFO - [2025-11-01T02:34:28.089+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T02:34:28.250+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T02:34:28.255+0000] {logging_mixin.py:188} INFO - [2025-11-01T02:34:28.255+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T02:34:28.259+0000] {logging_mixin.py:188} INFO - [2025-11-01T02:34:28.259+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T02:34:28.266+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.184 seconds
+[2025-11-01T02:34:58.495+0000] {processor.py:161} INFO - Started process (PID=68680) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T02:34:58.496+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T02:34:58.497+0000] {logging_mixin.py:188} INFO - [2025-11-01T02:34:58.497+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T02:34:58.655+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T02:34:58.660+0000] {logging_mixin.py:188} INFO - [2025-11-01T02:34:58.660+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T02:34:58.665+0000] {logging_mixin.py:188} INFO - [2025-11-01T02:34:58.665+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T02:34:58.671+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.180 seconds
+[2025-11-01T03:35:25.259+0000] {processor.py:161} INFO - Started process (PID=68711) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T03:35:25.260+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T03:35:25.262+0000] {logging_mixin.py:188} INFO - [2025-11-01T03:35:25.262+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T03:35:25.434+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T03:35:25.441+0000] {logging_mixin.py:188} INFO - [2025-11-01T03:35:25.440+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T03:35:25.446+0000] {logging_mixin.py:188} INFO - [2025-11-01T03:35:25.446+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T03:35:25.452+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.199 seconds
+[2025-11-01T03:35:56.648+0000] {processor.py:161} INFO - Started process (PID=68742) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T03:35:56.648+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T03:35:56.650+0000] {logging_mixin.py:188} INFO - [2025-11-01T03:35:56.649+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T03:35:56.798+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T03:35:56.804+0000] {logging_mixin.py:188} INFO - [2025-11-01T03:35:56.804+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T03:35:56.808+0000] {logging_mixin.py:188} INFO - [2025-11-01T03:35:56.808+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T03:35:56.814+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.170 seconds
+[2025-11-01T04:36:23.475+0000] {processor.py:161} INFO - Started process (PID=68773) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T04:36:23.476+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T04:36:23.477+0000] {logging_mixin.py:188} INFO - [2025-11-01T04:36:23.477+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T04:36:23.629+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T04:36:23.634+0000] {logging_mixin.py:188} INFO - [2025-11-01T04:36:23.634+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T04:36:23.639+0000] {logging_mixin.py:188} INFO - [2025-11-01T04:36:23.639+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T04:36:23.645+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.174 seconds
+[2025-11-01T04:36:53.903+0000] {processor.py:161} INFO - Started process (PID=68804) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T04:36:53.903+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T04:36:53.905+0000] {logging_mixin.py:188} INFO - [2025-11-01T04:36:53.905+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T04:36:54.086+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T04:36:54.091+0000] {logging_mixin.py:188} INFO - [2025-11-01T04:36:54.091+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T04:36:54.097+0000] {logging_mixin.py:188} INFO - [2025-11-01T04:36:54.096+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T04:36:54.103+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.205 seconds
+[2025-11-01T05:26:00.553+0000] {processor.py:161} INFO - Started process (PID=68835) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T05:26:00.553+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T05:26:00.555+0000] {logging_mixin.py:188} INFO - [2025-11-01T05:26:00.555+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T05:26:00.713+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T05:26:00.719+0000] {logging_mixin.py:188} INFO - [2025-11-01T05:26:00.718+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T05:26:00.723+0000] {logging_mixin.py:188} INFO - [2025-11-01T05:26:00.723+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T05:26:00.729+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.182 seconds
+[2025-11-01T05:37:50.927+0000] {processor.py:161} INFO - Started process (PID=68866) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T05:37:50.928+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T05:37:50.930+0000] {logging_mixin.py:188} INFO - [2025-11-01T05:37:50.930+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T05:37:51.090+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T05:37:51.096+0000] {logging_mixin.py:188} INFO - [2025-11-01T05:37:51.096+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T05:37:51.101+0000] {logging_mixin.py:188} INFO - [2025-11-01T05:37:51.101+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T05:37:51.107+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.186 seconds
+[2025-11-01T06:27:19.801+0000] {processor.py:161} INFO - Started process (PID=68897) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:27:19.802+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T06:27:19.804+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:27:19.803+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:27:19.963+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:27:19.968+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:27:19.968+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T06:27:19.972+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:27:19.972+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T06:27:19.979+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.184 seconds
+[2025-11-01T06:27:51.370+0000] {processor.py:161} INFO - Started process (PID=68928) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:27:51.371+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T06:27:51.372+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:27:51.372+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:27:51.530+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:27:51.535+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:27:51.535+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T06:27:51.540+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:27:51.540+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T06:27:51.546+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.180 seconds
+[2025-11-01T06:38:36.893+0000] {processor.py:161} INFO - Started process (PID=68959) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:38:36.894+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T06:38:36.896+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:38:36.895+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:38:37.060+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:38:37.066+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:38:37.066+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T06:38:37.071+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:38:37.071+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T06:38:37.077+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.189 seconds
+[2025-11-01T06:39:07.712+0000] {processor.py:161} INFO - Started process (PID=68990) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:39:07.713+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T06:39:07.714+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:39:07.713+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:39:07.858+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T06:39:07.864+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:39:07.864+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T06:39:07.869+0000] {logging_mixin.py:188} INFO - [2025-11-01T06:39:07.869+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T06:39:07.874+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.164 seconds
+[2025-11-01T07:39:35.857+0000] {processor.py:161} INFO - Started process (PID=69021) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T07:39:35.857+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T07:39:35.859+0000] {logging_mixin.py:188} INFO - [2025-11-01T07:39:35.859+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T07:39:36.019+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T07:39:36.025+0000] {logging_mixin.py:188} INFO - [2025-11-01T07:39:36.024+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T07:39:36.029+0000] {logging_mixin.py:188} INFO - [2025-11-01T07:39:36.029+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T07:39:36.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.184 seconds
+[2025-11-01T07:40:06.165+0000] {processor.py:161} INFO - Started process (PID=69052) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T07:40:06.166+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T07:40:06.167+0000] {logging_mixin.py:188} INFO - [2025-11-01T07:40:06.167+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T07:40:06.325+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T07:40:06.330+0000] {logging_mixin.py:188} INFO - [2025-11-01T07:40:06.330+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T07:40:06.335+0000] {logging_mixin.py:188} INFO - [2025-11-01T07:40:06.335+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T07:40:06.340+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.180 seconds
+[2025-11-01T08:26:52.775+0000] {processor.py:161} INFO - Started process (PID=69083) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T08:26:52.776+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T08:26:52.777+0000] {logging_mixin.py:188} INFO - [2025-11-01T08:26:52.777+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T08:26:52.935+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T08:26:52.941+0000] {logging_mixin.py:188} INFO - [2025-11-01T08:26:52.941+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T08:26:52.946+0000] {logging_mixin.py:188} INFO - [2025-11-01T08:26:52.945+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T08:26:52.952+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.181 seconds
+[2025-11-01T08:27:24.408+0000] {processor.py:161} INFO - Started process (PID=69114) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T08:27:24.409+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T08:27:24.410+0000] {logging_mixin.py:188} INFO - [2025-11-01T08:27:24.410+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T08:27:24.577+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T08:27:24.582+0000] {logging_mixin.py:188} INFO - [2025-11-01T08:27:24.582+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T08:27:24.587+0000] {logging_mixin.py:188} INFO - [2025-11-01T08:27:24.587+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T08:27:24.593+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.191 seconds
+[2025-11-01T09:34:10.818+0000] {processor.py:161} INFO - Started process (PID=69145) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T09:34:10.819+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T09:34:10.821+0000] {logging_mixin.py:188} INFO - [2025-11-01T09:34:10.820+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T09:34:10.998+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T09:34:11.003+0000] {logging_mixin.py:188} INFO - [2025-11-01T09:34:11.003+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T09:34:11.008+0000] {logging_mixin.py:188} INFO - [2025-11-01T09:34:11.008+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T09:34:11.014+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.206 seconds
+[2025-11-01T10:21:13.734+0000] {processor.py:161} INFO - Started process (PID=69176) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T10:21:13.735+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T10:21:13.736+0000] {logging_mixin.py:188} INFO - [2025-11-01T10:21:13.736+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T10:21:13.891+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T10:21:13.896+0000] {logging_mixin.py:188} INFO - [2025-11-01T10:21:13.896+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T10:21:13.901+0000] {logging_mixin.py:188} INFO - [2025-11-01T10:21:13.901+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T10:21:13.908+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.177 seconds
+[2025-11-01T10:36:46.292+0000] {processor.py:161} INFO - Started process (PID=69207) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T10:36:46.293+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T10:36:46.295+0000] {logging_mixin.py:188} INFO - [2025-11-01T10:36:46.294+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T10:36:46.455+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T10:36:46.460+0000] {logging_mixin.py:188} INFO - [2025-11-01T10:36:46.460+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T10:36:46.465+0000] {logging_mixin.py:188} INFO - [2025-11-01T10:36:46.465+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T10:36:46.471+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.184 seconds
+[2025-11-01T11:36:14.841+0000] {processor.py:161} INFO - Started process (PID=69238) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T11:36:14.842+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T11:36:14.843+0000] {logging_mixin.py:188} INFO - [2025-11-01T11:36:14.843+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T11:36:14.997+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T11:36:15.002+0000] {logging_mixin.py:188} INFO - [2025-11-01T11:36:15.002+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T11:36:15.007+0000] {logging_mixin.py:188} INFO - [2025-11-01T11:36:15.007+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T11:36:15.013+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.176 seconds
+[2025-11-01T11:36:46.457+0000] {processor.py:161} INFO - Started process (PID=69269) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T11:36:46.458+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T11:36:46.459+0000] {logging_mixin.py:188} INFO - [2025-11-01T11:36:46.459+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T11:36:46.618+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T11:36:46.623+0000] {logging_mixin.py:188} INFO - [2025-11-01T11:36:46.623+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T11:36:46.628+0000] {logging_mixin.py:188} INFO - [2025-11-01T11:36:46.628+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T11:36:46.634+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.182 seconds
+[2025-11-01T12:42:36.174+0000] {processor.py:161} INFO - Started process (PID=69300) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T12:42:36.174+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T12:42:36.176+0000] {logging_mixin.py:188} INFO - [2025-11-01T12:42:36.176+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T12:42:36.343+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T12:42:36.349+0000] {logging_mixin.py:188} INFO - [2025-11-01T12:42:36.348+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T12:42:36.354+0000] {logging_mixin.py:188} INFO - [2025-11-01T12:42:36.354+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T12:42:36.360+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.192 seconds
+[2025-11-01T12:43:07.955+0000] {processor.py:161} INFO - Started process (PID=69331) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T12:43:07.956+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T12:43:07.957+0000] {logging_mixin.py:188} INFO - [2025-11-01T12:43:07.957+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T12:43:08.105+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T12:43:08.111+0000] {logging_mixin.py:188} INFO - [2025-11-01T12:43:08.111+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T12:43:08.115+0000] {logging_mixin.py:188} INFO - [2025-11-01T12:43:08.115+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T12:43:08.121+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.169 seconds
+[2025-11-01T13:01:02.558+0000] {processor.py:161} INFO - Started process (PID=69362) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:01:02.559+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T13:01:02.561+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:01:02.561+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:01:02.718+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:01:02.724+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:01:02.724+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T13:01:02.728+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:01:02.728+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T13:01:02.734+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.181 seconds
+[2025-11-01T13:01:33.879+0000] {processor.py:161} INFO - Started process (PID=69393) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:01:33.880+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T13:01:33.881+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:01:33.881+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:01:34.047+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:01:34.052+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:01:34.052+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T13:01:34.057+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:01:34.057+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T13:01:34.063+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.190 seconds
+[2025-11-01T13:37:17.864+0000] {processor.py:161} INFO - Started process (PID=69424) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:37:17.865+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T13:37:17.866+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:37:17.866+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:37:18.026+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:37:18.032+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:37:18.032+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T13:37:18.037+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:37:18.037+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T13:37:18.043+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.184 seconds
+[2025-11-01T13:37:49.264+0000] {processor.py:161} INFO - Started process (PID=69455) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:37:49.264+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T13:37:49.266+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:37:49.266+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:37:49.433+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T13:37:49.438+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:37:49.438+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T13:37:49.443+0000] {logging_mixin.py:188} INFO - [2025-11-01T13:37:49.443+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T13:37:49.449+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.190 seconds
+[2025-11-01T14:38:14.093+0000] {processor.py:161} INFO - Started process (PID=69486) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:38:14.094+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T14:38:14.095+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:38:14.095+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:38:14.255+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:38:14.260+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:38:14.260+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T14:38:14.265+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:38:14.265+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T14:38:14.271+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.183 seconds
+[2025-11-01T14:38:45.672+0000] {processor.py:161} INFO - Started process (PID=69517) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:38:45.673+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T14:38:45.674+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:38:45.674+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:38:46.020+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:38:46.025+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:38:46.025+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T14:38:46.029+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:38:46.029+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T14:38:46.036+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.372 seconds
+[2025-11-01T14:40:41.152+0000] {processor.py:161} INFO - Started process (PID=69548) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:40:41.153+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T14:40:41.154+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:40:41.154+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:40:41.308+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:40:41.313+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:40:41.313+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T14:40:41.318+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:40:41.318+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T14:40:41.324+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.176 seconds
+[2025-11-01T14:56:36.191+0000] {processor.py:161} INFO - Started process (PID=69579) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:56:36.192+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T14:56:36.194+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:56:36.193+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:56:36.359+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T14:56:36.365+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:56:36.365+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T14:56:36.370+0000] {logging_mixin.py:188} INFO - [2025-11-01T14:56:36.370+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T14:56:36.375+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.189 seconds
+[2025-11-01T15:39:24.607+0000] {processor.py:161} INFO - Started process (PID=69610) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T15:39:24.608+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T15:39:24.610+0000] {logging_mixin.py:188} INFO - [2025-11-01T15:39:24.610+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T15:39:24.775+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T15:39:24.780+0000] {logging_mixin.py:188} INFO - [2025-11-01T15:39:24.780+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T15:39:24.785+0000] {logging_mixin.py:188} INFO - [2025-11-01T15:39:24.785+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T15:39:24.791+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.191 seconds
+[2025-11-01T15:56:07.138+0000] {processor.py:161} INFO - Started process (PID=69641) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T15:56:07.138+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T15:56:07.139+0000] {logging_mixin.py:188} INFO - [2025-11-01T15:56:07.139+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T15:56:07.293+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T15:56:07.298+0000] {logging_mixin.py:188} INFO - [2025-11-01T15:56:07.298+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T15:56:07.303+0000] {logging_mixin.py:188} INFO - [2025-11-01T15:56:07.303+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T15:56:07.309+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.176 seconds
+[2025-11-01T16:40:22.887+0000] {processor.py:161} INFO - Started process (PID=69672) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T16:40:22.887+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T16:40:22.888+0000] {logging_mixin.py:188} INFO - [2025-11-01T16:40:22.888+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T16:40:23.028+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T16:40:23.033+0000] {logging_mixin.py:188} INFO - [2025-11-01T16:40:23.033+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T16:40:23.038+0000] {logging_mixin.py:188} INFO - [2025-11-01T16:40:23.038+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T16:40:23.044+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.159 seconds
+[2025-11-01T16:40:54.602+0000] {processor.py:161} INFO - Started process (PID=69703) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T16:40:54.603+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T16:40:54.604+0000] {logging_mixin.py:188} INFO - [2025-11-01T16:40:54.604+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T16:40:54.764+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T16:40:54.769+0000] {logging_mixin.py:188} INFO - [2025-11-01T16:40:54.769+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T16:40:54.774+0000] {logging_mixin.py:188} INFO - [2025-11-01T16:40:54.774+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T16:40:54.780+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.182 seconds
+[2025-11-01T17:41:20.388+0000] {processor.py:161} INFO - Started process (PID=69734) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:41:20.389+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T17:41:20.390+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:41:20.390+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:41:20.546+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:41:20.552+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:41:20.551+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T17:41:20.556+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:41:20.556+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T17:41:20.562+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.179 seconds
+[2025-11-01T17:41:51.963+0000] {processor.py:161} INFO - Started process (PID=69765) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:41:51.964+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T17:41:51.965+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:41:51.965+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:41:52.119+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:41:52.124+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:41:52.124+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T17:41:52.128+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:41:52.128+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T17:41:52.136+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.177 seconds
+[2025-11-01T17:58:54.940+0000] {processor.py:161} INFO - Started process (PID=69796) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:58:54.941+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T17:58:54.942+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:58:54.942+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:58:55.095+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T17:58:55.100+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:58:55.100+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T17:58:55.105+0000] {logging_mixin.py:188} INFO - [2025-11-01T17:58:55.105+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T17:58:55.111+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.175 seconds
+[2025-11-01T18:16:20.483+0000] {processor.py:161} INFO - Started process (PID=69827) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:16:20.483+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T18:16:20.485+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:16:20.484+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:16:20.827+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:16:20.833+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:16:20.833+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T18:16:20.838+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:16:20.837+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T18:16:20.843+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.365 seconds
+[2025-11-01T18:42:32.039+0000] {processor.py:161} INFO - Started process (PID=69858) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:42:32.039+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T18:42:32.041+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:42:32.040+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:42:32.216+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:42:32.224+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:42:32.224+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T18:42:32.231+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:42:32.231+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T18:42:32.238+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.203 seconds
+[2025-11-01T18:59:38.963+0000] {processor.py:161} INFO - Started process (PID=69889) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:59:38.964+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T18:59:38.965+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:59:38.965+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:59:39.121+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T18:59:39.126+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:59:39.126+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T18:59:39.130+0000] {logging_mixin.py:188} INFO - [2025-11-01T18:59:39.130+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T18:59:39.138+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.179 seconds
+[2025-11-01T19:00:10.406+0000] {processor.py:161} INFO - Started process (PID=69920) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:00:10.406+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T19:00:10.408+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:00:10.408+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:00:10.560+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:00:10.565+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:00:10.565+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T19:00:10.570+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:00:10.570+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T19:00:10.576+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.175 seconds
+[2025-11-01T19:43:10.892+0000] {processor.py:161} INFO - Started process (PID=69951) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:43:10.892+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T19:43:10.894+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:43:10.894+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:43:11.046+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:43:11.051+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:43:11.051+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T19:43:11.056+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:43:11.056+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T19:43:11.062+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.174 seconds
+[2025-11-01T19:43:42.384+0000] {processor.py:161} INFO - Started process (PID=69982) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:43:42.385+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T19:43:42.386+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:43:42.386+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:43:42.530+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T19:43:42.535+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:43:42.535+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T19:43:42.540+0000] {logging_mixin.py:188} INFO - [2025-11-01T19:43:42.540+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T19:43:42.547+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.167 seconds
+[2025-11-01T20:31:16.358+0000] {processor.py:161} INFO - Started process (PID=70013) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T20:31:16.359+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T20:31:16.360+0000] {logging_mixin.py:188} INFO - [2025-11-01T20:31:16.360+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T20:31:16.513+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T20:31:16.518+0000] {logging_mixin.py:188} INFO - [2025-11-01T20:31:16.518+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T20:31:16.523+0000] {logging_mixin.py:188} INFO - [2025-11-01T20:31:16.523+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T20:31:16.529+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.176 seconds
+[2025-11-01T20:44:38.227+0000] {processor.py:161} INFO - Started process (PID=70044) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T20:44:38.228+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T20:44:38.230+0000] {logging_mixin.py:188} INFO - [2025-11-01T20:44:38.229+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T20:44:38.391+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T20:44:38.396+0000] {logging_mixin.py:188} INFO - [2025-11-01T20:44:38.396+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T20:44:38.401+0000] {logging_mixin.py:188} INFO - [2025-11-01T20:44:38.401+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T20:44:38.407+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.185 seconds
+[2025-11-01T21:34:04.862+0000] {processor.py:161} INFO - Started process (PID=70075) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T21:34:04.863+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T21:34:04.864+0000] {logging_mixin.py:188} INFO - [2025-11-01T21:34:04.864+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T21:34:05.025+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T21:34:05.030+0000] {logging_mixin.py:188} INFO - [2025-11-01T21:34:05.030+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T21:34:05.035+0000] {logging_mixin.py:188} INFO - [2025-11-01T21:34:05.035+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T21:34:05.041+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.185 seconds
+[2025-11-01T21:45:34.385+0000] {processor.py:161} INFO - Started process (PID=70106) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T21:45:34.386+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T21:45:34.387+0000] {logging_mixin.py:188} INFO - [2025-11-01T21:45:34.387+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T21:45:34.547+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T21:45:34.553+0000] {logging_mixin.py:188} INFO - [2025-11-01T21:45:34.553+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T21:45:34.558+0000] {logging_mixin.py:188} INFO - [2025-11-01T21:45:34.558+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T21:45:34.563+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.183 seconds
+[2025-11-01T22:19:11.174+0000] {processor.py:161} INFO - Started process (PID=70137) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:19:11.175+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T22:19:11.176+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:19:11.176+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:19:11.337+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:19:11.342+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:19:11.342+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T22:19:11.347+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:19:11.347+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T22:19:11.459+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.291 seconds
+[2025-11-01T22:46:32.304+0000] {processor.py:161} INFO - Started process (PID=70168) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:46:32.304+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T22:46:32.305+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:46:32.305+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:46:32.464+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:46:32.469+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:46:32.469+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T22:46:32.475+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:46:32.475+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T22:46:32.481+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.180 seconds
+[2025-11-01T22:53:24.527+0000] {processor.py:161} INFO - Started process (PID=70199) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:53:24.527+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T22:53:24.529+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:53:24.529+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:53:24.689+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:53:24.694+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:53:24.694+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T22:53:24.699+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:53:24.699+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T22:53:24.704+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.183 seconds
+[2025-11-01T22:53:56.515+0000] {processor.py:161} INFO - Started process (PID=70230) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:53:56.516+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T22:53:56.518+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:53:56.518+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:53:56.678+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T22:53:56.684+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:53:56.684+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T22:53:56.689+0000] {logging_mixin.py:188} INFO - [2025-11-01T22:53:56.688+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T22:53:56.695+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.185 seconds
+[2025-11-01T23:32:26.997+0000] {processor.py:161} INFO - Started process (PID=70261) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:32:26.998+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T23:32:27.000+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:32:26.999+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:32:27.160+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:32:27.165+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:32:27.165+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T23:32:27.170+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:32:27.170+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T23:32:27.176+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.184 seconds
+[2025-11-01T23:32:58.401+0000] {processor.py:161} INFO - Started process (PID=70292) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:32:58.402+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T23:32:58.404+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:32:58.403+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:32:58.573+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:32:58.578+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:32:58.578+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T23:32:58.583+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:32:58.583+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T23:32:58.588+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.192 seconds
+[2025-11-01T23:47:31.134+0000] {processor.py:161} INFO - Started process (PID=70323) to work on /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:47:31.135+0000] {processor.py:830} INFO - Processing file /opt/airflow/dags/urlhaus_silver.py for tasks to queue
+[2025-11-01T23:47:31.137+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:47:31.136+0000] {dagbag.py:545} INFO - Filling up the DagBag from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:47:31.298+0000] {processor.py:840} INFO - DAG(s) 'urlhaus_silver' retrieved from /opt/airflow/dags/urlhaus_silver.py
+[2025-11-01T23:47:31.304+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:47:31.303+0000] {dag.py:3089} INFO - Sync 1 DAGs
+[2025-11-01T23:47:31.308+0000] {logging_mixin.py:188} INFO - [2025-11-01T23:47:31.308+0000] {dag.py:3947} INFO - Setting next_dagrun for urlhaus_silver to 2025-10-30 00:00:00+00:00, run_after=2025-10-31 00:00:00+00:00
+[2025-11-01T23:47:31.314+0000] {processor.py:183} INFO - Processing /opt/airflow/dags/urlhaus_silver.py took 0.185 seconds
