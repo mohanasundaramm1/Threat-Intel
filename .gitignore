@@ -1,10 +1,21 @@
+# Airflow logs and state
+airflow/logs/
+airflow/airflow-webserver.pid
+airflow/airflow-worker.pid
+airflow/airflow.db
+
+# Data partitions
+bronze/
+silver/
+lookups/
+ct/data/
+ct/chk/
+dlq/
+
+# Environments and caches
 .venv/
 __pycache__/
-.chk/
-chk/
-bronze/
-dlq/
-*.pyc
+.pytest_cache/
 .DS_Store
 .env
 
@@ -13,3 +24,4 @@ ml/tmp/
 ml/models/*.joblib
 ml/models/*.bin
 ml/models/*.txt
+ml/reports/

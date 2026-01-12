@@ -1,20 +1,21 @@
 # airflow/dags/openphish_silver_dag.py
 from __future__ import annotations
-import os
-import shutil
-import logging
+import os, shutil, tempfile, logging
 from datetime import datetime
 
 import pandas as pd
 
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator, get_current_context
 from airflow.exceptions import AirflowSkipException
 
 log = logging.getLogger(__name__)
 
+BRONZE = "/opt/airflow/bronze/openphish"
+SILVER = "/opt/airflow/silver/openphish"
+
 def _effective_ds_ts(ds: str, ts: str, **context):
-    """If the orchestrator passed ds/ts via dag_run.conf, use those."""
+    """Use ds/ts from dag_run.conf if the orchestrator passed them."""
     dr = context.get("dag_run")
     if dr and getattr(dr, "conf", None):
         ds_conf = dr.conf.get("ds") or ds
@@ -27,18 +28,30 @@ def _effective_ds_ts(ds: str, ts: str, **context):
         return ds_conf, ts_conf
     return ds, ts
 
+def _resolve_ds_ts_flexible(ds: str | None, ts: str | None, **maybe_ctx):
+    """
+    Works whether ds/ts/context were provided explicitly or not.
+    Falls back to Airflow runtime context; last-resort fallback = 'now' (UTC).
+    """
+    try:
+        ctx = maybe_ctx if ("dag_run" in maybe_ctx) else get_current_context()
+        ds0 = ds or ctx["ds"]
+        ts0 = ts or ctx["ts"]
+        return _effective_ds_ts(ds0, ts0, **ctx)
+    except Exception:
+        now = pd.Timestamp.utcnow()
+        return (now.date().isoformat(), now.strftime("%Y-%m-%d %H:%M:%S"))
+
 def _atomic_to_parquet(df: pd.DataFrame, final_path: str):
     """Write to a temp file then atomically replace the final file."""
-    tmp_path = final_path + ".tmp"
+    fd, tmp_path = tempfile.mkstemp(suffix=".parquet", dir=os.path.dirname(final_path) or ".")
+    os.close(fd)
     df.to_parquet(tmp_path, index=False)
     os.replace(tmp_path, final_path)
 
-BRONZE = "/opt/airflow/bronze/openphish"
-SILVER = "/opt/airflow/silver/openphish"
-
-def openphish_to_silver(ds: str, ts: str, **context):
+def openphish_to_silver(ds: str | None = None, ts: str | None = None, **context):
     # Align with orchestrator's ds/ts if provided
-    ds, ts = _effective_ds_ts(ds, ts, **context)
+    ds, ts = _resolve_ds_ts_flexible(ds, ts, **context)
 
     bronze_path = f"{BRONZE}/ingest_date={ds}/openphish.parquet"
 
@@ -51,11 +64,19 @@ def openphish_to_silver(ds: str, ts: str, **context):
     if df is None or len(df) == 0:
         raise AirflowSkipException(f"[openphish_silver] bronze empty for {ds}: {bronze_path}")
 
+    # Ensure required columns exist (size-safe defaults)
+    if "domain" not in df.columns:
+        df["domain"] = pd.Series([None] * len(df), dtype="object")
+    if "url" not in df.columns:
+        df["url"] = pd.Series([None] * len(df), dtype="object")
+    if "first_seen" not in df.columns:
+        df["first_seen"] = pd.Series([None] * len(df), dtype="object")
+
     # Normalize to stable schema
     out = pd.DataFrame({
-        "domain": df.get("domain", pd.Series(dtype="object")).astype("string"),
-        "url": df.get("url", pd.Series(dtype="object")).astype("string"),
-        "first_seen": pd.to_datetime(df.get("first_seen"), utc=True, errors="coerce"),
+        "domain": df["domain"].astype("string"),
+        "url": df["url"].astype("string"),
+        "first_seen": pd.to_datetime(df["first_seen"], utc=True, errors="coerce"),
         "label": "phishing",
         "source": "openphish",
     })
@@ -63,7 +84,7 @@ def openphish_to_silver(ds: str, ts: str, **context):
     # Hygiene
     out = out.dropna(subset=["domain", "first_seen"])
     out = out.sort_values(["domain", "first_seen"]).drop_duplicates(
-        subset=["domain", "first_seen"], keep="first"
+        subset=["domain", "first_seen", "url"], keep="first"
     )
 
     # Idempotent write for the ds partition
@@ -72,16 +93,17 @@ def openphish_to_silver(ds: str, ts: str, **context):
         shutil.rmtree(outdir)
     os.makedirs(outdir, exist_ok=True)
 
-    _atomic_to_parquet(out, f"{outdir}/openphish_silver.parquet")
-    log.info("[openphish_silver] %s: wrote %d rows -> %s", ds, len(out), outdir)
+    final_path = f"{outdir}/openphish_silver.parquet"
+    _atomic_to_parquet(out, final_path)
+    log.info("[openphish_silver] %s: wrote %d rows -> %s", ds, len(out), final_path)
 
 default_args = {"owner": "you", "retries": 0}
 
 with DAG(
     dag_id="openphish_silver",
     start_date=datetime(2025, 11, 3),
-    schedule_interval="@daily",
-    catchup=False,            # orchestrator controls dates; don't backfill here
+    schedule=None,          # orchestrator triggers; no independent schedule
+    catchup=False,          # orchestrator controls dates; don't backfill here
     max_active_runs=1,
     default_args=default_args,
     tags=["silver", "normalize"],

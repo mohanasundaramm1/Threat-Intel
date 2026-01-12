@@ -1,7 +1,7 @@
 # airflow/dags/misp_osint_ingest.py
 from __future__ import annotations
-import os, re, io, json, shutil, time, tempfile
-from datetime import datetime
+import os, re, io, json, time, tempfile, logging
+from datetime import datetime, timedelta
 from typing import List, Tuple
 
 import pandas as pd
@@ -11,8 +11,10 @@ from urllib3.util.retry import Retry
 from urllib.parse import urljoin
 
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.python import PythonOperator, get_current_context
 from airflow.exceptions import AirflowSkipException
+
+log = logging.getLogger(__name__)
 
 # Where to write
 SILVER_BASE = "/opt/airflow/silver/misp_osint"
@@ -28,14 +30,16 @@ ROW_RE = re.compile(
     re.IGNORECASE | re.DOTALL
 )
 
+# ---------------- helpers ----------------
+
 def _session() -> requests.Session:
     s = requests.Session()
-    s.headers.update({"User-Agent": "threat-intel-lab/misp-osint/0.1"})
+    s.headers.update({"User-Agent": "threat-intel-lab/misp-osint/0.1", "Accept": "application/json"})
     retry = Retry(
         total=4, connect=3, read=3,
         backoff_factor=0.6,
         status_forcelist=(429, 500, 502, 503, 504),
-        allowed_methods=("GET",),
+        allowed_methods={"GET"},
         raise_on_status=False,
     )
     adapter = HTTPAdapter(max_retries=retry, pool_connections=20, pool_maxsize=20)
@@ -43,14 +47,53 @@ def _session() -> requests.Session:
     s.mount("https://", adapter)
     return s
 
+def _atomic_to_parquet(df: pd.DataFrame, final_path: str):
+    """Write atomically to avoid partial files on failure."""
+    os.makedirs(os.path.dirname(final_path), exist_ok=True)
+    fd, tmp = tempfile.mkstemp(suffix=".parquet", dir=os.path.dirname(final_path) or ".")
+    os.close(fd)
+    try:
+        df.to_parquet(tmp, index=False)
+        os.replace(tmp, final_path)
+    finally:
+        if os.path.exists(tmp):
+            try: os.remove(tmp)
+            except Exception: pass
+
+def _effective_ds_ts(ds: str, ts: str, **context):
+    """Honor dag_run.conf overrides from the orchestrator."""
+    dr = context.get("dag_run")
+    if dr and getattr(dr, "conf", None):
+        ds2 = dr.conf.get("ds") or ds
+        ts2 = dr.conf.get("ts") or ts
+        if ds2 != ds or ts2 != ts:
+            log.info("Overriding ds/ts from dag_run.conf: %s,%s -> %s,%s", ds, ts, ds2, ts2)
+        return ds2, ts2
+    return ds, ts
+
+def _resolve_ds_ts_flexible(ds: str | None, ts: str | None, **maybe_ctx):
+    """
+    Works whether ds/ts/context were provided explicitly or not.
+    Falls back to Airflow runtime context; last-resort fallback = 'now' (UTC).
+    """
+    try:
+        ctx = maybe_ctx if ("dag_run" in maybe_ctx or "ds" in maybe_ctx) else get_current_context()
+        ds0 = ds or ctx["ds"]
+        ts0 = ts or ctx["ts"]
+        return _effective_ds_ts(ds0, ts0, **ctx)
+    except Exception:
+        now = pd.Timestamp.utcnow()
+        return (now.date().isoformat(), now.strftime("%Y-%m-%d %H:%M:%S"))
+
 def _parse_index(base_url: str, session: requests.Session) -> pd.DataFrame:
     """Return a dataframe with ['url','last_modified'] from the index page."""
-    r = session.get(base_url, timeout=(3, 30))
+    r = session.get(base_url, timeout=(5, 45))
     r.raise_for_status()
     rows: List[Tuple[str, str]] = ROW_RE.findall(r.text)
     data = []
     for rel, lm in rows:
         absu = urljoin(base_url, rel)
+        # Parse naive timestamp and treat as UTC (server usually lists UTC; if not, the day window has a buffer)
         dt = pd.to_datetime(lm, utc=True, errors="coerce")
         if pd.isna(dt):
             continue
@@ -108,19 +151,23 @@ def _extract_attributes(event_json: dict) -> list[dict]:
         })
     return rows
 
-def ingest_misp_osint(ds: str, ts: str, **_):
+# ---------------- main task ----------------
+
+def ingest_misp_osint(ds: str | None = None, ts: str | None = None, **context):
     """
     Strategy:
       1) Parse the index into (url,last_modified).
-      2) Keep only files whose last_modified.date == ds (UTC).
+      2) Keep files whose last_modified falls in the ds UTC window (with ±3h buffer).
       3) Fetch those JSONs (capped), extract attributes → flat rows.
-      4) Write idempotently to silver/misp_osint/ingest_date={ds}/misp_osint.parquet
-         with a MIN_ROWS guard (keep-existing-partition-on-low-count).
+      4) Write atomically to silver/misp_osint/ingest_date={ds}/misp_osint.parquet
+         with a MIN_ROWS guard (preserve an existing same-day partition if present).
     """
+    ds, ts = _resolve_ds_ts_flexible(ds, ts, **context)
+
     base_url   = (os.getenv("MISP_OSINT_BASE") or DEFAULT_FEED_BASE).strip()
     max_files  = int(os.getenv("MISP_OSINT_MAX", "100"))           # safety cap per run
     rate_sec   = float(os.getenv("MISP_OSINT_RATE_SEC", "0.3"))    # small delay between fetches
-    timeout    = (3, int(os.getenv("MISP_OSINT_TIMEOUT", "60")))
+    timeout    = (5, int(os.getenv("MISP_OSINT_TIMEOUT", "60")))
     MIN_ROWS   = int(os.getenv("MISP_OSINT_MIN_ROWS", "50"))
 
     s = _session()
@@ -130,15 +177,15 @@ def ingest_misp_osint(ds: str, ts: str, **_):
     if idx.empty:
         raise AirflowSkipException(f"[misp_osint] Index empty at {base_url}")
 
-    # 2) filter to ds window (UTC date match)
-    ds_date = pd.to_datetime(ds).date()
-    idx["date"] = idx["last_modified"].dt.date
-    day_df = idx[idx["date"] == ds_date]
+    # 2) filter to ds window (UTC) with ±3h tolerance to absorb listing TZ quirks
+    ds_start = pd.Timestamp(ds, tz="UTC")
+    start = ds_start - pd.Timedelta(hours=3)
+    end   = ds_start + pd.Timedelta(days=1, hours=3)
+    day_df = idx[(idx["last_modified"] >= start) & (idx["last_modified"] < end)]
     if day_df.empty:
-        # Nothing for this ds; skip gracefully (no empty partition)
-        raise AirflowSkipException(f"[misp_osint] No files for ds={ds_date} at {base_url}")
+        raise AirflowSkipException(f"[misp_osint] No files in window {start}..{end} for ds={ds}")
 
-    # cap & keep newest within ds
+    # cap & keep newest within window
     day_df = day_df.sort_values("last_modified").tail(max_files)
 
     # 3) fetch & extract
@@ -152,7 +199,7 @@ def ingest_misp_osint(ds: str, ts: str, **_):
             all_rows.extend(_extract_attributes(data))
         except Exception as e:
             errors += 1
-            print(f"[misp_osint] error on {url}: {e}")
+            log.warning("[misp_osint] error on %s: %s", url, e)
         time.sleep(rate_sec)
 
     df = pd.DataFrame(all_rows)
@@ -171,36 +218,35 @@ def ingest_misp_osint(ds: str, ts: str, **_):
 
     n = len(df)
     outdir = f"{SILVER_BASE}/ingest_date={ds}"
+    outpath = f"{outdir}/misp_osint.parquet"
 
-    # 4) MIN_ROWS guard (keep-existing-partition if present, else fail loudly)
+    # 4) MIN_ROWS guard (preserve same-day partition if it already exists)
     if n < MIN_ROWS:
-        if os.path.exists(outdir):
+        if os.path.exists(outpath):
             raise AirflowSkipException(
-                f"[misp_osint] rows={n} < {MIN_ROWS}; keeping existing partition for {ds} at {outdir}"
+                f"[misp_osint] rows={n} < {MIN_ROWS}; keeping existing partition for {ds} at {outpath}"
             )
         raise ValueError(f"[misp_osint] returned {n} rows (<{MIN_ROWS})")
 
-    print(f"[misp_osint] ds={ds} index_rows={len(idx)} matched_today={len(day_df)} "
-          f"rows_extracted={n} file_errors={errors}")
+    log.info("[misp_osint] ds=%s index_rows=%d matched_window=%d rows_extracted=%d file_errors=%d",
+             ds, len(idx), len(day_df), n, errors)
 
-    # Idempotent + atomic write
-    if os.path.exists(outdir):
-        shutil.rmtree(outdir)
-    os.makedirs(outdir, exist_ok=True)
-    final_path = f"{outdir}/misp_osint.parquet"
-    fd, tmp = tempfile.mkstemp(suffix=".parquet", dir=outdir); os.close(fd)
-    df.to_parquet(tmp, index=False)
-    os.replace(tmp, final_path)
-    print(f"[misp_osint] wrote {n} rows -> {final_path}")
+    # Idempotent + atomic write (no rmtree; single file swap)
+    _atomic_to_parquet(df, outpath)
+    log.info("[misp_osint] wrote %d rows -> %s", n, outpath)
 
 # ---------------- DAG ----------------
 
-default_args = {"owner": "you", "retries": 0}
+default_args = {
+    "owner": "you",
+    "retries": 2,
+    "retry_delay": timedelta(minutes=5),
+}
 
 with DAG(
     dag_id="misp_osint_ingest",
     start_date=datetime(2025, 11, 3),
-    schedule_interval="@daily",   # ok to keep; Airflow 3 warns but works
+    schedule_interval=None,   # orchestrator triggers with ds/ts
     catchup=False,
     max_active_runs=1,
     default_args=default_args,

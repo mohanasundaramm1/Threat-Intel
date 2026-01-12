@@ -1,7 +1,8 @@
 # airflow/dags/dns_ip_geo_dag.py
 from __future__ import annotations
-import os, time, shutil, ipaddress, tempfile
-from datetime import datetime
+import os, time, ipaddress, tempfile, logging
+from datetime import datetime, timedelta
+
 from typing import List, Dict, Any, Tuple
 
 import pandas as pd
@@ -14,7 +15,6 @@ from urllib3.util.retry import Retry
 from airflow import DAG
 from airflow.operators.python import PythonOperator
 from airflow.exceptions import AirflowSkipException
-import logging
 
 log = logging.getLogger(__name__)
 
@@ -28,7 +28,9 @@ DNS_GEO_DAILY_DIR  = f"{LOOKUPS_BASE}/dns_geo"                 # partitioned sna
 # ---------------- helpers ----------------
 
 def _effective_ds_ts(ds: str, ts: str, **context):
-    """Use ds/ts from dag_run.conf when triggered by the orchestrator."""
+    """
+    Use ds/ts from dag_run.conf when triggered by the orchestrator; fall back to Airflow context.
+    """
     dr = context.get("dag_run")
     if dr and getattr(dr, "conf", None):
         return dr.conf.get("ds", ds), dr.conf.get("ts", ts)
@@ -44,8 +46,10 @@ def _atomic_to_parquet(df: pd.DataFrame, final_path: str):
         os.replace(tmp_path, final_path)  # atomic on POSIX
     finally:
         if os.path.exists(tmp_path):
-            try: os.remove(tmp_path)
-            except Exception: pass
+            try:
+                os.remove(tmp_path)
+            except Exception:
+                pass
 
 def _load_labels_for_day(ds: str) -> pd.DataFrame:
     p = f"{LABELS_UNION_BASE}/ingest_date={ds}/labels_union.parquet"
@@ -89,7 +93,7 @@ def _resolve_rr(domain: str, rdtype: str, resolver: dns.resolver.Resolver) -> Li
             addr = getattr(rr, "address", None)
             if addr:
                 try:
-                    ipaddress.ip_address(addr)   # validates
+                    ipaddress.ip_address(addr)   # validates v4/v6
                     ips.append(addr)
                 except ValueError:
                     pass
@@ -140,7 +144,7 @@ def _ip_geo_batch(session: requests.Session, ips: List[str]) -> Dict[str, Dict[s
             log.warning("ip-api batch error on %s..%s: %s", chunk[:1], chunk[-1:], e)
             for ip in chunk:
                 out_map[ip] = {}
-        time.sleep(1)  # light throttle
+        time.sleep(1.5)  # gentler throttle
     return out_map
 
 
@@ -152,9 +156,6 @@ def dns_ip_geo_task(ds: str, ts: str, **context):
     os.makedirs(LOOKUPS_BASE, exist_ok=True)
     os.makedirs(DNS_GEO_DAILY_DIR, exist_ok=True)
     outdir = f"{DNS_GEO_DAILY_DIR}/ingest_date={ds}"
-    if os.path.exists(outdir):
-        shutil.rmtree(outdir)
-    os.makedirs(outdir, exist_ok=True)
 
     labels = _load_labels_for_day(ds)
 
@@ -185,10 +186,12 @@ def dns_ip_geo_task(ds: str, ts: str, **context):
     cache["ip"] = cache["ip"].astype(str)
     cached_keys = set((cache["puny_domain"] + "|" + cache["ip"]).tolist())
 
-    # DNS resolve
+    # DNS resolve (with fallback nameservers)
     resolver = dns.resolver.Resolver(configure=True)
     resolver.lifetime = 3.0
     resolver.timeout  = 3.0
+    if not resolver.nameservers:
+        resolver.nameservers = ["8.8.8.8", "1.1.1.1"]
 
     pairs: List[Tuple[str, str]] = []  # (puny_domain, ip)
     for d in domains:
@@ -248,12 +251,16 @@ def dns_ip_geo_task(ds: str, ts: str, **context):
 
 # ---------------- DAG ----------------
 
-default_args = {"owner": "you", "retries": 0}
+default_args = {
+    "owner": "you",
+    "retries": 2,
+    "retry_delay": timedelta(minutes=5),
+}
 
 with DAG(
     dag_id="dns_ip_geo_ingest",
     start_date=datetime(2025, 11, 1),
-    schedule_interval="@daily",
+    schedule_interval=None,          # <-- trigger-only (orchestrator handles ds/ts)
     catchup=False,
     max_active_runs=1,
     default_args=default_args,

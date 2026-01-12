@@ -1,11 +1,27 @@
-# ml/offline/train_week5_baselines.py
+# ml/offline/train_latest_baseline.py
+#
+# Dynamic phishing vs benign baseline, using all available labels / lookups.
+# Run from repo root:
+#   source .venv/bin/activate
+#   python ml/offline/train_latest_baseline.py
+#
+# Outputs:
+#   - ml/models/registry/ct_risk_logreg_full_<TS>.joblib
+#   - ml/models/registry/ct_risk_lgbm_full_<TS>.txt   (if LightGBM available)
+#   - ml/models/registry/ct_risk_meta_<TS>.json
+#   - "latest" copies:
+#       ct_risk_logreg_full_latest.joblib
+#       ct_risk_lgbm_full_latest.txt (if exists)
+#       ct_risk_meta_latest.json
+#
 
-import os, glob, math, json
+import os, glob, math, json, shutil
+from datetime import datetime, timezone
+from collections import Counter
+
 import numpy as np
 import pandas as pd
 import tldextract
-from datetime import datetime, timezone
-from collections import Counter
 
 from sklearn.feature_extraction.text import HashingVectorizer, FeatureHasher
 from sklearn.linear_model import LogisticRegression
@@ -22,6 +38,11 @@ try:
     import joblib
 except ImportError:
     joblib = None
+
+try:
+    import lightgbm as lgb
+except ImportError:
+    lgb = None
 
 NOW_UTC = datetime.now(timezone.utc)
 
@@ -48,6 +69,7 @@ def reg_domain(domain: str) -> str:
     if not isinstance(domain, str) or not domain:
         return ""
     ext = tldextract.extract(domain)
+    # keep the old behaviour for consistency with week5
     reg = getattr(ext, "registered_domain", None) or getattr(
         ext, "top_domain_under_public_suffix", None
     ) or ""
@@ -94,47 +116,44 @@ def df_from_parquets(patterns):
     return pd.concat(dfs, ignore_index=True)
 
 
-# ---------------- load labels (phishing + benign) ----------------
+# ---------------- load labels (dynamic) ----------------
 
-PHISH_DAYS  = [f"2025-11-{d:02d}" for d in range(17, 27)]
-BENIGN_DAYS = ["2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31"]
+def load_all_labels():
+    pattern = os.path.join(SILVER_LABELS_DIR, "ingest_date=*/labels_union.parquet")
+    print("[info] loading labels from pattern:", pattern)
+    labels = df_from_parquets([pattern])
+    if labels.empty:
+        raise SystemExit("No labels found (check silver/labels_union).")
 
-label_paths = [
-    os.path.join(SILVER_LABELS_DIR, f"ingest_date={d}", "labels_union.parquet")
-    for d in PHISH_DAYS + BENIGN_DAYS
-]
-print("[info] loading labels from:")
-for p in label_paths:
-    print("  -", p)
+    print("[info] raw labels rows:", len(labels))
 
-labels = df_from_parquets(label_paths)
-if labels.empty:
-    raise SystemExit("No labels found (check paths + days).")
+    # Normalise
+    labels["registered_domain"] = labels["domain"].map(reg_domain)
+    labels = labels[labels["registered_domain"].astype(bool)].copy()
 
-print("[info] raw labels rows:", len(labels))
+    # Label: benign=0 if source==benign_seed else 1 (same convention as week5)
+    labels["label"] = np.where(labels["source"] == "benign_seed", 0, 1)
 
-labels["registered_domain"] = labels["domain"].map(reg_domain)
-labels = labels[labels["registered_domain"].astype(bool)].copy()
+    # only benign + phishing (ignore other weird sources if any)
+    labels = labels[labels["label"].isin([0, 1])].copy()
 
-# label: benign=0 if source==benign_seed else 1
-labels["label"] = np.where(labels["source"] == "benign_seed", 0, 1)
+    # ensure ingest_date is string for grouping / temporal split
+    labels["ingest_date"] = labels["ingest_date"].astype(str)
 
-# only benign + phishing
-labels = labels[labels["label"].isin([0, 1])].copy()
+    print(
+        "[info] labels after filtering:",
+        len(labels),
+        "positives=",
+        int((labels["label"] == 1).sum()),
+        "negatives=",
+        int((labels["label"] == 0).sum()),
+    )
+    return labels
 
-# ensure ingest_date is string for grouping
-labels["ingest_date"] = labels["ingest_date"].astype(str)
 
-print(
-    "[info] labels after filtering:",
-    len(labels),
-    "positives=",
-    int((labels["label"] == 1).sum()),
-    "negatives=",
-    int((labels["label"] == 0).sum()),
-)
+labels = load_all_labels()
 
-# pick latest ingest_date per registered_domain
+# pick latest ingest_date per registered_domain (for temporal split later)
 last_seen = (
     labels.groupby("registered_domain")["ingest_date"]
     .max()
@@ -142,17 +161,12 @@ last_seen = (
     .rename(columns={"ingest_date": "last_ingest_date"})
 )
 
-# ---------------- load DNS (dns_geo) ----------------
+# ---------------- load DNS (all days) ----------------
 
-def load_dns_for_days(days):
-    paths = [
-        os.path.join(DNS_GEO_DIR, f"ingest_date={d}", "dns_geo.parquet")
-        for d in days
-    ]
-    print("[info] loading DNS-Geo from:")
-    for p in paths:
-        print("  -", p)
-    dns = df_from_parquets(paths)
+def load_all_dns():
+    pattern = os.path.join(DNS_GEO_DIR, "ingest_date=*/dns_geo.parquet")
+    print("[info] loading DNS-Geo from pattern:", pattern)
+    dns = df_from_parquets([pattern])
     if dns.empty:
         print("[warn] no DNS-Geo data loaded.")
         return dns
@@ -163,7 +177,7 @@ def load_dns_for_days(days):
     return dns
 
 
-dns = load_dns_for_days(PHISH_DAYS + BENIGN_DAYS)
+dns = load_all_dns()
 
 # reduce DNS to per-domain aggregates
 if not dns.empty:
@@ -184,17 +198,12 @@ else:
     agg = pd.DataFrame(columns=["registered_domain"])
 print("[info] DNS agg rows:", len(agg))
 
-# ---------------- load WHOIS ----------------
+# ---------------- load WHOIS (all days) ----------------
 
-def load_whois_for_days(days):
-    paths = [
-        os.path.join(WHOIS_DIR, f"ingest_date={d}", "whois.parquet")
-        for d in days
-    ]
-    print("[info] loading WHOIS from:")
-    for p in paths:
-        print("  -", p)
-    w = df_from_parquets(paths)
+def load_all_whois():
+    pattern = os.path.join(WHOIS_DIR, "ingest_date=*/whois.parquet")
+    print("[info] loading WHOIS from pattern:", pattern)
+    w = df_from_parquets([pattern])
     if w.empty:
         print("[warn] no WHOIS data loaded.")
         return w
@@ -203,7 +212,7 @@ def load_whois_for_days(days):
     return w
 
 
-whois = load_whois_for_days(PHISH_DAYS + BENIGN_DAYS)
+whois = load_all_whois()
 
 if not whois.empty:
     wcols = ["registered_domain", "registrar", "status", "created", "expires", "error"]
@@ -266,7 +275,8 @@ cols_to_show = [
 print(Xdf[cols_to_show].head(10))
 
 # Save frozen Xdf for debugging / reuse
-xdf_path = os.path.join(TMP_DIR, "week5_Xdf.parquet")
+stamp = NOW_UTC.strftime("%Y%m%dT%H%M%SZ")
+xdf_path = os.path.join(TMP_DIR, f"latest_Xdf_{stamp}.parquet")
 Xdf.to_parquet(xdf_path, index=False)
 print(f"[info] wrote Xdf to {xdf_path}")
 
@@ -381,7 +391,10 @@ y_train = y_test = None
 used_temporal = False
 
 if "last_ingest_date" in Xdf.columns and Xdf["last_ingest_date"].notna().any():
-    test_mask = (Xdf["last_ingest_date"] >= "2025-11-24").to_numpy(bool)
+    # Use last couple of days as "test" if possible
+    cutoff = sorted(Xdf["last_ingest_date"].dropna().unique())[-1]
+    print("[info] temporal split cutoff last_ingest_date >=", cutoff)
+    test_mask = (Xdf["last_ingest_date"] >= cutoff).to_numpy(bool)
     n_test = int(test_mask.sum())
     n_total = len(test_mask)
 
@@ -407,13 +420,7 @@ if "last_ingest_date" in Xdf.columns and Xdf["last_ingest_date"].notna().any():
             Xte_lex.shape[0],
         )
     else:
-        print(
-            f"[warn] temporal split degenerate "
-            f"(test={n_test}/{n_total}, "
-            f"train_classes={np.unique(y_train_temp)}, "
-            f"test_classes={np.unique(y_test_temp)}); "
-            "falling back to random stratified split"
-        )
+        print("[warn] temporal split degenerate; falling back to random split")
 
 if not used_temporal:
     Xtr_lex, Xte_lex, y_train, y_test = train_test_split(
@@ -449,18 +456,6 @@ print(
     int((y_test == 1).sum()),
     "negatives=",
     int((y_test == 0).sum()),
-)
-print(
-    "[info] X_train_lex shape:",
-    Xtr_lex.shape,
-    "| X_test_lex:",
-    Xte_lex.shape,
-)
-print(
-    "[info] X_train_full shape:",
-    Xtr_full.shape,
-    "| X_test_full:",
-    Xte_full.shape,
 )
 
 # ---------------- models ----------------
@@ -501,50 +496,51 @@ logreg_full, metrics_logreg_full = evaluate_model(
 
 # 2) LightGBM (optional)
 metrics_lgbm_lex = metrics_lgbm_full = None
-try:
-    import lightgbm as lgb
+if lgb is not None:
+    try:
+        lgbm_lex = lgb.LGBMClassifier(
+            n_estimators=600,
+            learning_rate=0.05,
+            num_leaves=63,
+            subsample=0.9,
+            colsample_bytree=0.9,
+            reg_alpha=0.1,
+            reg_lambda=0.1,
+            objective="binary",
+            class_weight="balanced",
+            n_jobs=-1,
+        )
+        lgbm_full = lgb.LGBMClassifier(
+            n_estimators=600,
+            learning_rate=0.05,
+            num_leaves=63,
+            subsample=0.9,
+            colsample_bytree=0.9,
+            reg_alpha=0.1,
+            reg_lambda=0.1,
+            objective="binary",
+            class_weight="balanced",
+            n_jobs=-1,
+        )
 
-    lgbm_lex = lgb.LGBMClassifier(
-        n_estimators=600,
-        learning_rate=0.05,
-        num_leaves=63,
-        subsample=0.9,
-        colsample_bytree=0.9,
-        reg_alpha=0.1,
-        reg_lambda=0.1,
-        objective="binary",
-        class_weight="balanced",
-        n_jobs=-1,
-    )
-    lgbm_full = lgb.LGBMClassifier(
-        n_estimators=600,
-        learning_rate=0.05,
-        num_leaves=63,
-        subsample=0.9,
-        colsample_bytree=0.9,
-        reg_alpha=0.1,
-        reg_lambda=0.1,
-        objective="binary",
-        class_weight="balanced",
-        n_jobs=-1,
-    )
-
-    lgbm_lex,  metrics_lgbm_lex  = evaluate_model(
-        "LightGBM[lex_only]", lgbm_lex,  Xtr_lex,  y_train, Xte_lex,  y_test
-    )
-    lgbm_full, metrics_lgbm_full = evaluate_model(
-        "LightGBM[full]",     lgbm_full, Xtr_full, y_train, Xte_full, y_test
-    )
-except Exception as e:
-    print("[warn] LightGBM not available:", e)
-    lgbm_lex = lgbm_full = None
+        lgbm_lex,  metrics_lgbm_lex  = evaluate_model(
+            "LightGBM[lex_only]", lgbm_lex,  Xtr_lex,  y_train, Xte_lex,  y_test
+        )
+        lgbm_full, metrics_lgbm_full = evaluate_model(
+            "LightGBM[full]",     lgbm_full, Xtr_full, y_train, Xte_full, y_test
+        )
+    except Exception as e:
+        print("[warn] LightGBM training failed:", e)
+        lgbm_lex = lgbm_full = None
+else:
+    print("[info] LightGBM not installed; skipping")
 
 # ---------------- save models + metadata ----------------
 
+ts_stamp = NOW_UTC.strftime("%Y%m%dT%H%M%SZ")
+
 meta = {
     "created_utc": NOW_UTC.isoformat(),
-    "phish_days": PHISH_DAYS,
-    "benign_days": BENIGN_DAYS,
     "n_rows": int(len(Xdf)),
     "n_pos": int((y == 1).sum()),
     "n_neg": int((y == 0).sum()),
@@ -560,26 +556,53 @@ meta = {
     },
 }
 
-meta_path = os.path.join(MODEL_DIR, "week5_meta.json")
+meta_path = os.path.join(MODEL_DIR, f"ct_risk_meta_{ts_stamp}.json")
 with open(meta_path, "w") as f:
     json.dump(meta, f, indent=2)
 print(f"[info] wrote meta to {meta_path}")
 
-if joblib is not None:
-    joblib.dump(logreg_lex, os.path.join(MODEL_DIR, "week5_logreg_lex.joblib"))
-    joblib.dump(logreg_full, os.path.join(MODEL_DIR, "week5_logreg_full.joblib"))
-    print("[info] saved LogisticRegression models via joblib")
+# Logistic Regression models
+logreg_lex_path = os.path.join(MODEL_DIR, f"ct_risk_logreg_lex_{ts_stamp}.joblib")
+logreg_full_path = os.path.join(MODEL_DIR, f"ct_risk_logreg_full_{ts_stamp}.joblib")
 
-try:
-    # LightGBM models (if available)
-    if lgbm_lex is not None:
-        lgbm_lex.booster_.save_model(
-            os.path.join(MODEL_DIR, "week5_lgbm_lex.txt")
-        )
-    if lgbm_full is not None:
-        lgbm_full.booster_.save_model(
-            os.path.join(MODEL_DIR, "week5_lgbm_full.txt")
-        )
-    print("[info] saved LightGBM boosters")
-except Exception as e:
-    print("[warn] failed to save LightGBM models:", e)
+if joblib is not None:
+    joblib.dump(logreg_lex, logreg_lex_path)
+    joblib.dump(logreg_full, logreg_full_path)
+    print("[info] saved LogisticRegression models via joblib")
+else:
+    print("[warn] joblib missing; LogReg models not saved to disk")
+
+# LightGBM boosters (if available)
+if lgb is not None and "lgbm_full" in locals() and lgbm_full is not None:
+    try:
+        lgb_full_path = os.path.join(MODEL_DIR, f"ct_risk_lgbm_full_{ts_stamp}.txt")
+        lgbm_full.booster_.save_model(lgb_full_path)
+        print("[info] saved LightGBM full booster to", lgb_full_path)
+    except Exception as e:
+        print("[warn] failed to save LightGBM full booster:", e)
+        lgb_full_path = None
+else:
+    lgb_full_path = None
+
+# ---------------- update "latest" symlinks/copies ----------------
+
+def _copy_latest(src, latest_name):
+    if src is None or not os.path.exists(src):
+        return
+    latest_path = os.path.join(MODEL_DIR, latest_name)
+    try:
+        # copy2 to preserve mtime, works on all platforms
+        shutil.copy2(src, latest_path)
+        print(f"[info] updated latest model: {latest_path}")
+    except Exception as e:
+        print(f"[warn] failed to update latest copy {latest_path}: {e}")
+
+# meta
+_copy_latest(meta_path, "ct_risk_meta_latest.json")
+# logreg
+_copy_latest(logreg_full_path, "ct_risk_logreg_full_latest.joblib")
+# lightgbm (if saved)
+if lgb_full_path is not None:
+    _copy_latest(lgb_full_path, "ct_risk_lgbm_full_latest.txt")
+
+print("[info] training run complete.")

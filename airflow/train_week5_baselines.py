@@ -1,6 +1,5 @@
-# ml/offline/train_week5_baselines.py
-
-import os, glob, math, json
+# train_week5_baselines.py
+import os, glob, math
 import numpy as np
 import pandas as pd
 import tldextract
@@ -17,29 +16,7 @@ from sklearn.metrics import (
 from sklearn.model_selection import train_test_split
 from scipy.sparse import csr_matrix, hstack
 
-# Optional: save models
-try:
-    import joblib
-except ImportError:
-    joblib = None
-
 NOW_UTC = datetime.now(timezone.utc)
-
-# ---------------- paths ----------------
-
-THIS_DIR = os.path.dirname(__file__)                    # .../ml/offline
-ML_DIR = os.path.abspath(os.path.join(THIS_DIR, ".."))  # .../ml
-REPO_ROOT = os.path.abspath(os.path.join(ML_DIR, "..")) # .../threat-intel
-
-SILVER_LABELS_DIR = os.path.join(REPO_ROOT, "silver", "labels_union")
-DNS_GEO_DIR       = os.path.join(REPO_ROOT, "lookups", "dns_geo")
-WHOIS_DIR         = os.path.join(REPO_ROOT, "lookups", "whois")
-
-MODEL_DIR = os.path.join(ML_DIR, "models", "registry")
-TMP_DIR   = os.path.join(ML_DIR, "tmp")
-
-os.makedirs(MODEL_DIR, exist_ok=True)
-os.makedirs(TMP_DIR, exist_ok=True)
 
 # ---------------- helpers ----------------
 
@@ -96,11 +73,11 @@ def df_from_parquets(patterns):
 
 # ---------------- load labels (phishing + benign) ----------------
 
-PHISH_DAYS  = [f"2025-11-{d:02d}" for d in range(17, 27)]
+PHISH_DAYS = [f"2025-11-{d:02d}" for d in range(17, 27)]
 BENIGN_DAYS = ["2025-10-28", "2025-10-29", "2025-10-30", "2025-10-31"]
 
 label_paths = [
-    os.path.join(SILVER_LABELS_DIR, f"ingest_date={d}", "labels_union.parquet")
+    f"../silver/labels_union/ingest_date={d}/labels_union.parquet"
     for d in PHISH_DAYS + BENIGN_DAYS
 ]
 print("[info] loading labels from:")
@@ -145,10 +122,7 @@ last_seen = (
 # ---------------- load DNS (dns_geo) ----------------
 
 def load_dns_for_days(days):
-    paths = [
-        os.path.join(DNS_GEO_DIR, f"ingest_date={d}", "dns_geo.parquet")
-        for d in days
-    ]
+    paths = [f"../lookups/dns_geo/ingest_date={d}/dns_geo.parquet" for d in days]
     print("[info] loading DNS-Geo from:")
     for p in paths:
         print("  -", p)
@@ -187,10 +161,7 @@ print("[info] DNS agg rows:", len(agg))
 # ---------------- load WHOIS ----------------
 
 def load_whois_for_days(days):
-    paths = [
-        os.path.join(WHOIS_DIR, f"ingest_date={d}", "whois.parquet")
-        for d in days
-    ]
+    paths = [f"../lookups/whois/ingest_date={d}/whois.parquet" for d in days]
     print("[info] loading WHOIS from:")
     for p in paths:
         print("  -", p)
@@ -264,11 +235,6 @@ cols_to_show = [
     "days_to_expiry",
 ]
 print(Xdf[cols_to_show].head(10))
-
-# Save frozen Xdf for debugging / reuse
-xdf_path = os.path.join(TMP_DIR, "week5_Xdf.parquet")
-Xdf.to_parquet(xdf_path, index=False)
-print(f"[info] wrote Xdf to {xdf_path}")
 
 # ---------------- build feature matrices ----------------
 
@@ -362,7 +328,7 @@ Xdf[whois_num_cols] = Xdf[whois_num_cols].fillna(0)
 X_whois_num = csr_matrix(Xdf[whois_num_cols].to_numpy(dtype=float))
 
 # Final feature matrices
-X_lex  = hstack([X_char, X_string]).tocsr()
+X_lex = hstack([X_char, X_string]).tocsr()
 X_full = hstack([X_char, X_string, X_dns_num, X_cat, X_whois_num]).tocsr()
 y = Xdf["label"].astype(int).to_numpy()
 
@@ -371,16 +337,97 @@ print(
     f"positives= {int(y.sum())} negatives= {int((y == 0).sum())}"
 )
 
+# # ---------------- temporal / random split ----------------
+
+# if "last_ingest_date" in Xdf.columns and Xdf["last_ingest_date"].notna().any():
+#     test_mask = (Xdf["last_ingest_date"] >= "2025-11-24").to_numpy(bool)
+#     n_test = int(test_mask.sum())
+#     n_total = len(test_mask)
+#     if n_test == 0 or n_test == n_total:
+#         print(
+#             f"[warn] temporal split degenerate (test={n_test}/{n_total}); "
+#             "falling back to random split"
+#         )
+#         Xtr_lex, Xte_lex, y_train, y_test = train_test_split(
+#             X_lex,
+#             y,
+#             test_size=0.25,
+#             stratify=y,
+#             random_state=42,
+#         )
+#         Xtr_full, Xte_full, _, _ = train_test_split(
+#             X_full,
+#             y,
+#             test_size=0.25,
+#             stratify=y,
+#             random_state=42,
+#         )
+#     else:
+#         Xtr_lex, Xte_lex = X_lex[~test_mask], X_lex[test_mask]
+#         Xtr_full, Xte_full = X_full[~test_mask], X_full[test_mask]
+#         y_train, y_test = y[~test_mask], y[test_mask]
+#         print(
+#             "[info] temporal split:",
+#             "train=",
+#             Xtr_lex.shape[0],
+#             "test=",
+#             Xte_lex.shape[0],
+#         )
+# else:
+#     print("[warn] last_ingest_date missing; using random split")
+#     Xtr_lex, Xte_lex, y_train, y_test = train_test_split(
+#         X_lex,
+#         y,
+#         test_size=0.25,
+#         stratify=y,
+#         random_state=42,
+#     )
+#     Xtr_full, Xte_full, _, _ = train_test_split(
+#         X_full,
+#         y,
+#         test_size=0.25,
+#         stratify=y,
+#         random_state=42,
+#     )
+
+# print(
+#     "[info] y_train: positives=",
+#     int((y_train == 1).sum()),
+#     "negatives=",
+#     int((y_train == 0).sum()),
+# )
+# print(
+#     "[info] y_test:  positives=",
+#     int((y_test == 1).sum()),
+#     "negatives=",
+#     int((y_test == 0).sum()),
+# )
+# print(
+#     "[info] X_train_lex shape:",
+#     Xtr_lex.shape,
+#     "| X_test_lex:",
+#     Xte_lex.shape,
+# )
+# print(
+#     "[info] X_train_full shape:",
+#     Xtr_full.shape,
+#     "| X_test_full:",
+#     Xte_full.shape,
+# )
 # ---------------- temporal / random split ----------------
 
-def has_two_classes(arr):
-    return len(np.unique(arr)) >= 2
+from sklearn.model_selection import train_test_split
+
+def has_two_classes(y_arr):
+    return len(np.unique(y_arr)) >= 2
 
 Xtr_lex = Xte_lex = Xtr_full = Xte_full = None
 y_train = y_test = None
+
 used_temporal = False
 
 if "last_ingest_date" in Xdf.columns and Xdf["last_ingest_date"].notna().any():
+    # try temporal hold-out
     test_mask = (Xdf["last_ingest_date"] >= "2025-11-24").to_numpy(bool)
     n_test = int(test_mask.sum())
     n_total = len(test_mask)
@@ -389,7 +436,8 @@ if "last_ingest_date" in Xdf.columns and Xdf["last_ingest_date"].notna().any():
     y_test_temp = y[test_mask]
 
     temporal_ok = (
-        0 < n_test < n_total
+        n_test > 0
+        and n_test < n_total
         and has_two_classes(y_train_temp)
         and has_two_classes(y_test_temp)
     )
@@ -416,6 +464,7 @@ if "last_ingest_date" in Xdf.columns and Xdf["last_ingest_date"].notna().any():
         )
 
 if not used_temporal:
+    # fall back to random split with stratification
     Xtr_lex, Xte_lex, y_train, y_test = train_test_split(
         X_lex,
         y,
@@ -481,7 +530,7 @@ def evaluate_model(name, clf, Xtr, ytr, Xte, yte):
         f"[{name}] ROC-AUC={roc:.4f}  PR-AUC={pr:.4f}  "
         f"Recall@FPR=1%={r_at_1pct:.3f}"
     )
-    return clf, {"roc_auc": roc, "pr_auc": pr, "recall_at_1pct": r_at_1pct}
+    return clf
 
 
 # 1) Logistic Regression baselines
@@ -492,15 +541,10 @@ logreg_full = LogisticRegression(
     solver="liblinear", class_weight="balanced", max_iter=200, n_jobs=None
 )
 
-logreg_lex,  metrics_logreg_lex  = evaluate_model(
-    "LogReg[lex_only]", logreg_lex,  Xtr_lex,  y_train, Xte_lex,  y_test
-)
-logreg_full, metrics_logreg_full = evaluate_model(
-    "LogReg[full]",     logreg_full, Xtr_full, y_train, Xte_full, y_test
-)
+evaluate_model("LogReg[lex_only]", logreg_lex, Xtr_lex, y_train, Xte_lex, y_test)
+evaluate_model("LogReg[full]", logreg_full, Xtr_full, y_train, Xte_full, y_test)
 
 # 2) LightGBM (optional)
-metrics_lgbm_lex = metrics_lgbm_full = None
 try:
     import lightgbm as lgb
 
@@ -529,57 +573,7 @@ try:
         n_jobs=-1,
     )
 
-    lgbm_lex,  metrics_lgbm_lex  = evaluate_model(
-        "LightGBM[lex_only]", lgbm_lex,  Xtr_lex,  y_train, Xte_lex,  y_test
-    )
-    lgbm_full, metrics_lgbm_full = evaluate_model(
-        "LightGBM[full]",     lgbm_full, Xtr_full, y_train, Xte_full, y_test
-    )
+    evaluate_model("LightGBM[lex_only]", lgbm_lex, Xtr_lex, y_train, Xte_lex, y_test)
+    evaluate_model("LightGBM[full]", lgbm_full, Xtr_full, y_train, Xte_full, y_test)
 except Exception as e:
     print("[warn] LightGBM not available:", e)
-    lgbm_lex = lgbm_full = None
-
-# ---------------- save models + metadata ----------------
-
-meta = {
-    "created_utc": NOW_UTC.isoformat(),
-    "phish_days": PHISH_DAYS,
-    "benign_days": BENIGN_DAYS,
-    "n_rows": int(len(Xdf)),
-    "n_pos": int((y == 1).sum()),
-    "n_neg": int((y == 0).sum()),
-    "metrics": {
-        "logreg_lex": metrics_logreg_lex,
-        "logreg_full": metrics_logreg_full,
-        "lgbm_lex": metrics_lgbm_lex,
-        "lgbm_full": metrics_lgbm_full,
-    },
-    "feature_shapes": {
-        "X_lex":  X_lex.shape,
-        "X_full": X_full.shape,
-    },
-}
-
-meta_path = os.path.join(MODEL_DIR, "week5_meta.json")
-with open(meta_path, "w") as f:
-    json.dump(meta, f, indent=2)
-print(f"[info] wrote meta to {meta_path}")
-
-if joblib is not None:
-    joblib.dump(logreg_lex, os.path.join(MODEL_DIR, "week5_logreg_lex.joblib"))
-    joblib.dump(logreg_full, os.path.join(MODEL_DIR, "week5_logreg_full.joblib"))
-    print("[info] saved LogisticRegression models via joblib")
-
-try:
-    # LightGBM models (if available)
-    if lgbm_lex is not None:
-        lgbm_lex.booster_.save_model(
-            os.path.join(MODEL_DIR, "week5_lgbm_lex.txt")
-        )
-    if lgbm_full is not None:
-        lgbm_full.booster_.save_model(
-            os.path.join(MODEL_DIR, "week5_lgbm_full.txt")
-        )
-    print("[info] saved LightGBM boosters")
-except Exception as e:
-    print("[warn] failed to save LightGBM models:", e)
